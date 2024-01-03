@@ -1,0 +1,21 @@
+.gift-cards,
+.game-cards,
+.payment-cards {
+  .gift-hero,
+  .game-hero,
+  .payment-hero {
+    background-image: url("../public/layered-waves.svg");
+    background-position: bottom;
+    background-size: cover;
+  }
+  .tabs {
+    @media screen and (max-width: 768px) {
+      max-width: 90%;
+    }
+    & > div {
+      @media screen and (max-width: 768px) {
+        flex-wrap: wrap;
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+//start global varibales
+$light: #ffffff;
+//end global varibales
+.about-page {
+  .hero {
+    background-image: url("../public/large-triangles.svg");
+    background-repeat: repeat-x;
+    background-size: contain;
+    background-attachment: fixed;
+    h1 {
+      color: transparent;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke-width: 3px;
+      -webkit-text-stroke-color: $light;
+      user-select: none;
+    }
+  }
+}

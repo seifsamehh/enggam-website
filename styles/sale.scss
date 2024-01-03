@@ -1,0 +1,44 @@
+.sale {
+  &::before {
+    content: "%";
+    position: absolute;
+    top: 0;
+    left: 10%;
+    color: #ffffff;
+    font-size: 20rem;
+    @media screen and (max-width: 991px) {
+      font-size: 6rem;
+    }
+  }
+  .sale-heading {
+    h3 {
+      color: #ffffff;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke-width: 3px;
+      -webkit-text-stroke-color: #ffffff;
+    }
+  }
+}
+.sale-home {
+  background-image: url("../public/patterns.svg");
+  background-repeat: repeat-x;
+  background-size: contain;
+  background-position: center 700px;
+  @media screen and (max-width: 991px) {
+    background-position: center bottom;
+  }
+  .keen-slider__slide {
+    background: #ffffff;
+  }
+  .keen-slider-large {
+    @media screen and (max-width: 991px) {
+      display: none !important;
+    }
+  }
+
+  .keen-slider-small {
+    @media (min-width: 992px) {
+      display: none !important;
+    }
+  }
+}

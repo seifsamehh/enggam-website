@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* start global components */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+::selection {
+  background-color: #0056b3;
+  color: #fff;
+}
+img,
+video,
+h1,
+h2,
+h3,
+button,
+a {
+  user-select: none;
+  outline: none;
+}
+header {
+  overflow: hidden;
+}
+.nav-links {
+  margin: 0 2rem;
+}
+.menu {
+  padding-top: 3rem;
+}
+.menu a {
+  color: #fff;
+  font-size: 1rem;
+  padding: 1rem 0;
+}
+.menu a svg {
+  margin-right: 1rem;
+}
+.lg-navbar {
+  display: flex;
+}
+@media screen and (max-width: 1024px) {
+  .lg-navbar {
+    display: none;
+  }
+}
+.sm-navbar {
+  display: none;
+}
+@media screen and (max-width: 1023px) {
+  .sm-navbar {
+    display: flex;
+  }
+}
+.loader {
+  display: inline-block;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  position: relative;
+  box-sizing: border-box;
+}
+.loader::after {
+  content: "BUY ANY DIGITAL CARD EASILY AND SAFELY";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #0056b3;
+  text-shadow: 0 0 2px #fff, 0 0 1px #fff, 0 0 1px #fff;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  animation: animloader 3s linear infinite;
+}
+
+@keyframes animloader {
+  0% {
+    height: 100%;
+  }
+  100% {
+    height: 0%;
+  }
+}
+
+.category-home-heading {
+  font-size: 6rem;
+  color: #ff474d;
+  -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #ff474d;
+}
+@media screen and (max-width: 991px) {
+  .category-home-heading {
+    font-size: 4rem;
+  }
+}
+
+.category-home-heading-main {
+  font-size: 6rem;
+}
+@media screen and (max-width: 991px) {
+  .category-home-heading-main {
+    font-size: 4rem;
+  }
+}
+
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+/* end global components */

@@ -1,0 +1,10 @@
+.partners {
+  @media screen and (max-width: 991px) {
+    display: none;
+  }
+}
+.partners-sm {
+  @media (min-width: 992px) {
+    display: none;
+  }
+}

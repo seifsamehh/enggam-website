@@ -1,0 +1,39 @@
+[class^="number-slide"],
+[class*=" number-slide"] {
+  background: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  color: #fff;
+  font-weight: 500;
+  height: 700px;
+  max-height: 100vh;
+}
+
+.keen-slider-large {
+  @media screen and (max-width: 991px) {
+    display: none !important;
+  }
+}
+
+.keen-slider-small {
+  @media (min-width: 992px) {
+    display: none !important;
+  }
+}
+
+.keen-slider__slide {
+  background: rgb(64, 175, 255);
+  background: linear-gradient(
+    128deg,
+    rgba(64, 175, 255, 1) 0%,
+    rgba(63, 97, 255, 1) 100%
+  );
+}
+
+.keen-slider-small {
+  .keen-slider__slide {
+    padding: 2rem;
+  }
+}

@@ -1,0 +1,17 @@
+.sign-in,
+.sign-up {
+  .content {
+    background-repeat: no-repeat;
+    background-position: left top;
+  }
+}
+.sign-in {
+  .content {
+    background-image: url("../public/signBg.webp");
+  }
+}
+.sign-up {
+  .content {
+    background-image: url("../public/signupBg.webp");
+  }
+}
