@@ -2,6 +2,7 @@ import "./globals.css";
 import LoadingPage from "@/common/LoadingPage";
 import Script from "next/script";
 import { ClerkProvider } from "@clerk/nextjs";
+import { Analytics } from "@vercel/analytics/react";
 import { Parallax } from "./parallax";
 import { Providers } from "./providers";
 import type { Metadata } from "next";
@@ -166,6 +167,7 @@ export default function RootLayout({
             defer
             rel="preload"
           />
+          <Analytics />
         </body>
       </html>
     </ClerkProvider>
