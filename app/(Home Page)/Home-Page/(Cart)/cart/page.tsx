@@ -10,10 +10,28 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import { useUser } from "@clerk/nextjs";
-import { FaArrowLeftLong } from "react-icons/fa6";
+import { useState } from "react";
+import {
+  Modal,
+  ModalContent,
+  ModalHeader,
+  ModalBody,
+  ModalFooter,
+  Button,
+  useDisclosure,
+  RadioGroup,
+  Radio,
+  Input,
+  Divider,
+  Textarea,
+} from "@nextui-org/react";
+import { FaArrowLeftLong, FaPhone } from "react-icons/fa6";
 import { RxCross2 } from "react-icons/rx";
-import { Raleway } from "next/font/google";
+import { FaUser } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import { useRouter } from "next/navigation";
 
+import { Raleway } from "next/font/google";
 const raleway = Raleway({ subsets: ["latin"], weight: "900", display: "swap" });
 
 interface CartItem {
@@ -24,6 +42,10 @@ interface CartItem {
   quantity: number;
 }
 const CartPage = () => {
+  const router = useRouter();
+  // model
+  const { isOpen, onOpen, onOpenChange } = useDisclosure();
+  // user data
   const { isLoaded, isSignedIn, user } = useUser();
 
   if (!isLoaded || !isSignedIn) {
@@ -50,12 +72,46 @@ const CartPage = () => {
     0
   );
 
-  const handleClick = () => {
-    window.open(
-      "https://form.jotform.com/240003393422544",
-      "blank",
-      "scrollbars=yes, toolbar=no, width=900, height=900"
-    );
+  // Handle form submission
+
+  const [firstname, setFirstName] = useState("");
+  const [lastname, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [products, setProducts] = useState(
+    `${cartItems.map((item) => `${item.name} x ${item.quantity}`).join(", ")}`
+  );
+  const [price, setPrice] = useState(`${totalPrice}`);
+  const [payment, setPayment] = useState("");
+  const [message, setMessage] = useState("");
+
+  const sendMail = async (e: any) => {
+    e.preventDefault();
+
+    const response = await fetch("/api/sendEmail", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify({
+        firstname,
+        lastname,
+        email,
+        phone,
+        products,
+        price,
+        payment,
+        message,
+      }),
+    });
+
+    console.log(await response.json());
+  };
+  const handleSubmit = () => {
+    // Perform any necessary form validation or processing here
+
+    // Redirect to another URL
+    router.push("/Home-Page/success");
   };
 
   return (
@@ -225,13 +281,196 @@ const CartPage = () => {
                 <p className={`${raleway.className} text-2xl`}>
                   <span className="font-black">Total Price:</span> ${totalPrice}
                 </p>
-                <button
+                <Button
+                  onPress={onOpen}
                   className="bg-white text-black py-2 px-4 rounded-md"
-                  onClick={handleClick}
                   title="checkout"
                 >
                   Checkout
-                </button>
+                </Button>
+                <Modal
+                  isOpen={isOpen}
+                  onOpenChange={onOpenChange}
+                  size="2xl"
+                  classNames={{
+                    backdrop:
+                      "bg-gradient-to-t from-cyan-700 to-cyan-300/20 backdrop-opacity-20",
+                  }}
+                  motionProps={{
+                    variants: {
+                      enter: {
+                        y: 0,
+                        opacity: 1,
+                        transition: {
+                          duration: 0.3,
+                          ease: "easeOut",
+                        },
+                      },
+                      exit: {
+                        y: -20,
+                        opacity: 0,
+                        transition: {
+                          duration: 0.2,
+                          ease: "easeIn",
+                        },
+                      },
+                    },
+                  }}
+                  placement="top-center"
+                >
+                  <ModalContent>
+                    {(onClose) => (
+                      <form onSubmit={sendMail}>
+                        <ModalHeader className="flex flex-col gap-1">
+                          <h4 className={`${raleway.className} text-2xl`}>
+                            ENGGAM Wallet
+                          </h4>
+                        </ModalHeader>
+                        <ModalBody>
+                          <div className="names flex justify-center items-center gap-2">
+                            <Input
+                              autoFocus
+                              type="text"
+                              label="First Name"
+                              placeholder="Enter your First Name"
+                              value={firstname}
+                              onChange={(e) => {
+                                setFirstName(e.target.value);
+                              }}
+                              isRequired
+                              startContent={<FaUser />}
+                            />
+                            <Input
+                              type="text"
+                              label="Last Name"
+                              placeholder="Enter your Last Name"
+                              value={lastname}
+                              onChange={(e) => {
+                                setLastName(e.target.value);
+                              }}
+                              isRequired
+                              startContent={<FaUser />}
+                            />
+                          </div>
+                          <div className="user-data flex justify-center items-center gap-2">
+                            <Input
+                              type="email"
+                              label="Email"
+                              placeholder="Enter your email"
+                              value={email}
+                              onChange={(e) => {
+                                setEmail(e.target.value);
+                              }}
+                              isRequired
+                              pattern="[^\s@]+@[^\s@]+\.[^\s@]+"
+                              startContent={<MdEmail />}
+                            />
+                            <Input
+                              type="tel"
+                              label="Phone Number"
+                              placeholder="Enter your Phone Number"
+                              value={phone}
+                              onChange={(e) => {
+                                setPhone(e.target.value);
+                              }}
+                              isRequired
+                              pattern="^\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,9}$"
+                              startContent={<FaPhone />}
+                            />
+                          </div>
+                          <Divider />
+                          <div className="order-details flex justify-center items-start gap-2">
+                            <Textarea
+                              label="Your orders"
+                              className="max-w-full"
+                              color="success"
+                              isReadOnly
+                              value={products}
+                              onChange={(e) => {
+                                setProducts(e.target.value);
+                              }}
+                            />
+                            <Input
+                              type="number"
+                              label="Total Price"
+                              description="The price in USD"
+                              color="danger"
+                              isReadOnly
+                              value={price}
+                              onChange={(e) => {
+                                setPrice(e.target.value);
+                              }}
+                            />
+                          </div>
+                          <div className="payment-images flex justify-between items-center gap-1">
+                            <Image
+                              src="https://i.imgur.com/SSQLkKN.jpg"
+                              alt="vodafone"
+                              aria-label="vodafone"
+                              width={100}
+                              height={50}
+                              loading="lazy"
+                              placeholder="blur"
+                              blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
+                            />
+                            <Image
+                              src="https://i.imgur.com/JAZOady.png"
+                              alt="orange"
+                              aria-label="orange"
+                              width={100}
+                              height={50}
+                              loading="lazy"
+                              placeholder="blur"
+                              blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
+                            />
+                            <Image
+                              src="https://i.imgur.com/6jAA2Wc.jpg"
+                              alt="etisalat"
+                              aria-label="etisalat"
+                              width={100}
+                              height={50}
+                              loading="lazy"
+                              placeholder="blur"
+                              blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
+                            />
+                          </div>
+                          <RadioGroup
+                            isRequired
+                            label="Select your payment method"
+                            orientation="horizontal"
+                            value={payment}
+                            onChange={(e) => {
+                              setPayment(e.target.value);
+                            }}
+                          >
+                            <Radio value="Vodafone Cash">Vodafone Cash</Radio>
+                            <Radio value="Orange Cash">Orange Cash</Radio>
+                            <Radio value="Etisalat Cash">Etisalat Cash</Radio>
+                          </RadioGroup>
+                          <Divider />
+                          <Textarea
+                            label="Notes"
+                            placeholder="Enter your notes"
+                            className="max-w-full"
+                            value={message}
+                            onChange={(e) => {
+                              setMessage(e.target.value);
+                            }}
+                          />
+                        </ModalBody>
+                        <ModalFooter>
+                          <Button
+                            type="submit"
+                            onPress={onClose}
+                            onClick={handleSubmit}
+                          >
+                            send
+                          </Button>
+                        </ModalFooter>
+                      </form>
+                    )}
+                  </ModalContent>
+                </Modal>
               </div>
             </div>
           </div>

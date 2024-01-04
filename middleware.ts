@@ -15,6 +15,11 @@ export default authMiddleware({
     "/Home-Page/categories/payment-cards",
     "/Home-Page/feedback",
     "/Home-Page/cart",
+    "/Home-Page/api/sendEmail",
+    "/api/sendEmail",
+    "/Home-Page/api/sendFeedback",
+    "/api/sendFeedback",
+    "/Home-Page/success",
   ],
 });
 

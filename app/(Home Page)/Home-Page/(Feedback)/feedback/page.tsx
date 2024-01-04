@@ -1,21 +1,48 @@
 "use client";
 
+import {
+  Modal,
+  ModalContent,
+  ModalHeader,
+  ModalBody,
+  ModalFooter,
+  Button,
+  useDisclosure,
+  Input,
+  Textarea,
+} from "@nextui-org/react";
 import Image from "next/image";
-// import Link from "next/link";
-import { Raleway } from "next/font/google";
 import HeaderHome from "@/lib/HeaderHome";
 import Footer from "@/common/Footer";
+import { useState } from "react";
 import "../../../../../styles/feedback.scss";
 
+import { Raleway } from "next/font/google";
 const raleway = Raleway({ subsets: ["latin"], weight: "900", display: "swap" });
 
 export default function page() {
-  const handleClick = () => {
-    window.open(
-      "https://form.jotform.com/233644957748574",
-      "blank",
-      "scrollbars=yes, toolbar=no, width=900, height=900"
-    );
+  // model
+  const { isOpen, onOpen, onOpenChange } = useDisclosure();
+  // Handle form submission
+
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const sendFeedback = async (e: any) => {
+    e.preventDefault();
+
+    const response = await fetch("/api/sendFeedback", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify({
+        email,
+        message,
+      }),
+    });
+
+    console.log(await response.json());
   };
   return (
     <>
@@ -44,13 +71,81 @@ export default function page() {
               Fugit explicabo tenetur atque qui illum ipsum nesciunt alias
               fugiat expedita.
             </p>
-            <p
-              onClick={handleClick}
+            <Button
+              onPress={onOpen}
               title="Give Us Your Feedback"
               className="cursor-pointer bg-[#0056b3] text-white w-fit px-4 py-2 rounded-md"
             >
               Give Us Your Feedback
-            </p>
+            </Button>
+            <Modal
+              isOpen={isOpen}
+              onOpenChange={onOpenChange}
+              size="2xl"
+              classNames={{
+                backdrop:
+                  "bg-gradient-to-t from-cyan-700 to-cyan-300/20 backdrop-opacity-20",
+              }}
+              motionProps={{
+                variants: {
+                  enter: {
+                    y: 0,
+                    opacity: 1,
+                    transition: {
+                      duration: 0.3,
+                      ease: "easeOut",
+                    },
+                  },
+                  exit: {
+                    y: -20,
+                    opacity: 0,
+                    transition: {
+                      duration: 0.2,
+                      ease: "easeIn",
+                    },
+                  },
+                },
+              }}
+              placement="top-center"
+            >
+              <ModalContent>
+                {(onClose) => (
+                  <form onSubmit={sendFeedback}>
+                    <ModalHeader className="flex flex-col gap-1">
+                      <h4 className={`${raleway.className} text-2xl`}>
+                        Feedback
+                      </h4>
+                    </ModalHeader>
+                    <ModalBody>
+                      <Input
+                        type="email"
+                        label="Email"
+                        value={email}
+                        onChange={(e) => {
+                          setEmail(e.target.value);
+                        }}
+                        placeholder="Enter your email"
+                        isRequired
+                      />
+                      <Textarea
+                        label="Feedback"
+                        placeholder="Enter your message"
+                        className="max-w-full"
+                        value={message}
+                        onChange={(e) => {
+                          setMessage(e.target.value);
+                        }}
+                      />
+                    </ModalBody>
+                    <ModalFooter>
+                      <Button type="submit" onPress={onClose}>
+                        send
+                      </Button>
+                    </ModalFooter>
+                  </form>
+                )}
+              </ModalContent>
+            </Modal>
           </div>
         </div>
       </section>
