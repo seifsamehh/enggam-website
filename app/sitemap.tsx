@@ -15,12 +15,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.5,
     },
     {
-      url: "https://www.enggam.com/profile/privacy-policy",
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
       url: "https://www.enggam.com/sign-in",
       lastModified: new Date(),
       changeFrequency: "yearly",

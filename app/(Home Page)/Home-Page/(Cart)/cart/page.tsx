@@ -12,7 +12,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useUser } from "@clerk/nextjs";
 import confetti from "canvas-confetti";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   Modal,
   ModalContent,
@@ -80,10 +80,20 @@ const CartPage = () => {
   const [lastname, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
-  const [products, setProducts] = useState(
-    `${cartItems.map((item) => `${item.name} x ${item.quantity}`).join(", ")}`
-  );
-  const [price, setPrice] = useState(`${totalPrice}`);
+  const [products, setProducts] = useState(""); // Initialize products state
+
+  useEffect(() => {
+    // Update products string whenever cartItems change
+    setProducts(
+      cartItems.map((item) => `${item.name} x ${item.quantity}`).join(", ")
+    );
+  }, [cartItems]);
+  const [price, setPrice] = useState("");
+
+  useEffect(() => {
+    // Update price string whenever cartItems or totalPrice change
+    setPrice(totalPrice.toString());
+  }, [cartItems, totalPrice]);
   const [payment, setPayment] = useState("");
   const [message, setMessage] = useState("");
 
@@ -405,9 +415,6 @@ const CartPage = () => {
                               color="success"
                               isReadOnly
                               value={products}
-                              onChange={(e) => {
-                                setProducts(e.target.value);
-                              }}
                             />
                             <Input
                               type="number"
@@ -416,9 +423,9 @@ const CartPage = () => {
                               color="danger"
                               isReadOnly
                               value={price}
-                              onChange={(e) => {
-                                setPrice(e.target.value);
-                              }}
+                              // onChange={(e) => {
+                              //   setPrice(e.target.value);
+                              // }}
                             />
                           </div>
                           <div className="payment-images flex justify-between items-center gap-1">

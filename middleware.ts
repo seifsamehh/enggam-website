@@ -4,7 +4,6 @@ export default authMiddleware({
   publicRoutes: [
     "/",
     "/about-us",
-    "/profile/privacy-policy",
     "/sign-in",
     "/sign-up",
     "/Home-Page",
