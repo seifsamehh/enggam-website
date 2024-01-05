@@ -20,6 +20,7 @@ export async function POST(request) {
       subject: "Feedback",
       html: `
         <h3>Hello Ali,</h3>
+        <p><span style="font-size: 1rem; font-weight: bold;">Email:</span> ${email}</p>
         <p>${message}</p>
         `,
     };

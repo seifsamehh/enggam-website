@@ -6,10 +6,12 @@ import {
   removeFromCart,
   increaseQuantity,
   decreaseQuantity,
+  resetCart,
 } from "@/slices/cartSlice";
 import Image from "next/image";
 import Link from "next/link";
 import { useUser } from "@clerk/nextjs";
+import confetti from "canvas-confetti";
 import { useState } from "react";
 import {
   Modal,
@@ -108,10 +110,27 @@ const CartPage = () => {
     console.log(await response.json());
   };
   const handleSubmit = () => {
-    // Perform any necessary form validation or processing here
-
     // Redirect to another URL
     router.push("/Home-Page/success");
+    // Wait for the redirect to complete before proceeding
+    setTimeout(() => {
+      // Make confetti
+      confetti({
+        particleCount: 100,
+        startVelocity: 30,
+        spread: 360,
+        origin: {
+          x: Math.random(),
+          // since they fall down, start a bit higher than random
+          y: Math.random() - 0.2,
+        },
+      });
+      // Wait for the confetti to finish before proceeding
+      setTimeout(() => {
+        // Clear the cart
+        dispatch(resetCart());
+      }, 1000); // Adjust the delay as needed
+    }, 0);
   };
 
   return (

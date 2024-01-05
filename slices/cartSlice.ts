@@ -50,11 +50,19 @@ export const cartSlice = createSlice({
         product.quantity -= 1;
       }
     },
+    resetCart: (state) => {
+      state.items = []; // Reset the items array to empty
+    },
   },
 });
 
-export const { addToCart, removeFromCart, increaseQuantity, decreaseQuantity } =
-  cartSlice.actions;
+export const {
+  addToCart,
+  removeFromCart,
+  increaseQuantity,
+  decreaseQuantity,
+  resetCart,
+} = cartSlice.actions;
 
 export const selectCartItems = (state: RootState) => state.cart.items;
 
