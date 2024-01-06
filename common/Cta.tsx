@@ -21,10 +21,11 @@ export default function Cta() {
           Call To Action
         </h2>
         <p className="text-center">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet tenetur
-          veritatis fugit similique laboriosam error provident repellendus
-          deserunt voluptate debitis. Debitis sit atque voluptatum asperiores
-          cum ipsum aperiam eos similique?
+          You can contact us by e-mail for me to find all the things that relate
+          to the things of the site and in order to use the best things in order
+          to solve all the problems facing the user in any of the charging or
+          use of the card can be used with ease Stay in touch with us always in
+          order to provide all things to the user.
         </p>
         <Link
           href="mailto:enggam729@gmail.com"
