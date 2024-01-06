@@ -233,7 +233,7 @@ const Footer = () => {
                   <ModalHeader className="flex flex-col gap-1 pb-8">
                     Privacy Policy
                   </ModalHeader>
-                  <ModalBody>
+                  <ModalBody className="mt-8">
                     <div className="terms">
                       <h5 className="text-[#0056b3] font-black text-2xl">
                         TERMS OF SERVICE
