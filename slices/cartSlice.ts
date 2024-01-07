@@ -2,7 +2,7 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { RootState } from "../store/store";
 
 interface Product {
-  id: string | number;
+  id: number;
   name: string;
   price: number;
   image: string;

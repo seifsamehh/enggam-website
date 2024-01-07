@@ -1,7 +1,5 @@
-import { v4 as uuidv4 } from "uuid";
-
 export interface GameProduct {
-  id: string;
+  id: number;
   name: string;
   description: string;
   price: number;
@@ -12,7 +10,7 @@ export interface GameProduct {
 
 export const PubgProducts: GameProduct[] = [
   {
-    id: uuidv4(),
+    id: Math.floor(Math.random() * 1000) + 1,
     name: "Pubg",
     description: "pubg game card",
     price: 10,
