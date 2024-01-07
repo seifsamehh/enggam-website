@@ -1,5 +1,7 @@
+import { v4 as uuidv4 } from "uuid";
+
 export interface Product {
-  id: number;
+  id: string;
   name: string;
   price: number;
   image: string;
@@ -9,7 +11,7 @@ export interface Product {
 
 export const products: Product[] = [
   {
-    id: 1,
+    id: uuidv4(),
     name: "Product 1",
     price: 10,
     image: "/maskable_icon.png",
@@ -17,7 +19,7 @@ export const products: Product[] = [
     // Add other properties as needed
   },
   {
-    id: 2,
+    id: uuidv4(),
     name: "Product 2",
     price: 20,
     image: "/maskable_icon.png",
@@ -25,7 +27,7 @@ export const products: Product[] = [
     // Add other properties as needed
   },
   {
-    id: 3,
+    id: uuidv4(),
     name: "Product 3",
     price: 30,
     image: "/maskable_icon.png",
@@ -33,7 +35,7 @@ export const products: Product[] = [
     // Add other properties as needed
   },
   {
-    id: 4,
+    id: uuidv4(),
     name: "Product 4",
     price: 40,
     image: "/maskable_icon.png",
@@ -41,7 +43,7 @@ export const products: Product[] = [
     // Add other properties as needed
   },
   {
-    id: 5,
+    id: uuidv4(),
     name: "Product 5",
     price: 50,
     image: "/maskable_icon.png",
