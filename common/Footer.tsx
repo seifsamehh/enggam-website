@@ -17,26 +17,10 @@ const raleway = Raleway({ subsets: ["latin"], weight: "900", display: "swap" });
 import "../styles/footer.scss";
 
 const Footer = () => {
+  // model
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
   // date
   const currentYear = new Date().getFullYear();
-  // share
-  const handleShare = async () => {
-    if (navigator.share) {
-      try {
-        await navigator.share({
-          title: "ENGGAM",
-          text: "Check out our website!",
-          url: "https://enggam-website.vercel.app/",
-        });
-        console.log("Website shared successfully");
-      } catch (error) {
-        console.error("Error sharing website:", error);
-      }
-    } else {
-      console.warn("Web Share API not supported");
-    }
-  };
   return (
     <footer className="footer">
       <div className="up flex justify-between items-start min-[290px]:flex-wrap md:flex-nowrap min-[290px]:gap-2 md:gap-0">
@@ -129,18 +113,6 @@ const Footer = () => {
                 <path d="M2.4 7.2a2.4 2.4 0 0 1 2.4-2.4h14.4a2.4 2.4 0 0 1 2.4 2.4v9.6a2.4 2.4 0 0 1-2.4 2.4H4.8a2.4 2.4 0 0 1-2.4-2.4V7.2ZM4.8 6a1.2 1.2 0 0 0-1.2 1.2v.26L12 12.5l8.4-5.04V7.2A1.2 1.2 0 0 0 19.2 6H4.8Zm15.6 2.86-5.65 3.39 5.65 3.476V8.859Zm-.04 8.25-6.768-4.165L12 13.9l-1.59-.954-6.77 4.164A1.2 1.2 0 0 0 4.8 18h14.4a1.2 1.2 0 0 0 1.159-.888ZM3.6 15.727l5.65-3.477L3.6 8.86v6.867Z" />
               </svg>
             </Link>
-            {/* share */}
-            <button onClick={handleShare}>
-              <svg
-                width={35}
-                height={35}
-                fill="#ffffff"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M18.875 3.25a1.875 1.875 0 1 0 0 3.75 1.875 1.875 0 0 0 0-3.75ZM15.75 5.125a3.125 3.125 0 1 1 .754 2.035l-8.397 3.9a3.124 3.124 0 0 1 0 1.88l8.397 3.9a3.125 3.125 0 1 1-.61 1.095l-8.397-3.9a3.125 3.125 0 1 1 0-4.07l8.397-3.9a3.125 3.125 0 0 1-.144-.94Zm-10.625 5a1.875 1.875 0 1 0 0 3.75 1.875 1.875 0 0 0 0-3.75ZM18.875 17a1.875 1.875 0 1 0 0 3.75 1.875 1.875 0 0 0 0-3.75Z" />
-              </svg>
-            </button>
           </div>
         </div>
         <div className="footer-address">
@@ -215,7 +187,6 @@ const Footer = () => {
           />
         </div>
         <div className="flex items-center justify-center gap-2 right">
-          {/* <Link href="/profile/privacy-policy">Privacy Policy</Link> */}
           <Button color="primary" onPress={onOpen}>
             Privacy Policy
           </Button>

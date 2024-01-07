@@ -20,7 +20,7 @@ export default function Cta() {
         >
           Call To Action
         </h2>
-        <p className="text-center">
+        <p className="text-center min-[290px]:px-4 md:px-0">
           You can contact us by e-mail for me to find all the things that relate
           to the things of the site and in order to use the best things in order
           to solve all the problems facing the user in any of the charging or
