@@ -49,7 +49,7 @@ export default function page() {
     return () => {
       clearTimeout(timeoutId);
     };
-  }, []);
+  });
   return (
     <main className="home-page">
       <HeaderHome />
