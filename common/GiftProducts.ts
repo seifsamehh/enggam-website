@@ -1430,8 +1430,56 @@ export interface RazerProduct {
 export const BrazilRazerProducts: RazerProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
-    name: "Razer brazil",
-    price: 10,
+    name: "BRL 5 Razer Gold",
+    price: 1.13,
+    image: "/Razer-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "BRL 10 Razer Gold",
+    price: 2.26,
+    image: "/Razer-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "BRL 20 Razer Gold",
+    price: 4.84,
+    image: "/Razer-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "BRL 25 Razer Gold",
+    price: 5.15,
+    image: "/Razer-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "BRL 30 Razer Gold",
+    price: 8.24,
+    image: "/Razer-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "BRL 50 Razer Gold",
+    price: 10.3,
+    image: "/Razer-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "BRL 100 Razer Gold",
+    price: 22.66,
     image: "/Razer-gift-card.webp",
     quantity: 0,
     // Add other properties as needed
@@ -1442,8 +1490,32 @@ export const BrazilRazerProducts: RazerProduct[] = [
 export const CandaRazerProducts: RazerProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
-    name: "Razer Canda",
-    price: 10,
+    name: "Razer Gold CAD 20",
+    price: 17.4,
+    image: "/Razer-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Razer Gold CAD 25",
+    price: 21.63,
+    image: "/Razer-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Razer Gold CAD 50",
+    price: 42.74,
+    image: "/Razer-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Razer Gold CAD 100",
+    price: 85.69,
     image: "/Razer-gift-card.webp",
     quantity: 0,
     // Add other properties as needed
@@ -1454,8 +1526,40 @@ export const CandaRazerProducts: RazerProduct[] = [
 export const EuropeRazerProducts: RazerProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
-    name: "Razer Europe",
-    price: 10,
+    name: "EUR 5 Razer Gold",
+    price: 5.97,
+    image: "/Razer-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "EUR 10 Razer Gold",
+    price: 12.36,
+    image: "/Razer-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "EUR 20 Razer Gold",
+    price: 23.69,
+    image: "/Razer-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "EUR 50 Razer Gold",
+    price: 56.65,
+    image: "/Razer-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "EUR 100 Razer Gold",
+    price: 112.27,
     image: "/Razer-gift-card.webp",
     quantity: 0,
     // Add other properties as needed
@@ -1466,8 +1570,80 @@ export const EuropeRazerProducts: RazerProduct[] = [
 export const MalaysiaRazerProducts: RazerProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
-    name: "Razer Malaysia",
-    price: 10,
+    name: "RM 5 Razer Gold (MY)",
+    price: 1.54,
+    image: "/Razer-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "RM 10 Razer Gold (MY)",
+    price: 2.88,
+    image: "/Razer-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "RM 20 Razer Gold (MY)",
+    price: 5.56,
+    image: "/Razer-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "RM 30 Razer Gold (MY)",
+    price: 8.24,
+    image: "/Razer-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "RM 40 Razer Gold (MY)",
+    price: 11.02,
+    image: "/Razer-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "RM 50 Razer Gold (MY)",
+    price: 13.39,
+    image: "/Razer-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "RM 100 Razer Gold (MY)",
+    price: 26.26,
+    image: "/Razer-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "RM 200 Razer Gold (MY)",
+    price: 50.98,
+    image: "/Razer-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "RM 300 Razer Gold (MY)",
+    price: 76.37,
+    image: "/Razer-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "RM 500 Razer Gold (MY)",
+    price: 127.27,
     image: "/Razer-gift-card.webp",
     quantity: 0,
     // Add other properties as needed
@@ -1478,20 +1654,280 @@ export const MalaysiaRazerProducts: RazerProduct[] = [
 export const TurkeyRazerProducts: RazerProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
-    name: "Razer Turkey",
-    price: 10,
+    name: "Razer Gold TRY 5",
+    price: 0.46,
+    image: "/Razer-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Razer Gold TRY 10",
+    price: 0.77,
+    image: "/Razer-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Razer Gold TRY 25",
+    price: 2.06,
+    image: "/Razer-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Razer Gold TRY 50",
+    price: 3.7,
+    image: "/Razer-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Razer Gold TRY 100",
+    price: 7.21,
+    image: "/Razer-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Razer Gold TRY 250",
+    price: 16.99,
+    image: "/Razer-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Razer Gold TRY 500",
+    price: 30.9,
     image: "/Razer-gift-card.webp",
     quantity: 0,
     // Add other properties as needed
   },
 ];
 
-// uk
-export const UKRazerProducts: RazerProduct[] = [
+// us
+export const USRazerProducts: RazerProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
-    name: "Razer UK",
-    price: 10,
+    name: "$1 Razer Gold Rixty (USA)",
+    price: 1.33,
+    image: "/Razer-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "$2 Razer Gold Rixty (USA)",
+    price: 2.47,
+    image: "/Razer-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "$5 Razer Gold Rixty (USA)",
+    price: 5.04,
+    image: "/Razer-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "$10 Razer Gold Rixty (USA)",
+    price: 9.99,
+    image: "/Razer-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "$20 Razer Gold Rixty (USA)",
+    price: 20.08,
+    image: "/Razer-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "$25 Razer Gold Rixty (USA)",
+    price: 25.75,
+    image: "/Razer-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "$50 Razer Gold Rixty (USA)",
+    price: 50.47,
+    image: "/Razer-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "$100 Razer Gold Rixty (USA)",
+    price: 100.94,
+    image: "/Razer-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "$150 Razer Gold Rixty (USA)",
+    price: 154.5,
+    image: "/Razer-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "$200 Razer Gold Rixty (USA)",
+    price: 200.85,
+    image: "/Razer-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "$250 Razer Gold Rixty (USA)",
+    price: 257.5,
+    image: "/Razer-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "$300 Razer Gold Rixty (USA)",
+    price: 309.0,
+    image: "/Razer-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "$400 Razer Gold Rixty (USA)",
+    price: 412.0,
+    image: "/Razer-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "$500 Razer Gold Rixty (USA)",
+    price: 504.7,
+    image: "/Razer-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+];
+
+// global
+export const GlobalRazerProducts: RazerProduct[] = [
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "$1 Razer Gold Global",
+    price: 1.03,
+    image: "/Razer-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "$2 Razer Gold Global",
+    price: 2.16,
+    image: "/Razer-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "$5 Razer Gold Global",
+    price: 5.04,
+    image: "/Razer-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "$10 Razer Gold Global",
+    price: 10.09,
+    image: "/Razer-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "$20 Razer Gold Global",
+    price: 20.39,
+    image: "/Razer-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "$50 Razer Gold Global",
+    price: 51.5,
+    image: "/Razer-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "$100 Razer Gold Global",
+    price: 103.0,
+    image: "/Razer-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "$150 Razer Gold Global",
+    price: 154.5,
+    image: "/Razer-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "$200 Razer Gold Global",
+    price: 203.94,
+    image: "/Razer-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "$250 Razer Gold Global",
+    price: 257.5,
+    image: "/Razer-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "$300 Razer Gold Global",
+    price: 303.85,
+    image: "/Razer-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "$400 Razer Gold Global",
+    price: 406.85,
+    image: "/Razer-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "$500 Razer Gold Global",
+    price: 504.7,
     image: "/Razer-gift-card.webp",
     quantity: 0,
     // Add other properties as needed
@@ -1512,8 +1948,24 @@ export interface SteamProduct {
 export const AustraliaSteamProducts: SteamProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
-    name: "Steam australia",
-    price: 10,
+    name: "Steam Wallet Code 10 AUD (AU)",
+    price: 86.52,
+    image: "/Steam-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Steam Wallet Code 20 AUD (AU)",
+    price: 17.51,
+    image: "/Steam-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Steam Wallet Code 50 AUD (AU)",
+    price: 43.26,
     image: "/Steam-gift-card.webp",
     quantity: 0,
     // Add other properties as needed
@@ -1524,8 +1976,32 @@ export const AustraliaSteamProducts: SteamProduct[] = [
 export const EmiratesSteamProducts: SteamProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
-    name: "Steam Emirates",
-    price: 10,
+    name: "50 AED Steam Wallet Code UAE",
+    price: 14.42,
+    image: "/Steam-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "100 AED Steam Wallet Code UAE",
+    price: 29.14,
+    image: "/Steam-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "200 AED Steam Wallet Code UAE",
+    price: 57.16,
+    image: "/Steam-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "400 AED Steam Wallet Code UAE",
+    price: 112.78,
     image: "/Steam-gift-card.webp",
     quantity: 0,
     // Add other properties as needed
@@ -1536,20 +2012,100 @@ export const EmiratesSteamProducts: SteamProduct[] = [
 export const EuropeSteamProducts: SteamProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
-    name: "Steam Europe",
-    price: 10,
+    name: "EUR 5  Steam Wallet Code (EU)",
+    price: 6.79,
+    image: "/Steam-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "EUR 10  Steam Wallet Code (EU)",
+    price: 12.35,
+    image: "/Steam-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "EUR 20  Steam Wallet Code (EU)",
+    price: 23.69,
+    image: "/Steam-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "EUR 50  Steam Wallet Code (EU)",
+    price: 59.74,
+    image: "/Steam-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "EUR 100  Steam Wallet Code (EU)",
+    price: 123.6,
     image: "/Steam-gift-card.webp",
     quantity: 0,
     // Add other properties as needed
   },
 ];
 
-// germany
-export const GermanySteamProducts: SteamProduct[] = [
+// brazil
+export const BrazilSteamProducts: SteamProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
-    name: "Steam Germany",
-    price: 10,
+    name: "BRL 10 Steam Wallet Code (BR)",
+    price: 2.57,
+    image: "/Steam-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "BRL 20 Steam Wallet Code (BR)",
+    price: 4.63,
+    image: "/Steam-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "BRL 30 Steam Wallet Code (BR)",
+    price: 7.21,
+    image: "/Steam-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "BRL 50 Steam Wallet Code (BR)",
+    price: 11.33,
+    image: "/Steam-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "BRL 100 Steam Wallet Code (BR)",
+    price: 22.66,
+    image: "/Steam-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "BRL 150 Steam Wallet Code (BR)",
+    price: 33.99,
+    image: "/Steam-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "BRL 200 Steam Wallet Code (BR)",
+    price: 44.29,
     image: "/Steam-gift-card.webp",
     quantity: 0,
     // Add other properties as needed
@@ -1560,8 +2116,32 @@ export const GermanySteamProducts: SteamProduct[] = [
 export const KuawitSteamProducts: SteamProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
-    name: "Steam Kuawit",
-    price: 10,
+    name: "5 KWD Steam Wallet Code (KW)",
+    price: 18.54,
+    image: "/Steam-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "10 KWD Steam Wallet Code (KW)",
+    price: 36.25,
+    image: "/Steam-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "20 KWD Steam Wallet Code (KW)",
+    price: 72.1,
+    image: "/Steam-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "30 KWD Steam Wallet Code (KW)",
+    price: 108.15,
     image: "/Steam-gift-card.webp",
     quantity: 0,
     // Add other properties as needed
@@ -1572,8 +2152,40 @@ export const KuawitSteamProducts: SteamProduct[] = [
 export const SaudiSteamProducts: SteamProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
-    name: "Steam Saudi",
-    price: 10,
+    name: "20 SAR Steam Wallet Code (SA)",
+    price: 6.0,
+    image: "/Steam-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "50 SAR Steam Wallet Code (SA)",
+    price: 14.1,
+    image: "/Steam-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "100 SAR Steam Wallet Code (SA)",
+    price: 28.84,
+    image: "/Steam-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "200 SAR Steam Wallet Code (SA)",
+    price: 56.65,
+    image: "/Steam-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "400 SAR Steam Wallet Code (SA)",
+    price: 111.24,
     image: "/Steam-gift-card.webp",
     quantity: 0,
     // Add other properties as needed
@@ -1584,8 +2196,32 @@ export const SaudiSteamProducts: SteamProduct[] = [
 export const TurkeySteamProducts: SteamProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
-    name: "Steam Turkey",
-    price: 10,
+    name: "Steam 10 TL (TR)",
+    price: 3.0,
+    image: "/Steam-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Steam 20 TL (TR)",
+    price: 6.18,
+    image: "/Steam-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Steam 50 TL (TR)",
+    price: 8.24,
+    image: "/Steam-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Steam 100 TL (TR)",
+    price: 15.45,
     image: "/Steam-gift-card.webp",
     quantity: 0,
     // Add other properties as needed
@@ -1596,8 +2232,48 @@ export const TurkeySteamProducts: SteamProduct[] = [
 export const UKSteamProducts: SteamProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
-    name: "Steam UK",
-    price: 10,
+    name: "GBP 5 Steam Wallet Code (UK)",
+    price: 7.21,
+    image: "/Steam-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "GBP 10 Steam Wallet Code (UK)",
+    price: 14.31,
+    image: "/Steam-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "GBP 20 Steam Wallet Code (UK)",
+    price: 27.81,
+    image: "/Steam-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "GBP 25 Steam Wallet Code (UK)",
+    price: 34.81,
+    image: "/Steam-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "GBP 50 Steam Wallet Code (UK)",
+    price: 67.98,
+    image: "/Steam-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "GBP 100 Steam Wallet Code (UK)",
+    price: 133.9,
     image: "/Steam-gift-card.webp",
     quantity: 0,
     // Add other properties as needed
@@ -1608,8 +2284,72 @@ export const UKSteamProducts: SteamProduct[] = [
 export const USSteamProducts: SteamProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
-    name: "Steam US",
-    price: 10,
+    name: "$5 Steam Wallet Code (US)",
+    price: 5.66,
+    image: "/Steam-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "$10 Steam Wallet Code (US)",
+    price: 10.81,
+    image: "/Steam-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "$15 Steam Wallet Code (US)",
+    price: 15.96,
+    image: "/Steam-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "$20 Steam Wallet Code (US)",
+    price: 20.49,
+    image: "/Steam-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "$25 Steam Wallet Code (US)",
+    price: 26.78,
+    image: "/Steam-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "$30 Steam Wallet Code (US)",
+    price: 31.93,
+    image: "/Steam-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "$50 Steam Wallet Code (US)",
+    price: 50.47,
+    image: "/Steam-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "$75 Steam Wallet Code (US)",
+    price: 78.0,
+    image: "/Steam-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "$100 Steam Wallet Code (US)",
+    price: 101.97,
     image: "/Steam-gift-card.webp",
     quantity: 0,
     // Add other properties as needed
