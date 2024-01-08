@@ -724,7 +724,7 @@ export default function page() {
                     <Tab key="Australia" title="Australia">
                       <Card className="max-w-7xl">
                         <CardBody>
-                          <div className="australia-cards flex justify-start items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
+                          <div className="australia-cards flex justify-center items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
                             {AustraliaGoogleProducts.map(
                               (GoogleProduct: GoogleProduct) => (
                                 <div
@@ -796,7 +796,7 @@ export default function page() {
                     <Tab key="Brazil" title="Brazil">
                       <Card className="max-w-7xl">
                         <CardBody>
-                          <div className="brazil-cards flex justify-start items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
+                          <div className="brazil-cards flex justify-center items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
                             {BrazilGoogleProducts.map(
                               (GoogleProduct: GoogleProduct) => (
                                 <div
@@ -871,7 +871,7 @@ export default function page() {
                     >
                       <Card className="max-w-7xl">
                         <CardBody>
-                          <div className="emirates-cards flex justify-start items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
+                          <div className="emirates-cards flex justify-center items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
                             {EmiratesGoogleProducts.map(
                               (GoogleProduct: GoogleProduct) => (
                                 <div
@@ -943,7 +943,7 @@ export default function page() {
                     <Tab key="Germany" title="Germany">
                       <Card className="max-w-7xl">
                         <CardBody>
-                          <div className="germany-cards flex justify-start items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
+                          <div className="germany-cards flex justify-center items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
                             {GermanyGoogleProducts.map(
                               (GoogleProduct: GoogleProduct) => (
                                 <div
@@ -1015,7 +1015,7 @@ export default function page() {
                     <Tab key="Saudi Arabia" title="Saudi Arabia">
                       <Card className="max-w-7xl">
                         <CardBody>
-                          <div className="saudi-cards flex justify-start items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
+                          <div className="saudi-cards flex justify-center items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
                             {SaudiArabiaGoogleProducts.map(
                               (GoogleProduct: GoogleProduct) => (
                                 <div
@@ -1087,7 +1087,7 @@ export default function page() {
                     <Tab key="Turkey" title="Turkey">
                       <Card className="max-w-7xl">
                         <CardBody>
-                          <div className="turkey-cards flex justify-start items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
+                          <div className="turkey-cards flex justify-center items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
                             {TurkeyGoogleProducts.map(
                               (GoogleProduct: GoogleProduct) => (
                                 <div
@@ -1159,7 +1159,7 @@ export default function page() {
                     <Tab key="United States" title="United States">
                       <Card className="max-w-7xl">
                         <CardBody>
-                          <div className="us-cards flex justify-start items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
+                          <div className="us-cards flex justify-center items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
                             {USGoogleProducts.map(
                               (GoogleProduct: GoogleProduct) => (
                                 <div
@@ -1240,7 +1240,7 @@ export default function page() {
                     <Tab key="Australia" title="Australia">
                       <Card className="max-w-7xl">
                         <CardBody>
-                          <div className="australia-cards flex justify-start items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
+                          <div className="australia-cards flex justify-center items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
                             {AustraliaNetflixProducts.map(
                               (NetflixProduct: NetflixProduct) => (
                                 <div
@@ -1314,7 +1314,7 @@ export default function page() {
                     <Tab key="Brazil" title="Brazil">
                       <Card className="max-w-7xl">
                         <CardBody>
-                          <div className="brazil-cards flex justify-start items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
+                          <div className="brazil-cards flex justify-center items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
                             {BrazilNetflixProducts.map(
                               (NetflixProduct: NetflixProduct) => (
                                 <div
@@ -1388,7 +1388,7 @@ export default function page() {
                     <Tab key="Canda" title="Canda">
                       <Card className="max-w-7xl">
                         <CardBody>
-                          <div className="canda-cards flex justify-start items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
+                          <div className="canda-cards flex justify-center items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
                             {CandaNetflixProducts.map(
                               (NetflixProduct: NetflixProduct) => (
                                 <div
@@ -1465,7 +1465,7 @@ export default function page() {
                     >
                       <Card className="max-w-7xl">
                         <CardBody>
-                          <div className="emirates-cards flex justify-start items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
+                          <div className="emirates-cards flex justify-center items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
                             {EmiratesNetflixProducts.map(
                               (NetflixProduct: NetflixProduct) => (
                                 <div
@@ -1539,7 +1539,7 @@ export default function page() {
                     <Tab key="United Kingdom" title="United Kingdom">
                       <Card className="max-w-7xl">
                         <CardBody>
-                          <div className="uk-cards flex justify-start items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
+                          <div className="uk-cards flex justify-center items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
                             {UKNetflixProducts.map(
                               (NetflixProduct: NetflixProduct) => (
                                 <div
@@ -1613,7 +1613,7 @@ export default function page() {
                     <Tab key="United States" title="United States">
                       <Card className="max-w-7xl">
                         <CardBody>
-                          <div className="us-cards flex justify-start items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
+                          <div className="us-cards flex justify-center items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
                             {USNetflixProducts.map(
                               (NetflixProduct: NetflixProduct) => (
                                 <div
@@ -1696,7 +1696,7 @@ export default function page() {
                     <Tab key="Brazil" title="Brazil">
                       <Card className="max-w-7xl">
                         <CardBody>
-                          <div className="brazil-cards flex justify-start items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
+                          <div className="brazil-cards flex justify-center items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
                             {BrazilRazerProducts.map(
                               (RazerProduct: RazerProduct) => (
                                 <div
@@ -1768,7 +1768,7 @@ export default function page() {
                     <Tab key="Canda" title="Canda">
                       <Card className="max-w-7xl">
                         <CardBody>
-                          <div className="canda-cards flex justify-start items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
+                          <div className="canda-cards flex justify-center items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
                             {CandaRazerProducts.map(
                               (RazerProduct: RazerProduct) => (
                                 <div
@@ -1840,7 +1840,7 @@ export default function page() {
                     <Tab key="Europen Union" title="Europen Union">
                       <Card className="max-w-7xl">
                         <CardBody>
-                          <div className="europe-cards flex justify-start items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
+                          <div className="europe-cards flex justify-center items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
                             {EuropeRazerProducts.map(
                               (RazerProduct: RazerProduct) => (
                                 <div
@@ -1912,7 +1912,7 @@ export default function page() {
                     <Tab key="Malaysia" title="Malaysia">
                       <Card className="max-w-7xl">
                         <CardBody>
-                          <div className="malaysia-cards flex justify-start items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
+                          <div className="malaysia-cards flex justify-center items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
                             {MalaysiaRazerProducts.map(
                               (RazerProduct: RazerProduct) => (
                                 <div
@@ -1984,7 +1984,7 @@ export default function page() {
                     <Tab key="Turkey" title="Turkey">
                       <Card className="max-w-7xl">
                         <CardBody>
-                          <div className="turkey-cards flex justify-start items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
+                          <div className="turkey-cards flex justify-center items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
                             {TurkeyRazerProducts.map(
                               (RazerProduct: RazerProduct) => (
                                 <div
@@ -2056,7 +2056,7 @@ export default function page() {
                     <Tab key="United Kingdom" title="United Kingdom">
                       <Card className="max-w-7xl">
                         <CardBody>
-                          <div className="uk-cards flex justify-start items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
+                          <div className="uk-cards flex justify-center items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
                             {UKRazerProducts.map(
                               (RazerProduct: RazerProduct) => (
                                 <div
@@ -2137,7 +2137,7 @@ export default function page() {
                     <Tab key="Australia" title="Australia">
                       <Card className="max-w-7xl">
                         <CardBody>
-                          <div className="australia-cards flex justify-start items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
+                          <div className="australia-cards flex justify-center items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
                             {AustraliaSteamProducts.map(
                               (SteamProduct: SteamProduct) => (
                                 <div
@@ -2212,7 +2212,7 @@ export default function page() {
                     >
                       <Card className="max-w-7xl">
                         <CardBody>
-                          <div className="emirates-cards flex justify-start items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
+                          <div className="emirates-cards flex justify-center items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
                             {EmiratesSteamProducts.map(
                               (SteamProduct: SteamProduct) => (
                                 <div
@@ -2284,7 +2284,7 @@ export default function page() {
                     <Tab key="Europen Union" title="Europen Union">
                       <Card className="max-w-7xl">
                         <CardBody>
-                          <div className="europe-cards flex justify-start items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
+                          <div className="europe-cards flex justify-center items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
                             {EuropeSteamProducts.map(
                               (SteamProduct: SteamProduct) => (
                                 <div
@@ -2356,7 +2356,7 @@ export default function page() {
                     <Tab key="Germany" title="Germany">
                       <Card className="max-w-7xl">
                         <CardBody>
-                          <div className="germany-cards flex justify-start items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
+                          <div className="germany-cards flex justify-center items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
                             {GermanySteamProducts.map(
                               (SteamProduct: SteamProduct) => (
                                 <div
@@ -2428,7 +2428,7 @@ export default function page() {
                     <Tab key="Kuawit" title="Kuawit">
                       <Card className="max-w-7xl">
                         <CardBody>
-                          <div className="kuawit-cards flex justify-start items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
+                          <div className="kuawit-cards flex justify-center items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
                             {KuawitSteamProducts.map(
                               (SteamProduct: SteamProduct) => (
                                 <div
@@ -2500,7 +2500,7 @@ export default function page() {
                     <Tab key="Saudi Arabia" title="Saudi Arabia">
                       <Card className="max-w-7xl">
                         <CardBody>
-                          <div className="saudi-cards flex justify-start items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
+                          <div className="saudi-cards flex justify-center items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
                             {SaudiSteamProducts.map(
                               (SteamProduct: SteamProduct) => (
                                 <div
@@ -2572,7 +2572,7 @@ export default function page() {
                     <Tab key="Turkey" title="Turkey">
                       <Card className="max-w-7xl">
                         <CardBody>
-                          <div className="turkey-cards flex justify-start items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
+                          <div className="turkey-cards flex justify-center items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
                             {TurkeySteamProducts.map(
                               (SteamProduct: SteamProduct) => (
                                 <div
@@ -2644,7 +2644,7 @@ export default function page() {
                     <Tab key="United Kingdom" title="United Kingdom">
                       <Card className="max-w-7xl">
                         <CardBody>
-                          <div className="uk-cards flex justify-start items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
+                          <div className="uk-cards flex justify-center items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
                             {UKSteamProducts.map(
                               (SteamProduct: SteamProduct) => (
                                 <div
@@ -2716,7 +2716,7 @@ export default function page() {
                     <Tab key="United States" title="United States">
                       <Card className="max-w-7xl">
                         <CardBody>
-                          <div className="us-cards flex justify-start items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
+                          <div className="us-cards flex justify-center items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
                             {USSteamProducts.map(
                               (SteamProduct: SteamProduct) => (
                                 <div
@@ -2797,7 +2797,7 @@ export default function page() {
                     <Tab key="Australia" title="Australia">
                       <Card className="max-w-7xl">
                         <CardBody>
-                          <div className="australia-cards flex justify-start items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
+                          <div className="australia-cards flex justify-center items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
                             {AustraliaPsnProducts.map(
                               (PsnProduct: PsnProduct) => (
                                 <div
@@ -2872,7 +2872,7 @@ export default function page() {
                     >
                       <Card className="max-w-7xl">
                         <CardBody>
-                          <div className="emirates-cards flex justify-start items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
+                          <div className="emirates-cards flex justify-center items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
                             {EmiratesPsnProducts.map(
                               (PsnProduct: PsnProduct) => (
                                 <div
@@ -2944,7 +2944,7 @@ export default function page() {
                     <Tab key="Europen Union" title="Europen Union">
                       <Card className="max-w-7xl">
                         <CardBody>
-                          <div className="europe-cards flex justify-start items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
+                          <div className="europe-cards flex justify-center items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
                             {EuropePsnProducts.map((PsnProduct: PsnProduct) => (
                               <div
                                 key={PsnProduct.id}
@@ -3014,7 +3014,7 @@ export default function page() {
                     <Tab key="Germany" title="Germany">
                       <Card className="max-w-7xl">
                         <CardBody>
-                          <div className="germany-cards flex justify-start items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
+                          <div className="germany-cards flex justify-center items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
                             {GermanyPsnProducts.map(
                               (PsnProduct: PsnProduct) => (
                                 <div
@@ -3086,7 +3086,7 @@ export default function page() {
                     <Tab key="Kuawit" title="Kuawit">
                       <Card className="max-w-7xl">
                         <CardBody>
-                          <div className="kuawit-cards flex justify-start items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
+                          <div className="kuawit-cards flex justify-center items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
                             {KuawitPsnProducts.map((PsnProduct: PsnProduct) => (
                               <div
                                 key={PsnProduct.id}
@@ -3156,7 +3156,7 @@ export default function page() {
                     <Tab key="Saudi Arabia" title="Saudi Arabia">
                       <Card className="max-w-7xl">
                         <CardBody>
-                          <div className="saudi-cards flex justify-start items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
+                          <div className="saudi-cards flex justify-center items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
                             {SaudiPsnProducts.map((PsnProduct: PsnProduct) => (
                               <div
                                 key={PsnProduct.id}
@@ -3226,7 +3226,7 @@ export default function page() {
                     <Tab key="United Kingdom" title="United Kingdom">
                       <Card className="max-w-7xl">
                         <CardBody>
-                          <div className="uk-cards flex justify-start items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
+                          <div className="uk-cards flex justify-center items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
                             {UKPsnProducts.map((PsnProduct: PsnProduct) => (
                               <div
                                 key={PsnProduct.id}
@@ -3296,7 +3296,7 @@ export default function page() {
                     <Tab key="United States" title="United States">
                       <Card className="max-w-7xl">
                         <CardBody>
-                          <div className="us-cards flex justify-start items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
+                          <div className="us-cards flex justify-center items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
                             {USPsnProducts.map((PsnProduct: PsnProduct) => (
                               <div
                                 key={PsnProduct.id}
