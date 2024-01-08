@@ -159,15 +159,16 @@ export default function page() {
                                   blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
                                 />
                                 <div className="mt-4 pb-5">
-                                  <h5 className="text-3xl font-semibold tracking-tight text-slate-900 my-4">
+                                  <h5 className="text-xl font-semibold tracking-tight text-slate-900 my-4">
                                     {ItuneProduct.name}
                                   </h5>
                                   <div className="flex items-center justify-between">
-                                    <p className="text-xl font-bold text-slate-900">
+                                    <p className="text-2xl font-bold text-slate-900">
                                       {ItuneProduct.price} $
                                     </p>
                                     {cartItems.find(
-                                      (item) => item.id === ItuneProduct.id
+                                      (item: { id: number }) =>
+                                        item.id === ItuneProduct.id
                                     ) ? (
                                       <button
                                         disabled
@@ -229,15 +230,16 @@ export default function page() {
                                     blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
                                   />
                                   <div className="mt-4 pb-5">
-                                    <h5 className="text-3xl font-semibold tracking-tight text-slate-900 my-4">
+                                    <h5 className="text-xl font-semibold tracking-tight text-slate-900 my-4">
                                       {ItuneProduct.name}
                                     </h5>
                                     <div className="flex items-center justify-between">
-                                      <p className="text-xl font-bold text-slate-900">
+                                      <p className="text-2xl font-bold text-slate-900">
                                         {ItuneProduct.price} $
                                       </p>
                                       {cartItems.find(
-                                        (item) => item.id === ItuneProduct.id
+                                        (item: { id: number }) =>
+                                          item.id === ItuneProduct.id
                                       ) ? (
                                         <button
                                           disabled
@@ -300,15 +302,16 @@ export default function page() {
                                     blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
                                   />
                                   <div className="mt-4 pb-5">
-                                    <h5 className="text-3xl font-semibold tracking-tight text-slate-900 my-4">
+                                    <h5 className="text-xl font-semibold tracking-tight text-slate-900 my-4">
                                       {ItuneProduct.name}
                                     </h5>
                                     <div className="flex items-center justify-between">
-                                      <p className="text-xl font-bold text-slate-900">
+                                      <p className="text-2xl font-bold text-slate-900">
                                         {ItuneProduct.price} $
                                       </p>
                                       {cartItems.find(
-                                        (item) => item.id === ItuneProduct.id
+                                        (item: { id: number }) =>
+                                          item.id === ItuneProduct.id
                                       ) ? (
                                         <button
                                           disabled
@@ -370,15 +373,16 @@ export default function page() {
                                   blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
                                 />
                                 <div className="mt-4 pb-5">
-                                  <h5 className="text-3xl font-semibold tracking-tight text-slate-900 my-4">
+                                  <h5 className="text-xl font-semibold tracking-tight text-slate-900 my-4">
                                     {ItuneProduct.name}
                                   </h5>
                                   <div className="flex items-center justify-between">
-                                    <p className="text-xl font-bold text-slate-900">
+                                    <p className="text-2xl font-bold text-slate-900">
                                       {ItuneProduct.price} $
                                     </p>
                                     {cartItems.find(
-                                      (item) => item.id === ItuneProduct.id
+                                      (item: { id: number }) =>
+                                        item.id === ItuneProduct.id
                                     ) ? (
                                       <button
                                         disabled
@@ -439,15 +443,16 @@ export default function page() {
                                   blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
                                 />
                                 <div className="mt-4 pb-5">
-                                  <h5 className="text-3xl font-semibold tracking-tight text-slate-900 my-4">
+                                  <h5 className="text-xl font-semibold tracking-tight text-slate-900 my-4">
                                     {ItuneProduct.name}
                                   </h5>
                                   <div className="flex items-center justify-between">
-                                    <p className="text-xl font-bold text-slate-900">
+                                    <p className="text-2xl font-bold text-slate-900">
                                       {ItuneProduct.price} $
                                     </p>
                                     {cartItems.find(
-                                      (item) => item.id === ItuneProduct.id
+                                      (item: { id: number }) =>
+                                        item.id === ItuneProduct.id
                                     ) ? (
                                       <button
                                         disabled
@@ -512,15 +517,16 @@ export default function page() {
                                     blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
                                   />
                                   <div className="mt-4 pb-5">
-                                    <h5 className="text-3xl font-semibold tracking-tight text-slate-900 my-4">
+                                    <h5 className="text-xl font-semibold tracking-tight text-slate-900 my-4">
                                       {ItuneProduct.name}
                                     </h5>
                                     <div className="flex items-center justify-between">
-                                      <p className="text-xl font-bold text-slate-900">
+                                      <p className="text-2xl font-bold text-slate-900">
                                         {ItuneProduct.price} $
                                       </p>
                                       {cartItems.find(
-                                        (item) => item.id === ItuneProduct.id
+                                        (item: { id: number }) =>
+                                          item.id === ItuneProduct.id
                                       ) ? (
                                         <button
                                           disabled
@@ -583,15 +589,16 @@ export default function page() {
                                     blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
                                   />
                                   <div className="mt-4 pb-5">
-                                    <h5 className="text-3xl font-semibold tracking-tight text-slate-900 my-4">
+                                    <h5 className="text-xl font-semibold tracking-tight text-slate-900 my-4">
                                       {ItuneProduct.name}
                                     </h5>
                                     <div className="flex items-center justify-between">
-                                      <p className="text-xl font-bold text-slate-900">
+                                      <p className="text-2xl font-bold text-slate-900">
                                         {ItuneProduct.price} $
                                       </p>
                                       {cartItems.find(
-                                        (item) => item.id === ItuneProduct.id
+                                        (item: { id: number }) =>
+                                          item.id === ItuneProduct.id
                                       ) ? (
                                         <button
                                           disabled
@@ -654,15 +661,16 @@ export default function page() {
                                     blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
                                   />
                                   <div className="mt-4 pb-5">
-                                    <h5 className="text-3xl font-semibold tracking-tight text-slate-900 my-4">
+                                    <h5 className="text-xl font-semibold tracking-tight text-slate-900 my-4">
                                       {ItuneProduct.name}
                                     </h5>
                                     <div className="flex items-center justify-between">
-                                      <p className="text-xl font-bold text-slate-900">
+                                      <p className="text-2xl font-bold text-slate-900">
                                         {ItuneProduct.price} $
                                       </p>
                                       {cartItems.find(
-                                        (item) => item.id === ItuneProduct.id
+                                        (item: { id: number }) =>
+                                          item.id === ItuneProduct.id
                                       ) ? (
                                         <button
                                           disabled
@@ -734,15 +742,16 @@ export default function page() {
                                     blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
                                   />
                                   <div className="mt-4 pb-5">
-                                    <h5 className="text-3xl font-semibold tracking-tight text-slate-900 my-4">
+                                    <h5 className="text-xl font-semibold tracking-tight text-slate-900 my-4">
                                       {GoogleProduct.name}
                                     </h5>
                                     <div className="flex items-center justify-between">
-                                      <p className="text-xl font-bold text-slate-900">
+                                      <p className="text-2xl font-bold text-slate-900">
                                         {GoogleProduct.price} $
                                       </p>
                                       {cartItems.find(
-                                        (item) => item.id === GoogleProduct.id
+                                        (item: { id: number }) =>
+                                          item.id === GoogleProduct.id
                                       ) ? (
                                         <button
                                           disabled
@@ -805,15 +814,16 @@ export default function page() {
                                     blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
                                   />
                                   <div className="mt-4 pb-5">
-                                    <h5 className="text-3xl font-semibold tracking-tight text-slate-900 my-4">
+                                    <h5 className="text-xl font-semibold tracking-tight text-slate-900 my-4">
                                       {GoogleProduct.name}
                                     </h5>
                                     <div className="flex items-center justify-between">
-                                      <p className="text-xl font-bold text-slate-900">
+                                      <p className="text-2xl font-bold text-slate-900">
                                         {GoogleProduct.price} $
                                       </p>
                                       {cartItems.find(
-                                        (item) => item.id === GoogleProduct.id
+                                        (item: { id: number }) =>
+                                          item.id === GoogleProduct.id
                                       ) ? (
                                         <button
                                           disabled
@@ -855,7 +865,10 @@ export default function page() {
                       </Card>
                     </Tab>
                     {/* emirates */}
-                    <Tab key="Emirates" title="Emirates">
+                    <Tab
+                      key="United Arab Emirates"
+                      title="United Arab Emirates"
+                    >
                       <Card className="max-w-7xl">
                         <CardBody>
                           <div className="emirates-cards flex justify-start items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
@@ -876,15 +889,16 @@ export default function page() {
                                     blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
                                   />
                                   <div className="mt-4 pb-5">
-                                    <h5 className="text-3xl font-semibold tracking-tight text-slate-900 my-4">
+                                    <h5 className="text-xl font-semibold tracking-tight text-slate-900 my-4">
                                       {GoogleProduct.name}
                                     </h5>
                                     <div className="flex items-center justify-between">
-                                      <p className="text-xl font-bold text-slate-900">
+                                      <p className="text-2xl font-bold text-slate-900">
                                         {GoogleProduct.price} $
                                       </p>
                                       {cartItems.find(
-                                        (item) => item.id === GoogleProduct.id
+                                        (item: { id: number }) =>
+                                          item.id === GoogleProduct.id
                                       ) ? (
                                         <button
                                           disabled
@@ -947,15 +961,16 @@ export default function page() {
                                     blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
                                   />
                                   <div className="mt-4 pb-5">
-                                    <h5 className="text-3xl font-semibold tracking-tight text-slate-900 my-4">
+                                    <h5 className="text-xl font-semibold tracking-tight text-slate-900 my-4">
                                       {GoogleProduct.name}
                                     </h5>
                                     <div className="flex items-center justify-between">
-                                      <p className="text-xl font-bold text-slate-900">
+                                      <p className="text-2xl font-bold text-slate-900">
                                         {GoogleProduct.price} $
                                       </p>
                                       {cartItems.find(
-                                        (item) => item.id === GoogleProduct.id
+                                        (item: { id: number }) =>
+                                          item.id === GoogleProduct.id
                                       ) ? (
                                         <button
                                           disabled
@@ -1018,15 +1033,16 @@ export default function page() {
                                     blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
                                   />
                                   <div className="mt-4 pb-5">
-                                    <h5 className="text-3xl font-semibold tracking-tight text-slate-900 my-4">
+                                    <h5 className="text-xl font-semibold tracking-tight text-slate-900 my-4">
                                       {GoogleProduct.name}
                                     </h5>
                                     <div className="flex items-center justify-between">
-                                      <p className="text-xl font-bold text-slate-900">
+                                      <p className="text-2xl font-bold text-slate-900">
                                         {GoogleProduct.price} $
                                       </p>
                                       {cartItems.find(
-                                        (item) => item.id === GoogleProduct.id
+                                        (item: { id: number }) =>
+                                          item.id === GoogleProduct.id
                                       ) ? (
                                         <button
                                           disabled
@@ -1089,15 +1105,16 @@ export default function page() {
                                     blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
                                   />
                                   <div className="mt-4 pb-5">
-                                    <h5 className="text-3xl font-semibold tracking-tight text-slate-900 my-4">
+                                    <h5 className="text-xl font-semibold tracking-tight text-slate-900 my-4">
                                       {GoogleProduct.name}
                                     </h5>
                                     <div className="flex items-center justify-between">
-                                      <p className="text-xl font-bold text-slate-900">
+                                      <p className="text-2xl font-bold text-slate-900">
                                         {GoogleProduct.price} $
                                       </p>
                                       {cartItems.find(
-                                        (item) => item.id === GoogleProduct.id
+                                        (item: { id: number }) =>
+                                          item.id === GoogleProduct.id
                                       ) ? (
                                         <button
                                           disabled
@@ -1160,15 +1177,16 @@ export default function page() {
                                     blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
                                   />
                                   <div className="mt-4 pb-5">
-                                    <h5 className="text-3xl font-semibold tracking-tight text-slate-900 my-4">
+                                    <h5 className="text-xl font-semibold tracking-tight text-slate-900 my-4">
                                       {GoogleProduct.name}
                                     </h5>
                                     <div className="flex items-center justify-between">
-                                      <p className="text-xl font-bold text-slate-900">
+                                      <p className="text-2xl font-bold text-slate-900">
                                         {GoogleProduct.price} $
                                       </p>
                                       {cartItems.find(
-                                        (item) => item.id === GoogleProduct.id
+                                        (item: { id: number }) =>
+                                          item.id === GoogleProduct.id
                                       ) ? (
                                         <button
                                           disabled
@@ -1240,15 +1258,16 @@ export default function page() {
                                     blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
                                   />
                                   <div className="mt-4 pb-5">
-                                    <h5 className="text-3xl font-semibold tracking-tight text-slate-900 my-4">
+                                    <h5 className="text-xl font-semibold tracking-tight text-slate-900 my-4">
                                       {NetflixProduct.name}
                                     </h5>
                                     <div className="flex items-center justify-between">
-                                      <p className="text-xl font-bold text-slate-900">
+                                      <p className="text-2xl font-bold text-slate-900">
                                         {NetflixProduct.price} $
                                       </p>
                                       {cartItems.find(
-                                        (item) => item.id === NetflixProduct.id
+                                        (item: { id: number }) =>
+                                          item.id === NetflixProduct.id
                                       ) ? (
                                         <button
                                           disabled
@@ -1313,15 +1332,16 @@ export default function page() {
                                     blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
                                   />
                                   <div className="mt-4 pb-5">
-                                    <h5 className="text-3xl font-semibold tracking-tight text-slate-900 my-4">
+                                    <h5 className="text-xl font-semibold tracking-tight text-slate-900 my-4">
                                       {NetflixProduct.name}
                                     </h5>
                                     <div className="flex items-center justify-between">
-                                      <p className="text-xl font-bold text-slate-900">
+                                      <p className="text-2xl font-bold text-slate-900">
                                         {NetflixProduct.price} $
                                       </p>
                                       {cartItems.find(
-                                        (item) => item.id === NetflixProduct.id
+                                        (item: { id: number }) =>
+                                          item.id === NetflixProduct.id
                                       ) ? (
                                         <button
                                           disabled
@@ -1386,15 +1406,16 @@ export default function page() {
                                     blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
                                   />
                                   <div className="mt-4 pb-5">
-                                    <h5 className="text-3xl font-semibold tracking-tight text-slate-900 my-4">
+                                    <h5 className="text-xl font-semibold tracking-tight text-slate-900 my-4">
                                       {NetflixProduct.name}
                                     </h5>
                                     <div className="flex items-center justify-between">
-                                      <p className="text-xl font-bold text-slate-900">
+                                      <p className="text-2xl font-bold text-slate-900">
                                         {NetflixProduct.price} $
                                       </p>
                                       {cartItems.find(
-                                        (item) => item.id === NetflixProduct.id
+                                        (item: { id: number }) =>
+                                          item.id === NetflixProduct.id
                                       ) ? (
                                         <button
                                           disabled
@@ -1462,15 +1483,16 @@ export default function page() {
                                     blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
                                   />
                                   <div className="mt-4 pb-5">
-                                    <h5 className="text-3xl font-semibold tracking-tight text-slate-900 my-4">
+                                    <h5 className="text-xl font-semibold tracking-tight text-slate-900 my-4">
                                       {NetflixProduct.name}
                                     </h5>
                                     <div className="flex items-center justify-between">
-                                      <p className="text-xl font-bold text-slate-900">
+                                      <p className="text-2xl font-bold text-slate-900">
                                         {NetflixProduct.price} $
                                       </p>
                                       {cartItems.find(
-                                        (item) => item.id === NetflixProduct.id
+                                        (item: { id: number }) =>
+                                          item.id === NetflixProduct.id
                                       ) ? (
                                         <button
                                           disabled
@@ -1535,15 +1557,16 @@ export default function page() {
                                     blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
                                   />
                                   <div className="mt-4 pb-5">
-                                    <h5 className="text-3xl font-semibold tracking-tight text-slate-900 my-4">
+                                    <h5 className="text-xl font-semibold tracking-tight text-slate-900 my-4">
                                       {NetflixProduct.name}
                                     </h5>
                                     <div className="flex items-center justify-between">
-                                      <p className="text-xl font-bold text-slate-900">
+                                      <p className="text-2xl font-bold text-slate-900">
                                         {NetflixProduct.price} $
                                       </p>
                                       {cartItems.find(
-                                        (item) => item.id === NetflixProduct.id
+                                        (item: { id: number }) =>
+                                          item.id === NetflixProduct.id
                                       ) ? (
                                         <button
                                           disabled
@@ -1608,15 +1631,16 @@ export default function page() {
                                     blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
                                   />
                                   <div className="mt-4 pb-5">
-                                    <h5 className="text-3xl font-semibold tracking-tight text-slate-900 my-4">
+                                    <h5 className="text-xl font-semibold tracking-tight text-slate-900 my-4">
                                       {NetflixProduct.name}
                                     </h5>
                                     <div className="flex items-center justify-between">
-                                      <p className="text-xl font-bold text-slate-900">
+                                      <p className="text-2xl font-bold text-slate-900">
                                         {NetflixProduct.price} $
                                       </p>
                                       {cartItems.find(
-                                        (item) => item.id === NetflixProduct.id
+                                        (item: { id: number }) =>
+                                          item.id === NetflixProduct.id
                                       ) ? (
                                         <button
                                           disabled
@@ -1690,15 +1714,16 @@ export default function page() {
                                     blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
                                   />
                                   <div className="mt-4 pb-5">
-                                    <h5 className="text-3xl font-semibold tracking-tight text-slate-900 my-4">
+                                    <h5 className="text-xl font-semibold tracking-tight text-slate-900 my-4">
                                       {RazerProduct.name}
                                     </h5>
                                     <div className="flex items-center justify-between">
-                                      <p className="text-xl font-bold text-slate-900">
+                                      <p className="text-2xl font-bold text-slate-900">
                                         {RazerProduct.price} $
                                       </p>
                                       {cartItems.find(
-                                        (item) => item.id === RazerProduct.id
+                                        (item: { id: number }) =>
+                                          item.id === RazerProduct.id
                                       ) ? (
                                         <button
                                           disabled
@@ -1761,15 +1786,16 @@ export default function page() {
                                     blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
                                   />
                                   <div className="mt-4 pb-5">
-                                    <h5 className="text-3xl font-semibold tracking-tight text-slate-900 my-4">
+                                    <h5 className="text-xl font-semibold tracking-tight text-slate-900 my-4">
                                       {RazerProduct.name}
                                     </h5>
                                     <div className="flex items-center justify-between">
-                                      <p className="text-xl font-bold text-slate-900">
+                                      <p className="text-2xl font-bold text-slate-900">
                                         {RazerProduct.price} $
                                       </p>
                                       {cartItems.find(
-                                        (item) => item.id === RazerProduct.id
+                                        (item: { id: number }) =>
+                                          item.id === RazerProduct.id
                                       ) ? (
                                         <button
                                           disabled
@@ -1832,15 +1858,16 @@ export default function page() {
                                     blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
                                   />
                                   <div className="mt-4 pb-5">
-                                    <h5 className="text-3xl font-semibold tracking-tight text-slate-900 my-4">
+                                    <h5 className="text-xl font-semibold tracking-tight text-slate-900 my-4">
                                       {RazerProduct.name}
                                     </h5>
                                     <div className="flex items-center justify-between">
-                                      <p className="text-xl font-bold text-slate-900">
+                                      <p className="text-2xl font-bold text-slate-900">
                                         {RazerProduct.price} $
                                       </p>
                                       {cartItems.find(
-                                        (item) => item.id === RazerProduct.id
+                                        (item: { id: number }) =>
+                                          item.id === RazerProduct.id
                                       ) ? (
                                         <button
                                           disabled
@@ -1903,15 +1930,16 @@ export default function page() {
                                     blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
                                   />
                                   <div className="mt-4 pb-5">
-                                    <h5 className="text-3xl font-semibold tracking-tight text-slate-900 my-4">
+                                    <h5 className="text-xl font-semibold tracking-tight text-slate-900 my-4">
                                       {RazerProduct.name}
                                     </h5>
                                     <div className="flex items-center justify-between">
-                                      <p className="text-xl font-bold text-slate-900">
+                                      <p className="text-2xl font-bold text-slate-900">
                                         {RazerProduct.price} $
                                       </p>
                                       {cartItems.find(
-                                        (item) => item.id === RazerProduct.id
+                                        (item: { id: number }) =>
+                                          item.id === RazerProduct.id
                                       ) ? (
                                         <button
                                           disabled
@@ -1974,15 +2002,16 @@ export default function page() {
                                     blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
                                   />
                                   <div className="mt-4 pb-5">
-                                    <h5 className="text-3xl font-semibold tracking-tight text-slate-900 my-4">
+                                    <h5 className="text-xl font-semibold tracking-tight text-slate-900 my-4">
                                       {RazerProduct.name}
                                     </h5>
                                     <div className="flex items-center justify-between">
-                                      <p className="text-xl font-bold text-slate-900">
+                                      <p className="text-2xl font-bold text-slate-900">
                                         {RazerProduct.price} $
                                       </p>
                                       {cartItems.find(
-                                        (item) => item.id === RazerProduct.id
+                                        (item: { id: number }) =>
+                                          item.id === RazerProduct.id
                                       ) ? (
                                         <button
                                           disabled
@@ -2045,15 +2074,16 @@ export default function page() {
                                     blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
                                   />
                                   <div className="mt-4 pb-5">
-                                    <h5 className="text-3xl font-semibold tracking-tight text-slate-900 my-4">
+                                    <h5 className="text-xl font-semibold tracking-tight text-slate-900 my-4">
                                       {RazerProduct.name}
                                     </h5>
                                     <div className="flex items-center justify-between">
-                                      <p className="text-xl font-bold text-slate-900">
+                                      <p className="text-2xl font-bold text-slate-900">
                                         {RazerProduct.price} $
                                       </p>
                                       {cartItems.find(
-                                        (item) => item.id === RazerProduct.id
+                                        (item: { id: number }) =>
+                                          item.id === RazerProduct.id
                                       ) ? (
                                         <button
                                           disabled
@@ -2125,15 +2155,16 @@ export default function page() {
                                     blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
                                   />
                                   <div className="mt-4 pb-5">
-                                    <h5 className="text-3xl font-semibold tracking-tight text-slate-900 my-4">
+                                    <h5 className="text-xl font-semibold tracking-tight text-slate-900 my-4">
                                       {SteamProduct.name}
                                     </h5>
                                     <div className="flex items-center justify-between">
-                                      <p className="text-xl font-bold text-slate-900">
+                                      <p className="text-2xl font-bold text-slate-900">
                                         {SteamProduct.price} $
                                       </p>
                                       {cartItems.find(
-                                        (item) => item.id === SteamProduct.id
+                                        (item: { id: number }) =>
+                                          item.id === SteamProduct.id
                                       ) ? (
                                         <button
                                           disabled
@@ -2199,15 +2230,16 @@ export default function page() {
                                     blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
                                   />
                                   <div className="mt-4 pb-5">
-                                    <h5 className="text-3xl font-semibold tracking-tight text-slate-900 my-4">
+                                    <h5 className="text-xl font-semibold tracking-tight text-slate-900 my-4">
                                       {SteamProduct.name}
                                     </h5>
                                     <div className="flex items-center justify-between">
-                                      <p className="text-xl font-bold text-slate-900">
+                                      <p className="text-2xl font-bold text-slate-900">
                                         {SteamProduct.price} $
                                       </p>
                                       {cartItems.find(
-                                        (item) => item.id === SteamProduct.id
+                                        (item: { id: number }) =>
+                                          item.id === SteamProduct.id
                                       ) ? (
                                         <button
                                           disabled
@@ -2270,15 +2302,16 @@ export default function page() {
                                     blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
                                   />
                                   <div className="mt-4 pb-5">
-                                    <h5 className="text-3xl font-semibold tracking-tight text-slate-900 my-4">
+                                    <h5 className="text-xl font-semibold tracking-tight text-slate-900 my-4">
                                       {SteamProduct.name}
                                     </h5>
                                     <div className="flex items-center justify-between">
-                                      <p className="text-xl font-bold text-slate-900">
+                                      <p className="text-2xl font-bold text-slate-900">
                                         {SteamProduct.price} $
                                       </p>
                                       {cartItems.find(
-                                        (item) => item.id === SteamProduct.id
+                                        (item: { id: number }) =>
+                                          item.id === SteamProduct.id
                                       ) ? (
                                         <button
                                           disabled
@@ -2341,15 +2374,16 @@ export default function page() {
                                     blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
                                   />
                                   <div className="mt-4 pb-5">
-                                    <h5 className="text-3xl font-semibold tracking-tight text-slate-900 my-4">
+                                    <h5 className="text-xl font-semibold tracking-tight text-slate-900 my-4">
                                       {SteamProduct.name}
                                     </h5>
                                     <div className="flex items-center justify-between">
-                                      <p className="text-xl font-bold text-slate-900">
+                                      <p className="text-2xl font-bold text-slate-900">
                                         {SteamProduct.price} $
                                       </p>
                                       {cartItems.find(
-                                        (item) => item.id === SteamProduct.id
+                                        (item: { id: number }) =>
+                                          item.id === SteamProduct.id
                                       ) ? (
                                         <button
                                           disabled
@@ -2412,15 +2446,16 @@ export default function page() {
                                     blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
                                   />
                                   <div className="mt-4 pb-5">
-                                    <h5 className="text-3xl font-semibold tracking-tight text-slate-900 my-4">
+                                    <h5 className="text-xl font-semibold tracking-tight text-slate-900 my-4">
                                       {SteamProduct.name}
                                     </h5>
                                     <div className="flex items-center justify-between">
-                                      <p className="text-xl font-bold text-slate-900">
+                                      <p className="text-2xl font-bold text-slate-900">
                                         {SteamProduct.price} $
                                       </p>
                                       {cartItems.find(
-                                        (item) => item.id === SteamProduct.id
+                                        (item: { id: number }) =>
+                                          item.id === SteamProduct.id
                                       ) ? (
                                         <button
                                           disabled
@@ -2483,15 +2518,16 @@ export default function page() {
                                     blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
                                   />
                                   <div className="mt-4 pb-5">
-                                    <h5 className="text-3xl font-semibold tracking-tight text-slate-900 my-4">
+                                    <h5 className="text-xl font-semibold tracking-tight text-slate-900 my-4">
                                       {SteamProduct.name}
                                     </h5>
                                     <div className="flex items-center justify-between">
-                                      <p className="text-xl font-bold text-slate-900">
+                                      <p className="text-2xl font-bold text-slate-900">
                                         {SteamProduct.price} $
                                       </p>
                                       {cartItems.find(
-                                        (item) => item.id === SteamProduct.id
+                                        (item: { id: number }) =>
+                                          item.id === SteamProduct.id
                                       ) ? (
                                         <button
                                           disabled
@@ -2554,15 +2590,16 @@ export default function page() {
                                     blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
                                   />
                                   <div className="mt-4 pb-5">
-                                    <h5 className="text-3xl font-semibold tracking-tight text-slate-900 my-4">
+                                    <h5 className="text-xl font-semibold tracking-tight text-slate-900 my-4">
                                       {SteamProduct.name}
                                     </h5>
                                     <div className="flex items-center justify-between">
-                                      <p className="text-xl font-bold text-slate-900">
+                                      <p className="text-2xl font-bold text-slate-900">
                                         {SteamProduct.price} $
                                       </p>
                                       {cartItems.find(
-                                        (item) => item.id === SteamProduct.id
+                                        (item: { id: number }) =>
+                                          item.id === SteamProduct.id
                                       ) ? (
                                         <button
                                           disabled
@@ -2625,15 +2662,16 @@ export default function page() {
                                     blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
                                   />
                                   <div className="mt-4 pb-5">
-                                    <h5 className="text-3xl font-semibold tracking-tight text-slate-900 my-4">
+                                    <h5 className="text-xl font-semibold tracking-tight text-slate-900 my-4">
                                       {SteamProduct.name}
                                     </h5>
                                     <div className="flex items-center justify-between">
-                                      <p className="text-xl font-bold text-slate-900">
+                                      <p className="text-2xl font-bold text-slate-900">
                                         {SteamProduct.price} $
                                       </p>
                                       {cartItems.find(
-                                        (item) => item.id === SteamProduct.id
+                                        (item: { id: number }) =>
+                                          item.id === SteamProduct.id
                                       ) ? (
                                         <button
                                           disabled
@@ -2696,15 +2734,16 @@ export default function page() {
                                     blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
                                   />
                                   <div className="mt-4 pb-5">
-                                    <h5 className="text-3xl font-semibold tracking-tight text-slate-900 my-4">
+                                    <h5 className="text-xl font-semibold tracking-tight text-slate-900 my-4">
                                       {SteamProduct.name}
                                     </h5>
                                     <div className="flex items-center justify-between">
-                                      <p className="text-xl font-bold text-slate-900">
+                                      <p className="text-2xl font-bold text-slate-900">
                                         {SteamProduct.price} $
                                       </p>
                                       {cartItems.find(
-                                        (item) => item.id === SteamProduct.id
+                                        (item: { id: number }) =>
+                                          item.id === SteamProduct.id
                                       ) ? (
                                         <button
                                           disabled
@@ -2776,15 +2815,16 @@ export default function page() {
                                     blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
                                   />
                                   <div className="mt-4 pb-5">
-                                    <h5 className="text-3xl font-semibold tracking-tight text-slate-900 my-4">
+                                    <h5 className="text-xl font-semibold tracking-tight text-slate-900 my-4">
                                       {PsnProduct.name}
                                     </h5>
                                     <div className="flex items-center justify-between">
-                                      <p className="text-xl font-bold text-slate-900">
+                                      <p className="text-2xl font-bold text-slate-900">
                                         {PsnProduct.price} $
                                       </p>
                                       {cartItems.find(
-                                        (item) => item.id === PsnProduct.id
+                                        (item: { id: number }) =>
+                                          item.id === PsnProduct.id
                                       ) ? (
                                         <button
                                           disabled
@@ -2850,15 +2890,16 @@ export default function page() {
                                     blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
                                   />
                                   <div className="mt-4 pb-5">
-                                    <h5 className="text-3xl font-semibold tracking-tight text-slate-900 my-4">
+                                    <h5 className="text-xl font-semibold tracking-tight text-slate-900 my-4">
                                       {PsnProduct.name}
                                     </h5>
                                     <div className="flex items-center justify-between">
-                                      <p className="text-xl font-bold text-slate-900">
+                                      <p className="text-2xl font-bold text-slate-900">
                                         {PsnProduct.price} $
                                       </p>
                                       {cartItems.find(
-                                        (item) => item.id === PsnProduct.id
+                                        (item: { id: number }) =>
+                                          item.id === PsnProduct.id
                                       ) ? (
                                         <button
                                           disabled
@@ -2920,15 +2961,16 @@ export default function page() {
                                   blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
                                 />
                                 <div className="mt-4 pb-5">
-                                  <h5 className="text-3xl font-semibold tracking-tight text-slate-900 my-4">
+                                  <h5 className="text-xl font-semibold tracking-tight text-slate-900 my-4">
                                     {PsnProduct.name}
                                   </h5>
                                   <div className="flex items-center justify-between">
-                                    <p className="text-xl font-bold text-slate-900">
+                                    <p className="text-2xl font-bold text-slate-900">
                                       {PsnProduct.price} $
                                     </p>
                                     {cartItems.find(
-                                      (item) => item.id === PsnProduct.id
+                                      (item: { id: number }) =>
+                                        item.id === PsnProduct.id
                                     ) ? (
                                       <button
                                         disabled
@@ -2990,15 +3032,16 @@ export default function page() {
                                     blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
                                   />
                                   <div className="mt-4 pb-5">
-                                    <h5 className="text-3xl font-semibold tracking-tight text-slate-900 my-4">
+                                    <h5 className="text-xl font-semibold tracking-tight text-slate-900 my-4">
                                       {PsnProduct.name}
                                     </h5>
                                     <div className="flex items-center justify-between">
-                                      <p className="text-xl font-bold text-slate-900">
+                                      <p className="text-2xl font-bold text-slate-900">
                                         {PsnProduct.price} $
                                       </p>
                                       {cartItems.find(
-                                        (item) => item.id === PsnProduct.id
+                                        (item: { id: number }) =>
+                                          item.id === PsnProduct.id
                                       ) ? (
                                         <button
                                           disabled
@@ -3060,15 +3103,16 @@ export default function page() {
                                   blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
                                 />
                                 <div className="mt-4 pb-5">
-                                  <h5 className="text-3xl font-semibold tracking-tight text-slate-900 my-4">
+                                  <h5 className="text-xl font-semibold tracking-tight text-slate-900 my-4">
                                     {PsnProduct.name}
                                   </h5>
                                   <div className="flex items-center justify-between">
-                                    <p className="text-xl font-bold text-slate-900">
+                                    <p className="text-2xl font-bold text-slate-900">
                                       {PsnProduct.price} $
                                     </p>
                                     {cartItems.find(
-                                      (item) => item.id === PsnProduct.id
+                                      (item: { id: number }) =>
+                                        item.id === PsnProduct.id
                                     ) ? (
                                       <button
                                         disabled
@@ -3129,15 +3173,16 @@ export default function page() {
                                   blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
                                 />
                                 <div className="mt-4 pb-5">
-                                  <h5 className="text-3xl font-semibold tracking-tight text-slate-900 my-4">
+                                  <h5 className="text-xl font-semibold tracking-tight text-slate-900 my-4">
                                     {PsnProduct.name}
                                   </h5>
                                   <div className="flex items-center justify-between">
-                                    <p className="text-xl font-bold text-slate-900">
+                                    <p className="text-2xl font-bold text-slate-900">
                                       {PsnProduct.price} $
                                     </p>
                                     {cartItems.find(
-                                      (item) => item.id === PsnProduct.id
+                                      (item: { id: number }) =>
+                                        item.id === PsnProduct.id
                                     ) ? (
                                       <button
                                         disabled
@@ -3198,15 +3243,16 @@ export default function page() {
                                   blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
                                 />
                                 <div className="mt-4 pb-5">
-                                  <h5 className="text-3xl font-semibold tracking-tight text-slate-900 my-4">
+                                  <h5 className="text-xl font-semibold tracking-tight text-slate-900 my-4">
                                     {PsnProduct.name}
                                   </h5>
                                   <div className="flex items-center justify-between">
-                                    <p className="text-xl font-bold text-slate-900">
+                                    <p className="text-2xl font-bold text-slate-900">
                                       {PsnProduct.price} $
                                     </p>
                                     {cartItems.find(
-                                      (item) => item.id === PsnProduct.id
+                                      (item: { id: number }) =>
+                                        item.id === PsnProduct.id
                                     ) ? (
                                       <button
                                         disabled
@@ -3267,15 +3313,16 @@ export default function page() {
                                   blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
                                 />
                                 <div className="mt-4 pb-5">
-                                  <h5 className="text-3xl font-semibold tracking-tight text-slate-900 my-4">
+                                  <h5 className="text-xl font-semibold tracking-tight text-slate-900 my-4">
                                     {PsnProduct.name}
                                   </h5>
                                   <div className="flex items-center justify-between">
-                                    <p className="text-xl font-bold text-slate-900">
+                                    <p className="text-2xl font-bold text-slate-900">
                                       {PsnProduct.price} $
                                     </p>
                                     {cartItems.find(
-                                      (item) => item.id === PsnProduct.id
+                                      (item: { id: number }) =>
+                                        item.id === PsnProduct.id
                                     ) ? (
                                       <button
                                         disabled

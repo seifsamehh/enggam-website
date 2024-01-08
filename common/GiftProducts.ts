@@ -156,6 +156,22 @@ export const CanadaProducts: ItuneProduct[] = [
 export const AustraliaProducts: ItuneProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
+    name: "iTunes 5 AUD Australia",
+    price: 6.0,
+    image: "/iTunes-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "iTunes 10 AUD Australia",
+    price: 11.8,
+    image: "/iTunes-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
     name: "iTunes 20 AUD Australia",
     price: 15.96,
     image: "/iTunes-gift-card.webp",
@@ -593,7 +609,7 @@ export const GermanyProducts: ItuneProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
     name: "iTunes 5 EURO Germany (DE)",
-    price: 6,
+    price: 6.0,
     image: "/iTunes-gift-card.webp",
     quantity: 0,
     // Add other properties as needed
@@ -686,8 +702,48 @@ export interface GoogleProduct {
 export const AustraliaGoogleProducts: GoogleProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
-    name: "Google Play australia",
-    price: 10,
+    name: "Google play AUD20 Australia (AU)",
+    price: 15.96,
+    image: "/GooglePlay-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Google play AUD30 Australia (AU)",
+    price: 26.0,
+    image: "/GooglePlay-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Google play AUD50 Australia (AU)",
+    price: 40.0,
+    image: "/GooglePlay-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Google play AUD100 Australia (AU)",
+    price: 90.64,
+    image: "/GooglePlay-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Google play AUD150 Australia (AU)",
+    price: 129.78,
+    image: "/GooglePlay-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Google play AUD200 Australia (AU)",
+    price: 173.0,
     image: "/GooglePlay-gift-card.webp",
     quantity: 0,
     // Add other properties as needed
@@ -698,8 +754,56 @@ export const AustraliaGoogleProducts: GoogleProduct[] = [
 export const USGoogleProducts: GoogleProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
-    name: "Google Play us",
-    price: 10,
+    name: "Google Play Gift Card USA 5 USD",
+    price: 5.25,
+    image: "/GooglePlay-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Google Play Gift Card USA 10 USD",
+    price: 10.2,
+    image: "/GooglePlay-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Google Play Gift Card USA 15 USD",
+    price: 15.35,
+    image: "/GooglePlay-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Google Play Gift Card USA 20 USD",
+    price: 20.4,
+    image: "/GooglePlay-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Google Play Gift Card USA 25 USD",
+    price: 25.54,
+    image: "/GooglePlay-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Google Play Gift Card USA 50 USD",
+    price: 50.99,
+    image: "/GooglePlay-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Google Play Gift Card USA 100 USD",
+    price: 101.97,
     image: "/GooglePlay-gift-card.webp",
     quantity: 0,
     // Add other properties as needed
@@ -710,8 +814,40 @@ export const USGoogleProducts: GoogleProduct[] = [
 export const EmiratesGoogleProducts: GoogleProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
-    name: "Google Play emirates",
-    price: 10,
+    name: "Google Play United Arab Emirates 30 AED (AE)",
+    price: 8.34,
+    image: "/GooglePlay-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Google Play United Arab Emirates 50 AED (AE)",
+    price: 14.0,
+    image: "/GooglePlay-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Google Play United Arab Emirates 100 AED (AE)",
+    price: 28.11,
+    image: "/GooglePlay-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Google Play United Arab Emirates 300 AED (AE)",
+    price: 83.43,
+    image: "/GooglePlay-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Google Play United Arab Emirates 500 AED (AE)",
+    price: 139.0,
     image: "/GooglePlay-gift-card.webp",
     quantity: 0,
     // Add other properties as needed
@@ -722,8 +858,208 @@ export const EmiratesGoogleProducts: GoogleProduct[] = [
 export const SaudiArabiaGoogleProducts: GoogleProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
-    name: "Google Play saudi arabia",
-    price: 10,
+    name: "Google play 5 SAR Saudi Arabia",
+    price: 1.4,
+    image: "/GooglePlay-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Google play 6 SAR Saudi Arabia",
+    price: 1.64,
+    image: "/GooglePlay-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Google play 7 SAR Saudi Arabia",
+    price: 1.96,
+    image: "/GooglePlay-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Google play 8 SAR Saudi Arabia",
+    price: 2.23,
+    image: "/GooglePlay-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Google play 9 SAR Saudi Arabia",
+    price: 2.5,
+    image: "/GooglePlay-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Google play 10 SAR Saudi Arabia",
+    price: 2.79,
+    image: "/GooglePlay-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Google play 20 SAR Saudi Arabia",
+    price: 5.4,
+    image: "/GooglePlay-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Google play 30 SAR Saudi Arabia",
+    price: 8.24,
+    image: "/GooglePlay-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Google play 40 SAR Saudi Arabia",
+    price: 1.8,
+    image: "/GooglePlay-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Google play 50 SAR Saudi Arabia",
+    price: 15.45,
+    image: "/GooglePlay-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Google play 60 SAR Saudi Arabia",
+    price: 15.96,
+    image: "/GooglePlay-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Google play 70 SAR Saudi Arabia",
+    price: 18.74,
+    image: "/GooglePlay-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Google play 75 SAR Saudi Arabia",
+    price: 20.78,
+    image: "/GooglePlay-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Google play 80 SAR Saudi Arabia",
+    price: 21.63,
+    image: "/GooglePlay-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Google play 90 SAR Saudi Arabia",
+    price: 24.2,
+    image: "/GooglePlay-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Google play 100 SAR Saudi Arabia",
+    price: 26.78,
+    image: "/GooglePlay-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Google play 125 SAR Saudi Arabia",
+    price: 34.64,
+    image: "/GooglePlay-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Google play 150 SAR Saudi Arabia",
+    price: 40.68,
+    image: "/GooglePlay-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Google play 175 SAR Saudi Arabia",
+    price: 48.5,
+    image: "/GooglePlay-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Google play 200 SAR Saudi Arabia",
+    price: 54.59,
+    image: "/GooglePlay-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Google play 250 SAR Saudi Arabia",
+    price: 66.95,
+    image: "/GooglePlay-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Google play 300 SAR Saudi Arabia",
+    price: 81.37,
+    image: "/GooglePlay-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Google play 350 SAR Saudi Arabia",
+    price: 93.73,
+    image: "/GooglePlay-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Google play 400 SAR Saudi Arabia",
+    price: 109.0,
+    image: "/GooglePlay-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Google play 950 SAR Saudi Arabia",
+    price: 265.76,
+    image: "/GooglePlay-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Google play 1000 SAR Saudi Arabia",
+    price: 279.74,
     image: "/GooglePlay-gift-card.webp",
     quantity: 0,
     // Add other properties as needed
@@ -734,8 +1070,48 @@ export const SaudiArabiaGoogleProducts: GoogleProduct[] = [
 export const GermanyGoogleProducts: GoogleProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
-    name: "Google Play germany",
-    price: 10,
+    name: "Google Play EUR 5 Germany (DE)",
+    price: 5.87,
+    image: "/GooglePlay-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Google Play EUR 10 Germany (DE)",
+    price: 12.36,
+    image: "/GooglePlay-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Google Play EUR 15 Germany (DE)",
+    price: 22.66,
+    image: "/GooglePlay-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Google Play EUR 25 Germany (DE)",
+    price: 32.96,
+    image: "/GooglePlay-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Google Play EUR 50 Germany (DE)",
+    price: 46.35,
+    image: "/GooglePlay-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Google Play EUR 100 Germany (DE)",
+    price: 118.4,
     image: "/GooglePlay-gift-card.webp",
     quantity: 0,
     // Add other properties as needed
@@ -746,8 +1122,56 @@ export const GermanyGoogleProducts: GoogleProduct[] = [
 export const BrazilGoogleProducts: GoogleProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
-    name: "Google Play brazil",
-    price: 10,
+    name: "R$10 Google Play Brazil (BR)",
+    price: 2.78,
+    image: "/GooglePlay-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "R$15 Google Play Brazil (BR)",
+    price: 4.1,
+    image: "/GooglePlay-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "R$30 Google Play Brazil (BR)",
+    price: 6.69,
+    image: "/GooglePlay-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "R$50 Google Play Brazil (BR)",
+    price: 10.7,
+    image: "/GooglePlay-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "R$100 Google Play Brazil (BR)",
+    price: 21.0,
+    image: "/GooglePlay-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "R$200 Google Play Brazil (BR)",
+    price: 41.71,
+    image: "/GooglePlay-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "R$300 Google Play Brazil (BR)",
+    price: 63.8,
     image: "/GooglePlay-gift-card.webp",
     quantity: 0,
     // Add other properties as needed
@@ -758,8 +1182,48 @@ export const BrazilGoogleProducts: GoogleProduct[] = [
 export const TurkeyGoogleProducts: GoogleProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
-    name: "Google Play turkey",
-    price: 10,
+    name: "Google Play TL 25 Turkey (TR)",
+    price: 1.75,
+    image: "/GooglePlay-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Google Play TL 50 Turkey (TR)",
+    price: 3.19,
+    image: "/GooglePlay-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Google Play TL 100 Turkey (TR)",
+    price: 6.48,
+    image: "/GooglePlay-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Google Play TL 250 Turkey (TR)",
+    price: 14.93,
+    image: "/GooglePlay-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Google Play TL 500 Turkey (TR)",
+    price: 31.93,
+    image: "/GooglePlay-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Google Play TL 1000 Turkey (TR)",
+    price: 63.86,
     image: "/GooglePlay-gift-card.webp",
     quantity: 0,
     // Add other properties as needed
@@ -780,8 +1244,16 @@ export interface NetflixProduct {
 export const AustraliaNetflixProducts: NetflixProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
-    name: "Netflix australia",
-    price: 10,
+    name: "Netflix 30 AUD (AU)",
+    price: 24.82,
+    image: "/netflix-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Netflix 50 AUD (AU)",
+    price: 40.99,
     image: "/netflix-gift-card.webp",
     quantity: 0,
     // Add other properties as needed
@@ -792,8 +1264,32 @@ export const AustraliaNetflixProducts: NetflixProduct[] = [
 export const BrazilNetflixProducts: NetflixProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
-    name: "Netflix brazil",
-    price: 10,
+    name: "Netflix 35 BRL (BR)",
+    price: 8.75,
+    image: "/netflix-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Netflix 50 BRL (BR)",
+    price: 13.39,
+    image: "/netflix-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Netflix 70 BRL (BR)",
+    price: 15.34,
+    image: "/netflix-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Netflix 150 BRL (BR)",
+    price: 36.15,
     image: "/netflix-gift-card.webp",
     quantity: 0,
     // Add other properties as needed
@@ -804,8 +1300,16 @@ export const BrazilNetflixProducts: NetflixProduct[] = [
 export const CandaNetflixProducts: NetflixProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
-    name: "Netflix canda",
-    price: 10,
+    name: "Netflix 15 CAD (CA)",
+    price: 17.4,
+    image: "/netflix-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Netflix 30 CAD (CA)",
+    price: 32.34,
     image: "/netflix-gift-card.webp",
     quantity: 0,
     // Add other properties as needed
@@ -816,8 +1320,16 @@ export const CandaNetflixProducts: NetflixProduct[] = [
 export const EmiratesNetflixProducts: NetflixProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
-    name: "Netflix Emirates",
-    price: 10,
+    name: "Netflix UAE – AED 100",
+    price: 30.9,
+    image: "/netflix-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Netflix UAE – AED 500",
+    price: 140.0,
     image: "/netflix-gift-card.webp",
     quantity: 0,
     // Add other properties as needed
@@ -828,8 +1340,24 @@ export const EmiratesNetflixProducts: NetflixProduct[] = [
 export const UKNetflixProducts: NetflixProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
-    name: "Netflix UK",
-    price: 10,
+    name: "Netflix 15 GBP (UK)",
+    price: 25.75,
+    image: "/netflix-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Netflix 25 GBP (UK)",
+    price: 41.2,
+    image: "/netflix-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Netflix 50 GBP (UK)",
+    price: 72.0,
     image: "/netflix-gift-card.webp",
     quantity: 0,
     // Add other properties as needed
@@ -840,8 +1368,48 @@ export const UKNetflixProducts: NetflixProduct[] = [
 export const USNetflixProducts: NetflixProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
-    name: "Netflix US",
-    price: 10,
+    name: "Netflix 15 USD (US)",
+    price: 20.6,
+    image: "/netflix-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Netflix 25 USD (US)",
+    price: 26.57,
+    image: "/netflix-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Netflix 30 USD (US)",
+    price: 31.4,
+    image: "/netflix-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Netflix 50 USD (US)",
+    price: 53.0,
+    image: "/netflix-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Netflix 60 USD (US)",
+    price: 63.3,
+    image: "/netflix-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Netflix 100 USD (US)",
+    price: 106.0,
     image: "/netflix-gift-card.webp",
     quantity: 0,
     // Add other properties as needed
@@ -1062,8 +1630,16 @@ export interface PsnProduct {
 export const AustraliaPsnProducts: PsnProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
-    name: "Psn australia",
-    price: 10,
+    name: "PSN $30 (AU)",
+    price: 22.66,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PSN $50 (AU)",
+    price: 38.1,
     image: "/Psn-gift-card.webp",
     quantity: 0,
     // Add other properties as needed
@@ -1074,8 +1650,96 @@ export const AustraliaPsnProducts: PsnProduct[] = [
 export const EmiratesPsnProducts: PsnProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
-    name: "Psn Emirates",
-    price: 10,
+    name: "PSN $5 (UAE)",
+    price: 5.0,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PSN $10 (UAE)",
+    price: 10.0,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PSN $15 (UAE)",
+    price: 15.15,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PSN $20 (UAE)",
+    price: 20.0,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PSN $30 (UAE)",
+    price: 29.87,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PSN $40 (UAE)",
+    price: 39.45,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PSN $45 (UAE)",
+    price: 44.8,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PSN $50 (UAE)",
+    price: 49.95,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PSN $60 (UAE)",
+    price: 60.77,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PSN $70 (UAE)",
+    price: 70.0,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PSN $100 (UAE)",
+    price: 98.88,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PlayStation Plus 12 Month Membership (UAE)",
+    price: 57.16,
     image: "/Psn-gift-card.webp",
     quantity: 0,
     // Add other properties as needed
@@ -1086,8 +1750,8 @@ export const EmiratesPsnProducts: PsnProduct[] = [
 export const EuropePsnProducts: PsnProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
-    name: "Psn Europe",
-    price: 10,
+    name: "PSN €15 (EU)",
+    price: 16.99,
     image: "/Psn-gift-card.webp",
     quantity: 0,
     // Add other properties as needed
@@ -1098,8 +1762,112 @@ export const EuropePsnProducts: PsnProduct[] = [
 export const GermanyPsnProducts: PsnProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
-    name: "Psn Germany",
-    price: 10,
+    name: "PSN 5 EURO (DE)",
+    price: 5.66,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PSN 10 EURO (DE)",
+    price: 10.6,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PSN 15 EURO (DE)",
+    price: 15.96,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PSN 20 EURO (DE)",
+    price: 21.3,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PSN 25 EURO (DE)",
+    price: 26.67,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PSN 30 EURO (DE)",
+    price: 31.93,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PSN 35 EURO (DE)",
+    price: 37.35,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PSN 40 EURO (DE)",
+    price: 42.23,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PlayStation Plus 1 Month Membership (DE)",
+    price: 9.37,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PlayStation Plus 3 Month Membership (DE)",
+    price: 24.72,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PlayStation Plus 12 Month Membership (DE)",
+    price: 60.25,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PSN 50 EURO (DE)",
+    price: 5.66,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PSN 75 EURO (DE)",
+    price: 50.47,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PSN 100 EURO (DE)",
+    price: 106.0,
     image: "/Psn-gift-card.webp",
     quantity: 0,
     // Add other properties as needed
@@ -1110,8 +1878,112 @@ export const GermanyPsnProducts: PsnProduct[] = [
 export const KuawitPsnProducts: PsnProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
-    name: "Psn Kuawit",
-    price: 10,
+    name: "PSN $5 (KW)",
+    price: 5.0,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PSN $10 (KW)",
+    price: 10.0,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PSN $15 (KW)",
+    price: 15.0,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PSN $20 (KW)",
+    price: 20.0,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PSN $30 (KW)",
+    price: 30.2,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PSN $40 (KW)",
+    price: 40.15,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PSN $45 (KW)",
+    price: 45.3,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PSN $50 (KW)",
+    price: 50.35,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PSN $60 (KW)",
+    price: 60.45,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PSN $70 (KW)",
+    price: 70.5,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PSN $100 (KW)",
+    price: 100.95,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PlayStation Plus 1 Month Membership (KW)",
+    price: 8.2,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PlayStation Plus 3 Month Membership (KW)",
+    price: 21.4,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PlayStation Plus 12 Month Membership (KW)",
+    price: 21.4,
     image: "/Psn-gift-card.webp",
     quantity: 0,
     // Add other properties as needed
@@ -1122,8 +1994,104 @@ export const KuawitPsnProducts: PsnProduct[] = [
 export const SaudiPsnProducts: PsnProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
-    name: "Psn Saudi",
-    price: 10,
+    name: "PSN $10 (SA)",
+    price: 10.3,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PSN $15 (SA)",
+    price: 15.45,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PSN $20 (SA)",
+    price: 20.6,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PSN $30 (SA)",
+    price: 30.9,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PSN $40 (SA)",
+    price: 41.2,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PSN $45 (SA)",
+    price: 46.35,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PSN $50 (SA)",
+    price: 51.5,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PSN $60 (SA)",
+    price: 61.8,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PSN $70 (SA)",
+    price: 72.1,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PSN $100 (SA)",
+    price: 103.0,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PlayStation Plus 1 Months Membership (SA)",
+    price: 8.75,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PlayStation Plus 3 Months Membership (SA)",
+    price: 20.6,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PlayStation Plus 12 Months Membership (SA)",
+    price: 46.35,
     image: "/Psn-gift-card.webp",
     quantity: 0,
     // Add other properties as needed
@@ -1134,8 +2102,120 @@ export const SaudiPsnProducts: PsnProduct[] = [
 export const UKPsnProducts: PsnProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
-    name: "Psn UK",
-    price: 10,
+    name: "PSN £5 (UK)",
+    price: 6.2,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PSN £10 (UK)",
+    price: 10.39,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PSN £15 (UK)",
+    price: 17.51,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PSN £20 (UK)",
+    price: 24.61,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PSN £25 (UK)",
+    price: 30.9,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PSN £30 (UK)",
+    price: 36.0,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PSN £35 (UK)",
+    price: 43.26,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PSN £45 (UK)",
+    price: 53.56,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PSN £50 (UK)",
+    price: 61.8,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PSN £80 (UK)",
+    price: 95.79,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PSN £100 (UK)",
+    price: 120.5,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PSN £90 (UK)",
+    price: 108.0,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PlayStation Now 1 Months Subscription (UK)",
+    price: 12.36,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PlayStation Now 3 Months Subscription (UK)",
+    price: 31.9,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PlayStation Now 12 Months Subscription (UK)",
+    price: 61.8,
     image: "/Psn-gift-card.webp",
     quantity: 0,
     // Add other properties as needed
@@ -1146,8 +2226,112 @@ export const UKPsnProducts: PsnProduct[] = [
 export const USPsnProducts: PsnProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
-    name: "psn Us",
-    price: 10,
+    name: "PSN $10 (US)",
+    price: 9.47,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PSN $20 (US)",
+    price: 19.46,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PSN $25 (US)",
+    price: 23.69,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PSN $30 (US)",
+    price: 29.87,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PSN $50 (US)",
+    price: 46.86,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PSN $55 (US)",
+    price: 54.59,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PSN $60 (US)",
+    price: 56.13,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PSN $70 (US)",
+    price: 70.55,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PSN $75 (US)",
+    price: 70.0,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PSN $100 (US)",
+    price: 95.79,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PSN $110 (US)",
+    price: 108.15,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PlayStation Now 1 Month Subscription (US)",
+    price: 11.53,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PlayStation Now 3 Month Subscription (US)",
+    price: 25.75,
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PlayStation Now 12 Month Subscription (US)",
+    price: 56.65,
     image: "/Psn-gift-card.webp",
     quantity: 0,
     // Add other properties as needed
