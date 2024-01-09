@@ -66,7 +66,10 @@ const Footer = () => {
               </svg>
             </Link>
             {/* instgram */}
-            <Link href="https://www.instagram.com/enggam729/" target="_blank">
+            <Link
+              href="https://www.instagram.com/enggam.co/?hl=en"
+              target="_blank"
+            >
               <svg
                 width={35}
                 height={35}
