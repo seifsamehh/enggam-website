@@ -424,41 +424,6 @@ const CartPage = () => {
                               color="danger"
                               isReadOnly
                               value={price}
-                              // onChange={(e) => {
-                              //   setPrice(e.target.value);
-                              // }}
-                            />
-                          </div>
-                          <div className="payment-images flex justify-between items-center gap-1">
-                            <Image
-                              src="https://i.imgur.com/SSQLkKN.jpg"
-                              alt="vodafone"
-                              aria-label="vodafone"
-                              width={100}
-                              height={50}
-                              loading="lazy"
-                              placeholder="blur"
-                              blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
-                            />
-                            <Image
-                              src="https://i.imgur.com/JAZOady.png"
-                              alt="orange"
-                              aria-label="orange"
-                              width={100}
-                              height={50}
-                              loading="lazy"
-                              placeholder="blur"
-                              blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
-                            />
-                            <Image
-                              src="https://i.imgur.com/6jAA2Wc.jpg"
-                              alt="etisalat"
-                              aria-label="etisalat"
-                              width={100}
-                              height={50}
-                              loading="lazy"
-                              placeholder="blur"
-                              blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
                             />
                           </div>
                           <RadioGroup
