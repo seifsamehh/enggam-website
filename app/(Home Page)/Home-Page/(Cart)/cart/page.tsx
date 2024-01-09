@@ -225,7 +225,7 @@ const CartPage = () => {
         </div>
       ) : (
         <section className="cart-page-products min-h-screen overflow-hidden flex justify-center items-center py-12">
-          <div className="cart-content w-screen flex justify-around items-center gap-4 flex-wrap">
+          <div className="cart-content w-screen flex justify-around items-start gap-4 flex-wrap">
             <div className="left min-[290px]:mx-4 md:mx-0">
               <div className="shopping mb-8">
                 <Link
@@ -320,7 +320,8 @@ const CartPage = () => {
                 <Modal
                   isOpen={isOpen}
                   onOpenChange={onOpenChange}
-                  size="2xl"
+                  scrollBehavior={"inside"}
+                  size="5xl"
                   classNames={{
                     backdrop:
                       "bg-gradient-to-t from-cyan-700 to-cyan-300/20 backdrop-opacity-20",
