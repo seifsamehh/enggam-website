@@ -43,12 +43,12 @@ export default function page() {
                 Sale
               </span>
               <div className="mt-4 px-5 pb-5">
-                <h5 className="text-3xl font-semibold tracking-tight text-slate-900 my-4">
+                <h5 className="text-xl font-semibold tracking-tight text-slate-900 my-4">
                   {SalePageProduct.name}
                 </h5>
                 <del>{SalePageProduct.delete} $</del>
                 <div className="flex items-center justify-between">
-                  <p className="text-xl font-bold text-slate-900">
+                  <p className="text-2xl font-bold text-slate-900">
                     {SalePageProduct.price} $
                   </p>
                   {cartItems.find((item) => item.id === SalePageProduct.id) ? (

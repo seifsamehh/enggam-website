@@ -66,10 +66,16 @@ export default function page() {
               Feedback
             </h1>
             <p className="max-w-2xl my-8">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-              ut minus sunt quae consequatur rem quia quod cumque sapiente?
-              Fugit explicabo tenetur atque qui illum ipsum nesciunt alias
-              fugiat expedita.
+              You can send everything that is required in order to give
+              irrigation in the use of the site in order to develop the site can
+              be shared with what is there that makes the site easier and
+              simpler and develop every day on the site in order to make it the
+              largest site in order to use our site, which makes it easy and
+              simple and make it the largest in the development of the site and
+              identify any defects and features of the site and share it with
+              each other to make the site fast and effective in order to use our
+              site and ease in order to develop daily The site has everyone's
+              opinion is more important to us and your opinion should be given.
             </p>
             <Button
               onPress={onOpen}

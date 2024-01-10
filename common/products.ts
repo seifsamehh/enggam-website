@@ -11,7 +11,7 @@ export interface Product {
 export const products: Product[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
-    name: "Free Fire 2200 + 220 Diamonds Pins (Garena)",
+    name: "Free Fire 2200+220 Diamonds Pins",
     price: 19.87,
     delete: "20.20",
     image: "/freefire-card.webp",

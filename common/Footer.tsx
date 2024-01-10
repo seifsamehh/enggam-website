@@ -73,7 +73,7 @@ const Footer = () => {
             </Link>
             {/* instgram */}
             <Link
-              href="https://www.instagram.com/enggam.co/?hl=en"
+              href="https://www.instagram.com/enggam.co/"
               target="_blank"
               aria-label="Instagram"
               title="Instagram"

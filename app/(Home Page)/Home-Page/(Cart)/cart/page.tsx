@@ -300,10 +300,12 @@ const CartPage = () => {
                   <span className="text-xl">{user.fullName}</span>
                 </h2>
                 <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Deleniti quos expedita laboriosam beatae ipsum, necessitatibus
-                  sit, autem nostrum porro magnam consectetur cupiditate
-                  repudiandae alias libero quasi ea accusantium quidem quam?
+                  You can ship the order easily and choose the easiest and most
+                  suitable payment method for all and send it to us and the
+                  reply will be done as soon as possible so that it is done to
+                  help you in everything and make the order come out as soon as
+                  possible and you can communicate with us easily in order to
+                  complete any order required and make it faster ...
                 </p>
               </div>
               <div className="checkout min-[290px]:mt-8 md:mt-0">
