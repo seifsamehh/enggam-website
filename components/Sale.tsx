@@ -19,8 +19,8 @@ export default function SaleSection() {
         <Link
           href="/sign-in"
           className="bg-white text-[#ff474d] rounded-md py-4 px-8"
-          title="Sale"
-          aria-label="Sale"
+          title="Go Shopping"
+          aria-label="Go Shopping"
         >
           Go Shopping
         </Link>

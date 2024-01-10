@@ -58,6 +58,7 @@ export default function HeaderLanding() {
             <Link
               href="/"
               className="text-white flex justify-center items-center gap-1"
+              aria-label="Home"
             >
               <BiHomeAlt />
               Home
@@ -66,6 +67,7 @@ export default function HeaderLanding() {
           <NavbarItem>
             <Link
               href="/about-us"
+              aria-label="About Us"
               className="text-white flex justify-center items-center gap-1"
             >
               <HiOutlineInformationCircle />
@@ -76,6 +78,7 @@ export default function HeaderLanding() {
             <Link
               href="/sign-in"
               className="text-white flex justify-center items-center gap-1"
+              aria-label="Sale"
             >
               <HiOutlineShoppingCart />
               Sale
@@ -106,6 +109,7 @@ export default function HeaderLanding() {
               <DropdownItem
                 as={Link}
                 href="/sign-in"
+                aria-label="Gift-Cards"
                 key="Gift-Cards"
                 startContent={<HiOutlineGift />}
               >
@@ -114,6 +118,7 @@ export default function HeaderLanding() {
               <DropdownItem
                 as={Link}
                 href="/sign-in"
+                aria-label="Game-Cards"
                 key="Game-Cards"
                 startContent={<BiJoystick />}
               >
@@ -122,6 +127,7 @@ export default function HeaderLanding() {
               <DropdownItem
                 as={Link}
                 href="/sign-in"
+                aria-label="Payment-Cards"
                 key="Payment-Cards"
                 startContent={<LiaCcVisa />}
               >
@@ -132,6 +138,7 @@ export default function HeaderLanding() {
           <NavbarItem>
             <Link
               href="/sign-in"
+              aria-label="Feedback"
               className="text-white flex justify-center items-center gap-1"
             >
               <VscFeedback />
@@ -141,12 +148,17 @@ export default function HeaderLanding() {
         </NavbarContent>
         <NavbarContent justify="end">
           <NavbarItem className="lg:flex">
-            <Link href="/sign-in" className="text-white">
+            <Link href="/sign-in" className="text-white" aria-label="Login">
               Login
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Button as={Link} href="/sign-up" className="bg-background">
+            <Button
+              as={Link}
+              href="/sign-up"
+              className="bg-background"
+              aria-label="Sign Up"
+            >
               Sign Up
             </Button>
           </NavbarItem>
@@ -180,55 +192,55 @@ export default function HeaderLanding() {
         {/* menu */}
         <NavbarMenu className="bg-primary menu">
           <NavbarMenuItem>
-            <Link href="/">
+            <Link href="/" aria-label="Home">
               <BiHomeAlt />
               Home
             </Link>
           </NavbarMenuItem>
           <NavbarMenuItem>
-            <Link href="/about-us">
+            <Link href="/about-us" aria-label="About Us">
               <HiOutlineInformationCircle />
               About Us
             </Link>
           </NavbarMenuItem>
           <NavbarMenuItem>
-            <Link href="/sign-in">
+            <Link href="/sign-in" aria-label="sale">
               <HiOutlineShoppingCart />
               sale
             </Link>
           </NavbarMenuItem>
           <NavbarMenuItem>
-            <Link href="/sign-in">
+            <Link href="/sign-in" aria-label="Gift Cards">
               <HiOutlineGift />
               Gift Cards
             </Link>
           </NavbarMenuItem>
           <NavbarMenuItem>
-            <Link href="/sign-in">
+            <Link href="/sign-in" aria-label="Game Cards">
               <BiJoystick />
               Game Cards
             </Link>
           </NavbarMenuItem>
           <NavbarMenuItem>
-            <Link href="/sign-in">
+            <Link href="/sign-in" aria-label="Payment Cards">
               <LiaCcVisa />
               Payment Cards
             </Link>
           </NavbarMenuItem>
           <NavbarMenuItem>
-            <Link href="/sign-in">
+            <Link href="/sign-in" aria-label="Login">
               <BiLogIn />
               Login
             </Link>
           </NavbarMenuItem>
           <NavbarMenuItem>
-            <Link href="/sign-up">
+            <Link href="/sign-up" aria-label="Sign Up">
               <BiLogIn />
               Sign Up
             </Link>
           </NavbarMenuItem>
           <NavbarMenuItem>
-            <Link href="/sign-in">
+            <Link href="/sign-in" aria-label="Feedback">
               <VscFeedback />
               Feedback
             </Link>
