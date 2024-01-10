@@ -5,7 +5,6 @@ import Link from "next/link";
 import {
   Modal,
   ModalContent,
-  ModalHeader,
   ModalBody,
   ModalFooter,
   Button,
@@ -42,6 +41,8 @@ const Footer = () => {
             <Link
               href="https://www.facebook.com/profile.php?id=100095357415380"
               target="_blank"
+              aria-label="Facebook"
+              title="Facebook"
             >
               <svg
                 width={35}
@@ -54,7 +55,12 @@ const Footer = () => {
               </svg>
             </Link>
             {/* whatsapp */}
-            <Link href="https://wa.me/+201014402598" target="_blank">
+            <Link
+              href="https://wa.me/+201014402598"
+              target="_blank"
+              aria-label="Whatsapp"
+              title="Whatsapp"
+            >
               <svg
                 width={35}
                 height={35}
@@ -69,6 +75,8 @@ const Footer = () => {
             <Link
               href="https://www.instagram.com/enggam.co/?hl=en"
               target="_blank"
+              aria-label="Instagram"
+              title="Instagram"
             >
               <svg
                 width={35}
@@ -81,7 +89,12 @@ const Footer = () => {
               </svg>
             </Link>
             {/* twitter */}
-            <Link href="https://twitter.com/enggam729" target="_blank">
+            <Link
+              href="https://twitter.com/enggam729"
+              target="_blank"
+              title="Twitter"
+              aria-label="Twitter"
+            >
               <svg
                 width={35}
                 height={35}
@@ -93,7 +106,12 @@ const Footer = () => {
               </svg>
             </Link>
             {/* telegram */}
-            <Link href="https://t.me/+201014402598" target="_blank">
+            <Link
+              href="https://t.me/+201014402598"
+              target="_blank"
+              title="Telegram"
+              aria-label="Telegram"
+            >
               <svg
                 width={35}
                 height={35}
@@ -105,7 +123,12 @@ const Footer = () => {
               </svg>
             </Link>
             {/* gmail */}
-            <Link href="mailto:enggam729@gmail.com" target="_blank">
+            <Link
+              href="mailto:enggam729@gmail.com"
+              target="_blank"
+              title="Gmail"
+              aria-label="Gmail"
+            >
               <svg
                 width={35}
                 height={35}

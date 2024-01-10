@@ -161,12 +161,6 @@ export default function RootLayout({
             defer
             rel="preload"
           />
-          <Script
-            id="form"
-            src="https://form.jotform.com/jsform/233644957748574"
-            defer
-            rel="preload"
-          />
           <Analytics />
         </body>
       </html>
