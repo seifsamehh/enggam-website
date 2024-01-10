@@ -39,9 +39,10 @@ export default function HeroSection() {
             </span>
           </h2>
           <p className="mb-6 text-base text-indigo-100 md:text-lg">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-            quae. explicabo. Sed ut perspiciatis unde omnis.
+            You can now use our site to do any order with the use of the
+            strongest offers that allow you to enjoy the strongest games and
+            Gift cards The order can be shipped as soon as possible and the
+            speed of the shipping process.
           </p>
           <TourBtn />
         </div>

@@ -121,7 +121,7 @@ export default function SaleHome() {
           {products.map((product: Product) => (
             <div
               key={product.id}
-              className="keen-slider__slide box relative w-full md:max-w-xs overflow-hidden rounded-lg"
+              className="keen-slider__slide box relative w-full md:max-w-xs overflow-hidden"
             >
               <Image
                 src={product.image}
@@ -137,11 +137,12 @@ export default function SaleHome() {
                 Sale
               </span>
               <div className="mt-4 px-5 pb-5">
-                <h5 className="text-3xl font-semibold tracking-tight text-slate-900 my-4">
+                <h5 className="text-xl font-semibold tracking-tight text-slate-900 my-4">
                   {product.name}
                 </h5>
+                <del>{product.delete} $</del>
                 <div className="flex items-center justify-between">
-                  <p className="text-xl font-bold text-slate-900">
+                  <p className="text-2xl font-bold text-slate-900">
                     {product.price} $
                   </p>
                   {cartItems.find((item) => item.id === product.id) ? (
@@ -202,6 +203,7 @@ export default function SaleHome() {
                 <h5 className="text-3xl font-semibold tracking-tight text-slate-900 my-4">
                   {product.name}
                 </h5>
+                <del>{product.delete} $</del>
                 <div className="flex items-center justify-between">
                   <p className="text-xl font-bold text-slate-900">
                     {product.price} $

@@ -2,7 +2,7 @@
 
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "@/store/store";
-import { Product, products } from "@/common/products";
+import { SalePageProduct, SaleProducts } from "@/common/SalePageProducts";
 import { addToCart } from "@/slices/cartSlice";
 import Footer from "@/common/Footer";
 import HeaderHome from "@/lib/HeaderHome";
@@ -13,10 +13,10 @@ export default function page() {
   const cartItems = useSelector((state: RootState) => state.cart.items);
   const dispatch = useDispatch();
 
-  const handleAddToCart = (product: Product) => {
-    dispatch(addToCart(product));
+  const handleAddToCart = (SalePageProduct: SalePageProduct) => {
+    dispatch(addToCart(SalePageProduct));
     toast.success("Successfully added to cart", {
-      description: `${product.name} has been added to your cart.`,
+      description: `${SalePageProduct.name} has been added to your cart.`,
     });
   };
   return (
@@ -24,14 +24,14 @@ export default function page() {
       <HeaderHome />
       <section className="sale-page overflow-hidden">
         <div className="sale-boxs flex justify-center items-center gap-4 flex-wrap py-12">
-          {products.map((product) => (
+          {SaleProducts.map((SalePageProduct) => (
             <div
-              key={product.id}
+              key={SalePageProduct.id}
               className="box relative w-full md:max-w-xs overflow-hidden rounded-lg"
             >
               <Image
-                src={product.image}
-                alt={product.name}
+                src={SalePageProduct.image}
+                alt={SalePageProduct.name}
                 className="h-[23rem] rounded-t-lg object-cover"
                 width={500}
                 height={500}
@@ -44,13 +44,14 @@ export default function page() {
               </span>
               <div className="mt-4 px-5 pb-5">
                 <h5 className="text-3xl font-semibold tracking-tight text-slate-900 my-4">
-                  {product.name}
+                  {SalePageProduct.name}
                 </h5>
+                <del>{SalePageProduct.delete} $</del>
                 <div className="flex items-center justify-between">
                   <p className="text-xl font-bold text-slate-900">
-                    {product.price} $
+                    {SalePageProduct.price} $
                   </p>
-                  {cartItems.find((item) => item.id === product.id) ? (
+                  {cartItems.find((item) => item.id === SalePageProduct.id) ? (
                     <button
                       disabled
                       className="flex items-center rounded-md bg-[#0056b3] px-5 py-2.5 text-center text-sm font-medium text-white focus:outline-none focus:ring-4 focus:ring-blue-300"
@@ -59,7 +60,7 @@ export default function page() {
                     </button>
                   ) : (
                     <button
-                      onClick={() => handleAddToCart(product)}
+                      onClick={() => handleAddToCart(SalePageProduct)}
                       className="flex items-center rounded-md bg-[#0056b3] px-5 py-2.5 text-center text-sm font-medium text-white focus:outline-none focus:ring-4 focus:ring-blue-300"
                     >
                       <svg

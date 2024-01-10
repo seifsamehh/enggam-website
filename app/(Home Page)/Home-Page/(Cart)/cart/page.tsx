@@ -437,7 +437,18 @@ const CartPage = () => {
                           >
                             <Radio value="Vodafone Cash">Vodafone Cash</Radio>
                             <Radio value="Orange Cash">Orange Cash</Radio>
-                            <Radio value="Etisalat Cash">Etisalat Cash</Radio>
+                            <Radio value="Cib Smart Wallet">
+                              Cib Smart Wallet
+                            </Radio>
+                            <Radio value="Visa">Visa</Radio>
+                            <Radio value="Payeer">Payeer</Radio>
+                            <Radio value="Perfect Money">Perfect Money</Radio>
+                            <Radio value="WebMoney">WebMoney</Radio>
+                            <Radio value="Paypal">Paypal</Radio>
+                            <Radio value="Bm Online Wallet">
+                              Bm Online Wallet
+                            </Radio>
+                            <Radio value="Easy Pay">Easy Pay</Radio>
                           </RadioGroup>
                           <Divider />
                           <Textarea

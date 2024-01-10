@@ -4,39 +4,39 @@ import { Raleway } from "next/font/google";
 
 const raleway = Raleway({ subsets: ["latin"], weight: "900", display: "swap" });
 
+type TeamMember = {
+  avatar: string;
+  name: string;
+  title: string;
+  desc: string;
+  linkedin: string;
+  twitter?: string; // Make twitter field optional
+  github: string;
+};
+
 export default function Team() {
-  const team = [
+  const team: TeamMember[] = [
     {
       avatar: "/maskable_icon.png",
-      name: "Martiana dialan",
-      title: "Product designer",
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesettin industry. Lorem Ipsum has been the industry's standard dummy",
+      name: "Ali Nasr",
+      title: "CEO of ENGGAM",
+      desc: "Ali Nasr leads enggam, a trailblazing company revolutionizing how we access and spend digitally. With a knack for innovation and an eye on convenience, he has made enggam the go-to platform for game cards, gift cards, and instant payment solutions.",
       linkedin: "",
       twitter: "",
       github: "",
     },
     {
-      avatar: "/maskable_icon.png",
-      name: "Micheal colorand",
-      title: "Software engineer",
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesettin industry. Lorem Ipsum has been the industry's standard dummy",
-      linkedin: "",
-      twitter: "",
-      github: "",
+      avatar: "/Seif-Sameh.webp",
+      name: "Seif Eldin Sameh",
+      title: "Web Developer",
+      desc: "I am a MERN stack web developer with 4+ years of experience in building scalable and user-friendly web applications.",
+      linkedin: "https://www.linkedin.com/in/seif-eldin-sameh-81b8661b7/",
+      github: "https://github.com/seifsamehh",
     },
     {
       avatar: "/maskable_icon.png",
       name: "Daniel martin",
       title: "Product designer",
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesettin industry. Lorem Ipsum has been the industry's standard dummy",
-      linkedin: "",
-      twitter: "",
-      github: "",
-    },
-    {
-      avatar: "/maskable_icon.png",
-      name: "Vicky tanson",
-      title: "Product manager",
       desc: "Lorem Ipsum is simply dummy text of the printing and typesettin industry. Lorem Ipsum has been the industry's standard dummy",
       linkedin: "",
       twitter: "",
@@ -59,7 +59,7 @@ export default function Team() {
                   <Image
                     src={item.avatar}
                     alt={item.name}
-                    className="w-full h-full object-cover object-center rounded-xl"
+                    className="w-full h-full object-contain object-center rounded-xl"
                     width={100}
                     height={100}
                     loading="lazy"
@@ -74,25 +74,27 @@ export default function Team() {
                   <p className="text-indigo-600">{item.title}</p>
                   <p className="text-gray-600 mt-2">{item.desc}</p>
                   <div className="mt-3 flex gap-4 text-gray-400">
-                    <Link href={item.twitter} target="_blank">
-                      <svg
-                        className="w-5 h-5 duration-150 hover:text-gray-500"
-                        fill="currentColor"
-                        viewBox="0 0 48 48"
-                      >
-                        <g clipPath="url(#clip0_17_80)">
-                          <path
-                            fill="currentColor"
-                            d="M15.1 43.5c18.11 0 28.017-15.006 28.017-28.016 0-.422-.01-.853-.029-1.275A19.998 19.998 0 0048 9.11c-1.795.798-3.7 1.32-5.652 1.546a9.9 9.9 0 004.33-5.445 19.794 19.794 0 01-6.251 2.39 9.86 9.86 0 00-16.788 8.979A27.97 27.97 0 013.346 6.299 9.859 9.859 0 006.393 19.44a9.86 9.86 0 01-4.462-1.228v.122a9.844 9.844 0 007.901 9.656 9.788 9.788 0 01-4.442.169 9.867 9.867 0 009.195 6.843A19.75 19.75 0 010 39.078 27.937 27.937 0 0015.1 43.5z"
-                          />
-                        </g>
-                        <defs>
-                          <clipPath id="clip0_17_80">
-                            <path fill="currentColor" d="M0 0h48v48H0z" />
-                          </clipPath>
-                        </defs>
-                      </svg>
-                    </Link>
+                    {item.twitter && (
+                      <Link href={item.twitter} target="_blank">
+                        <svg
+                          className="w-5 h-5 duration-150 hover:text-gray-500"
+                          fill="currentColor"
+                          viewBox="0 0 48 48"
+                        >
+                          <g clipPath="url(#clip0_17_80)">
+                            <path
+                              fill="currentColor"
+                              d="M15.1 43.5c18.11 0 28.017-15.006 28.017-28.016 0-.422-.01-.853-.029-1.275A19.998 19.998 0 0048 9.11c-1.795.798-3.7 1.32-5.652 1.546a9.9 9.9 0 004.33-5.445 19.794 19.794 0 01-6.251 2.39 9.86 9.86 0 00-16.788 8.979A27.97 27.97 0 013.346 6.299 9.859 9.859 0 006.393 19.44a9.86 9.86 0 01-4.462-1.228v.122a9.844 9.844 0 007.901 9.656 9.788 9.788 0 01-4.442.169 9.867 9.867 0 009.195 6.843A19.75 19.75 0 010 39.078 27.937 27.937 0 0015.1 43.5z"
+                            />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_17_80">
+                              <path fill="currentColor" d="M0 0h48v48H0z" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </Link>
+                    )}
                     <Link href={item.github} target="_blank">
                       <svg
                         className="w-5 h-5 duration-150 hover:text-gray-500"

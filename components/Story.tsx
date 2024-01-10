@@ -21,20 +21,13 @@ export default function Story() {
             <span className="text-[#ff474d]">Story</span>
           </h2>
           <p className="max-w-2xl my-4 leading-10">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi
-            dolor quasi tenetur alias laboriosam cupiditate sed, voluptas minima
-            sunt reprehenderit dolore architecto mollitia eveniet iure maxime
-            quidem! Optio, ab reiciendis. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Adipisci id nihil blanditiis molestias
-            exercitationem. Deserunt, nesciunt nisi obcaecati corrupti commodi
-            unde pariatur saepe quaerat repellat vitae dolorem vero voluptates
-            hic. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo
-            ex quo commodi rem nisi beatae ipsam aspernatur, nostrum repellat
-            dolore placeat ullam quisquam amet minus magnam dicta eveniet. Illo,
-            sit? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Impedit natus veritatis tempore voluptates ducimus. Ipsam nobis eum
-            nostrum dolores debitis, recusandae libero reiciendis quos voluptas
-            cumque possimus nemo, at vitae!
+            Our goal is First, get a small profit Second : enggam.com is a Gift
+            Card Company located in Egypt. we sell all prepaid cards like:-
+            iTunes cards, google play cards, PNS cards, Xbox cards, Razer gold
+            cards, Amazon cards, steam cards, Karma coin game cards, and much
+            more. Our Purpose is making easy to get all Gift Cards safe and
+            fast. We Can Use Our Website At Any Time And We Will With You In 24
+            Hours.
           </p>
           <h3 className={`${sacramento.className} text-4xl text-[#0056b3]`}>
             Ali Nasr
