@@ -118,6 +118,7 @@ const CartPage = () => {
     });
 
     console.log(await response.json());
+    handleSubmit();
   };
   const handleSubmit = () => {
     // Redirect to another URL
@@ -464,11 +465,7 @@ const CartPage = () => {
                           />
                         </ModalBody>
                         <ModalFooter className="justify-start">
-                          <Button
-                            type="submit"
-                            onPress={onClose}
-                            onClick={handleSubmit}
-                          >
+                          <Button type="submit" onPress={onClose}>
                             send
                           </Button>
                         </ModalFooter>

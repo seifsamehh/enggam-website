@@ -38,7 +38,7 @@ export default function HeroSection() {
               <span className="relative text-[#ff474d]">{user.username}</span>
             </span>
           </h1>
-          <p className="mb-6 text-base text-indigo-100 md:text-lg">
+          <p className="mb-6 text-base text-indigo-100 md:text-lg text-center">
             You can now use our site to do any order with the use of the
             strongest offers that allow you to enjoy the strongest games and
             Gift cards The order can be shipped as soon as possible and the
