@@ -8,6 +8,7 @@ import { Parallax } from "./parallax";
 import { Providers } from "./providers";
 import type { Metadata } from "next";
 import { PT_Serif } from "next/font/google";
+import CrispChat from "@/components/CrispChat";
 
 const ptSerif = PT_Serif({
   subsets: ["latin"],
@@ -159,12 +160,13 @@ export default function RootLayout({
             <LoadingPage />
             <Parallax>{children}</Parallax>
           </Providers>
-          <Script
+          <CrispChat />
+          {/* <Script
             id="live chat"
             src="https://embed.tawk.to/64c418e5cc26a871b02bddaa/1h6f02gqc"
             defer
             rel="preload"
-          />
+          /> */}
           <Analytics />
         </body>
       </html>
