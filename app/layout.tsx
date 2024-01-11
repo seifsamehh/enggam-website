@@ -1,6 +1,5 @@
 import "./globals.css";
 import LoadingPage from "@/common/LoadingPage";
-import Script from "next/script";
 import Head from "next/head";
 import { ClerkProvider } from "@clerk/nextjs";
 import { Analytics } from "@vercel/analytics/react";
