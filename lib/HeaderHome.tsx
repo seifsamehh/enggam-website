@@ -60,6 +60,7 @@ export default function HeaderHome() {
               href="/Home-Page"
               className="text-white flex justify-center items-center gap-1"
               id="home-page"
+              aria-label="Home"
             >
               <BiHomeAlt />
               Home
@@ -70,6 +71,7 @@ export default function HeaderHome() {
               href="/Home-Page/about-us"
               className="text-white flex justify-center items-center gap-1"
               id="about-page"
+              aria-label="About Us"
             >
               <HiOutlineInformationCircle />
               About Us
@@ -80,6 +82,7 @@ export default function HeaderHome() {
               href="/Home-Page/sale-page"
               className="text-white flex justify-center items-center gap-1"
               id="sale-page"
+              aria-label="Sale"
             >
               <HiOutlineShoppingCart />
               Sale
@@ -112,6 +115,7 @@ export default function HeaderHome() {
                 href="/Home-Page/categories/gift-cards"
                 key="Gift-Cards"
                 startContent={<HiOutlineGift />}
+                aria-label="Gift Cards"
               >
                 Gift Cards
               </DropdownItem>
@@ -120,6 +124,7 @@ export default function HeaderHome() {
                 href="/Home-Page/categories/game-cards"
                 key="Game-Cards"
                 startContent={<BiJoystick />}
+                aria-label="Game Cards"
               >
                 Game Cards
               </DropdownItem>
@@ -128,6 +133,7 @@ export default function HeaderHome() {
                 href="/Home-Page/categories/payment-cards"
                 key="Payment-Cards"
                 startContent={<LiaCcVisa />}
+                aria-label="Payment Cards"
               >
                 Payment Cards
               </DropdownItem>
@@ -138,6 +144,7 @@ export default function HeaderHome() {
               href="/Home-Page/feedback"
               className="text-white flex justify-center items-center gap-1"
               id="feedback-page"
+              aria-label="Feedback"
             >
               <VscFeedback />
               Feedback
@@ -198,43 +205,71 @@ export default function HeaderHome() {
         {/* menu */}
         <NavbarMenu className="bg-primary menu">
           <NavbarMenuItem>
-            <Link href="/Home-Page">
+            <Link
+              href="/Home-Page"
+              aria-label="Home"
+              className="flex justify-center items-center gap-1"
+            >
               <BiHomeAlt />
               Home
             </Link>
           </NavbarMenuItem>
           <NavbarMenuItem>
-            <Link href="/Home-Page/about-us">
+            <Link
+              href="/Home-Page/about-us"
+              aria-label="About Us"
+              className="flex justify-center items-center gap-1"
+            >
               <HiOutlineInformationCircle />
               About Us
             </Link>
           </NavbarMenuItem>
           <NavbarMenuItem>
-            <Link href="/Home-Page/sale-page">
+            <Link
+              href="/Home-Page/sale-page"
+              aria-label="Sale"
+              className="flex justify-center items-center gap-1"
+            >
               <HiOutlineShoppingCart />
               Sale
             </Link>
           </NavbarMenuItem>
           <NavbarMenuItem>
-            <Link href="/Home-Page/categories/gift-cards">
+            <Link
+              href="/Home-Page/categories/gift-cards"
+              aria-label="Gift Cards"
+              className="flex justify-center items-center gap-1"
+            >
               <HiOutlineGift />
               Gift Cards
             </Link>
           </NavbarMenuItem>
           <NavbarMenuItem>
-            <Link href="/Home-Page/categories/game-cards">
+            <Link
+              href="/Home-Page/categories/game-cards"
+              aria-label="Game Cards"
+              className="flex justify-center items-center gap-1"
+            >
               <BiJoystick />
               Game Cards
             </Link>
           </NavbarMenuItem>
           <NavbarMenuItem>
-            <Link href="/Home-Page/categories/payment-cards">
+            <Link
+              href="/Home-Page/categories/payment-cards"
+              aria-label="Payment Cards"
+              className="flex justify-center items-center gap-1"
+            >
               <LiaCcVisa />
               Payment Cards
             </Link>
           </NavbarMenuItem>
           <NavbarMenuItem>
-            <Link href="/Home-Page/feedback">
+            <Link
+              href="/Home-Page/feedback"
+              aria-label="Feedback"
+              className="flex justify-center items-center gap-1"
+            >
               <VscFeedback />
               Feedback
             </Link>
@@ -243,7 +278,12 @@ export default function HeaderHome() {
             <UserButton afterSignOutUrl="/" />
           </NavbarMenuItem>
           <NavbarItem className="lg:flex" id="cart">
-            <Link href="/Home-Page/cart" title="cart">
+            <Link
+              href="/Home-Page/cart"
+              title="cart"
+              className="flex justify-center items-center gap-1"
+            >
+              Cart
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="icon icon-tabler icon-tabler-shopping-bag"
