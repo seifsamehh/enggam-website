@@ -8,6 +8,7 @@ const raleway = Raleway({ subsets: ["latin"], weight: "900", display: "swap" });
 import "../../../styles/about.scss";
 import Footer from "@/common/Footer";
 import HeaderLanding from "@/lib/HeaderLanding";
+import Team from "@/components/Team";
 
 const AboutPage = () => {
   return (
@@ -422,6 +423,7 @@ const AboutPage = () => {
             />
           </div>
         </div>
+        <Team />
       </section>
       <Footer />
     </>
