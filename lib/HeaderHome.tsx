@@ -208,7 +208,7 @@ export default function HeaderHome() {
             <Link
               href="/Home-Page"
               aria-label="Home"
-              className="flex justify-center items-center gap-1"
+              className="flex justify-start items-center gap-1"
             >
               <BiHomeAlt />
               Home
@@ -218,7 +218,7 @@ export default function HeaderHome() {
             <Link
               href="/Home-Page/about-us"
               aria-label="About Us"
-              className="flex justify-center items-center gap-1"
+              className="flex justify-start items-center gap-1"
             >
               <HiOutlineInformationCircle />
               About Us
@@ -228,7 +228,7 @@ export default function HeaderHome() {
             <Link
               href="/Home-Page/sale-page"
               aria-label="Sale"
-              className="flex justify-center items-center gap-1"
+              className="flex justify-start items-center gap-1"
             >
               <HiOutlineShoppingCart />
               Sale
@@ -238,7 +238,7 @@ export default function HeaderHome() {
             <Link
               href="/Home-Page/categories/gift-cards"
               aria-label="Gift Cards"
-              className="flex justify-center items-center gap-1"
+              className="flex justify-start items-center gap-1"
             >
               <HiOutlineGift />
               Gift Cards
@@ -248,7 +248,7 @@ export default function HeaderHome() {
             <Link
               href="/Home-Page/categories/game-cards"
               aria-label="Game Cards"
-              className="flex justify-center items-center gap-1"
+              className="flex justify-start items-center gap-1"
             >
               <BiJoystick />
               Game Cards
@@ -258,7 +258,7 @@ export default function HeaderHome() {
             <Link
               href="/Home-Page/categories/payment-cards"
               aria-label="Payment Cards"
-              className="flex justify-center items-center gap-1"
+              className="flex justify-start items-center gap-1"
             >
               <LiaCcVisa />
               Payment Cards
@@ -268,7 +268,7 @@ export default function HeaderHome() {
             <Link
               href="/Home-Page/feedback"
               aria-label="Feedback"
-              className="flex justify-center items-center gap-1"
+              className="flex justify-start items-center gap-1"
             >
               <VscFeedback />
               Feedback
@@ -281,7 +281,7 @@ export default function HeaderHome() {
             <Link
               href="/Home-Page/cart"
               title="cart"
-              className="flex justify-center items-center gap-1"
+              className="flex justify-start items-center gap-1"
             >
               Cart
               <svg
