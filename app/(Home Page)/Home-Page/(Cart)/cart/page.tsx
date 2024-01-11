@@ -323,7 +323,7 @@ const CartPage = () => {
                   isOpen={isOpen}
                   onOpenChange={onOpenChange}
                   scrollBehavior={"inside"}
-                  size="5xl"
+                  size="full"
                   classNames={{
                     backdrop:
                       "bg-gradient-to-t from-cyan-700 to-cyan-300/20 backdrop-opacity-20",
@@ -463,7 +463,7 @@ const CartPage = () => {
                             }}
                           />
                         </ModalBody>
-                        <ModalFooter>
+                        <ModalFooter className="justify-start">
                           <Button
                             type="submit"
                             onPress={onClose}

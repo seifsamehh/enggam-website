@@ -32,7 +32,7 @@ export default function HomeCategories() {
               <p className="my-4">
                 Buy cards for PSN, Xbox , Steam, Razer Gold, iTunes, Google Play
                 and Netflex , Enggam Stores gives you the Group of Gift Cards
-                collection ever found In Egypt.
+                collection ever found In all over the world.
               </p>
               <Link
                 href="/Home-Page/categories/gift-cards"

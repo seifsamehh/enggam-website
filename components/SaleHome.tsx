@@ -107,7 +107,7 @@ export default function SaleHome() {
   return (
     <section className="sale-home overflow-hidden min-h-screen" id="sale-home">
       <div className="sale-boxs flex min-[290px]:justify-center md:justify-start items-center min-[290px]:flex-wrap md:flex-nowrap">
-        <div className="box bg-[#ff474d] text-white min-[290px]:w-full md:w-1/4 h-[540px] flex justify-center items-center flex-col gap-4">
+        <div className="box bg-[#ff474d] text-white min-[290px]:w-full md:w-1/4 h-[525px] flex justify-center items-center flex-col gap-4">
           <h2 className={`${raleway.className} text-6xl`}>SALE</h2>
           <Link
             href="/Home-Page/sale-page"

@@ -12,7 +12,7 @@ export default function HomeProducts() {
       <h2
         className={`${raleway.className} text-7xl bg-gradient-to-r from-red-700 to-red-500 bg-clip-text text-transparent min-[290px]:text-center md:text-left`}
       >
-        Products
+        Top Seller
       </h2>
       <HomeProductSlider />
     </section>
