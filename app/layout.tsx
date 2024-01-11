@@ -1,6 +1,7 @@
 import "./globals.css";
 import LoadingPage from "@/common/LoadingPage";
 import Script from "next/script";
+import Head from "next/head";
 import { ClerkProvider } from "@clerk/nextjs";
 import { Analytics } from "@vercel/analytics/react";
 import { Parallax } from "./parallax";
@@ -70,7 +71,6 @@ export const metadata: Metadata = {
   manifest: "/manifest.json",
   icons: {
     icon: [
-      { url: "/app/favicon.ico", sizes: "48x48", type: "image/x-icon" },
       { url: "/icon-16x16.png", sizes: "16x16", type: "image/png" },
       { url: "/icon-32x32.png", sizes: "32x32", type: "image/png" },
       { url: "/icon-48x48.png", sizes: "48x48", type: "image/png" },
@@ -151,6 +151,9 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en">
+        <Head>
+          <link rel="icon" type="image/x-icon" href="/app/favicon.ico" />
+        </Head>
         <body className={ptSerif.className}>
           <Providers>
             <LoadingPage />
