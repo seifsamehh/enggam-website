@@ -3077,3 +3077,24 @@ export const USPsnProducts: PsnProduct[] = [
     // Add other properties as needed
   },
 ];
+
+// xbox
+export interface XboxProduct {
+  id: number;
+  name: string;
+  price: number;
+  image: string;
+  quantity: number;
+  // Add other properties as needed
+}
+// australia
+export const AustraliaXboxProducts: XboxProduct[] = [
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "xbox $30 (AU)",
+    price: 22.66,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+];

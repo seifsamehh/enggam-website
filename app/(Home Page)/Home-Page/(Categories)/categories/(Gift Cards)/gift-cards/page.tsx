@@ -54,6 +54,8 @@ import {
   UKPsnProducts,
   USPsnProducts,
   GlobalRazerProducts,
+  XboxProduct,
+  AustraliaXboxProducts,
 } from "@/common/GiftProducts";
 import { addToCart } from "@/slices/cartSlice";
 import { Toaster, toast } from "sonner";
@@ -110,6 +112,13 @@ export default function page() {
     dispatch(addToCart(PsnProduct));
     toast.success("Successfully added to cart", {
       description: `${PsnProduct.name} has been added to your cart.`,
+    });
+  };
+  // xbox products
+  const handleAddToCartXbox = (XboxProduct: XboxProduct) => {
+    dispatch(addToCart(XboxProduct));
+    toast.success("Successfully added to cart", {
+      description: `${XboxProduct.name} has been added to your cart.`,
     });
   };
   return (
@@ -3431,6 +3440,87 @@ export default function page() {
                                 </div>
                               </div>
                             ))}
+                          </div>
+                        </CardBody>
+                      </Card>
+                    </Tab>
+                  </Tabs>
+                </CardBody>
+              </Card>
+            </Tab>
+            {/* xbox tab */}
+            <Tab key="Xbox" title="Xbox">
+              <Card className="max-w-7xl">
+                <CardBody>
+                  <Tabs aria-label="Options" size="lg" className="tabs">
+                    {/* australia */}
+                    <Tab key="Australia" title="Australia">
+                      <Card className="max-w-7xl">
+                        <CardBody>
+                          <div className="australia-cards flex justify-center items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
+                            {AustraliaXboxProducts.map(
+                              (XboxProduct: XboxProduct) => (
+                                <div
+                                  key={XboxProduct.id}
+                                  className="box relative w-full md:max-w-xs overflow-hidden rounded-lg bg-white p-4"
+                                >
+                                  <Image
+                                    src={XboxProduct.image}
+                                    alt={XboxProduct.name}
+                                    aria-label={XboxProduct.name}
+                                    width={500}
+                                    height={500}
+                                    loading="lazy"
+                                    placeholder="blur"
+                                    blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
+                                  />
+                                  <div className="mt-4 pb-5">
+                                    <h5 className="text-xl font-semibold tracking-tight text-slate-900 my-4">
+                                      {XboxProduct.name}
+                                    </h5>
+                                    <div className="flex items-center justify-between">
+                                      <p className="text-2xl font-bold text-slate-900">
+                                        {XboxProduct.price} $
+                                      </p>
+                                      {cartItems.find(
+                                        (item: { id: number }) =>
+                                          item.id === XboxProduct.id
+                                      ) ? (
+                                        <button
+                                          disabled
+                                          className="flex items-center rounded-md bg-[#0056b3] px-5 py-2.5 text-center text-sm font-medium text-white focus:outline-none focus:ring-4 focus:ring-blue-300"
+                                        >
+                                          Added to Cart
+                                        </button>
+                                      ) : (
+                                        <button
+                                          onClick={() =>
+                                            handleAddToCartXbox(XboxProduct)
+                                          }
+                                          className="flex items-center rounded-md bg-[#0056b3] px-5 py-2.5 text-center text-sm font-medium text-white focus:outline-none focus:ring-4 focus:ring-blue-300"
+                                        >
+                                          <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            className="mr-2 h-6 w-6"
+                                            fill="none"
+                                            viewBox="0 0 24 24"
+                                            stroke="currentColor"
+                                            strokeWidth="2"
+                                          >
+                                            <path
+                                              strokeLinecap="round"
+                                              strokeLinejoin="round"
+                                              d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                                            />
+                                          </svg>
+                                          Add to Cart
+                                        </button>
+                                      )}
+                                    </div>
+                                  </div>
+                                </div>
+                              )
+                            )}
                           </div>
                         </CardBody>
                       </Card>
