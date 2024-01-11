@@ -121,24 +121,18 @@ const CartPage = () => {
     handleSubmit();
   };
   const handleSubmit = () => {
-    // Redirect to another URL
     router.push("/Home-Page/success");
-    // Wait for the redirect to complete before proceeding
     setTimeout(() => {
-      // Make confetti
       confetti({
         particleCount: 100,
         startVelocity: 30,
         spread: 360,
         origin: {
           x: Math.random(),
-          // since they fall down, start a bit higher than random
           y: Math.random() - 0.2,
         },
       });
-      // Wait for the confetti to finish before proceeding
       setTimeout(() => {
-        // Clear the cart
         dispatch(resetCart());
       }, 1000); // Adjust the delay as needed
     }, 0);
@@ -353,7 +347,7 @@ const CartPage = () => {
                 >
                   <ModalContent>
                     {(onClose) => (
-                      <form onSubmit={sendMail}>
+                      <form onSubmit={sendMail} className="bg-white">
                         <ModalHeader className="flex flex-col gap-1">
                           <h4 className={`${raleway.className} text-2xl`}>
                             ENGGAM Wallet
