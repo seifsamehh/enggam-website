@@ -161,12 +161,6 @@ export default function RootLayout({
             <Parallax>{children}</Parallax>
           </Providers>
           <CrispChat />
-          {/* <Script
-            id="live chat"
-            src="https://embed.tawk.to/64c418e5cc26a871b02bddaa/1h6f02gqc"
-            defer
-            rel="preload"
-          /> */}
           <Analytics />
         </body>
       </html>
