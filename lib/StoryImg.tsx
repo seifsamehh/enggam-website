@@ -7,11 +7,12 @@ export default function StoryImg() {
   return (
     <ScrollParallax strength={-0.5}>
       <Image
-        src="/maskable_icon.png"
+        src="/enggam-image.webp"
         alt="story image"
         aria-label="story image"
-        width={300}
-        height={300}
+        className="rounded-md"
+        width={500}
+        height={500}
         loading="lazy"
         placeholder="blur"
         blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="

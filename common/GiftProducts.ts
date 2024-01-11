@@ -3087,12 +3087,714 @@ export interface XboxProduct {
   quantity: number;
   // Add other properties as needed
 }
+// uk
+export const UKXboxProducts: XboxProduct[] = [
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "£5 Xbox Live Card United Kingdom (UK)",
+    price: 7.0,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "£10 Xbox Live Card United Kingdom (UK)",
+    price: 12.36,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "£15 Xbox Live Card United Kingdom (UK)",
+    price: 18.54,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "£20 Xbox Live Card United Kingdom (UK)",
+    price: 24.2,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "£25 Xbox Live Card United Kingdom (UK)",
+    price: 30.9,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "£50 Xbox Live Card United Kingdom (UK)",
+    price: 62.0,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+];
+// us
+export const USXboxProducts: XboxProduct[] = [
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "$5 Xbox Live Gift Card (US)",
+    price: 5.0,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "$10 Xbox Live Gift Card (US)",
+    price: 9.78,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "$15 Xbox Live Gift Card (US)",
+    price: 14.62,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "$20 Xbox Live Gift Card (US)",
+    price: 19.57,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "$25 Xbox Live Gift Card (US)",
+    price: 25.75,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "$50 Xbox Live Gift Card (US)",
+    price: 48.41,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "$100 Xbox Live Gift Card (US)",
+    price: 96.82,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+];
+// canda
+export const CandaXboxProducts: XboxProduct[] = [
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "15CAD Xbox Live card Canada (CA)",
+    price: 11.84,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "25CAD Xbox Live card Canada (CA)",
+    price: 20.08,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "50CAD Xbox Live card Canada (CA)",
+    price: 36.14,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "75CAD Xbox Live card Canada (CA)",
+    price: 57.16,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "100CAD Xbox Live card Canada (CA)",
+    price: 77.25,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+];
+// emirates
+export const EmiratesXboxProducts: XboxProduct[] = [
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "59 AED Xbox Live Card United Arab Emirates (15 USD)",
+    price: 16.99,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "99 AED Xbox Live Card United Arab Emirates (15 USD)",
+    price: 27.81,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "199 AED Xbox Live Card United Arab Emirates (15 USD)",
+    price: 52.0,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+];
+// Saudi
+export const SaudiXboxProducts: XboxProduct[] = [
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "50 SAR Xbox Live Card Saudi Arabia (SA)",
+    price: 14.42,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "100 SAR Xbox Live Card Saudi Arabia (SA)",
+    price: 26.95,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "200 SAR Xbox Live Card Saudi Arabia (SA)",
+    price: 56.65,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "300 SAR Xbox Live Card Saudi Arabia (SA)",
+    price: 82.4,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+];
+// brazil
+export const BrazilXboxProducts: XboxProduct[] = [
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "5 BRL Xbox Live Card Brazil (BR)",
+    price: 1.33,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "10 BRL Xbox Live Card Brazil (BR)",
+    price: 2.26,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "15 BRL Xbox Live Card Brazil (BR)",
+    price: 3.39,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "20 BRL Xbox Live Card Brazil (BR)",
+    price: 4.53,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "25 BRL Xbox Live Card Brazil (BR)",
+    price: 5.66,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "50 BRL Xbox Live Card Brazil (BR)",
+    price: 10.6,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "60 BRL Xbox Live Card Brazil (BR)",
+    price: 12.36,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "70 BRL Xbox Live Card Brazil (BR)",
+    price: 15.65,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "100 BRL Xbox Live Card Brazil (BR)",
+    price: 21.0,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "200 BRL Xbox Live Card Brazil (BR)",
+    price: 41.2,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+];
 // australia
 export const AustraliaXboxProducts: XboxProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
-    name: "xbox $30 (AU)",
-    price: 22.66,
+    name: "15 AUD Xbox Live Card Australia (AU)",
+    price: 10.81,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "25 AUD Xbox Live Card Australia (AU)",
+    price: 18.54,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "50 AUD Xbox Live Card Australia (AU)",
+    price: 36.05,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "100 AUD Xbox Live Card Australia (AU)",
+    price: 71.07,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+];
+// japan
+export const JapanXboxProducts: XboxProduct[] = [
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "¥5000 Xbox Live Card Japan (JP)",
+    price: 51.5,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "¥10000 Xbox Live Card Japan (JP)",
+    price: 199.9,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+];
+
+// xbox live gold
+export interface XboxGoldProduct {
+  id: number;
+  name: string;
+  price: number;
+  image: string;
+  quantity: number;
+  // Add other properties as needed
+}
+// us
+export const USXboxGoldProducts: XboxGoldProduct[] = [
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Xbox Live Gold 1 Month Subscription (US)",
+    price: 10.3,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Xbox Live Gold 3 Month Subscription (US)",
+    price: 23.17,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Xbox Live Gold 12 Month Subscription (US)",
+    price: 56.65,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+];
+// canda
+export const CandaXboxGoldProducts: XboxGoldProduct[] = [
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "3 Months Subscription Xbox Live Gold (CA)",
+    price: 24.2,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "6 Months Subscription Xbox Live Gold (CA)",
+    price: 33.99,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "12 Months Subscription Xbox Live Gold (CA)",
+    price: 50.47,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+];
+// saudi
+export const SaudiXboxGoldProducts: XboxGoldProduct[] = [
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "3 Months Subscription Xbox Live Gold (KSA)",
+    price: 28.84,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "12 Months Subscription Xbox Live Gold (KSA)",
+    price: 61.8,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+];
+// turkey
+export const TurkeyXboxGoldProducts: XboxGoldProduct[] = [
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "3 Months Xbox Live Gold Subscription (TR)",
+    price: 16.99,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "12 Months Xbox Live Gold Subscription (TR)",
+    price: 38.11,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+];
+// brazil
+export const BrazilXboxGoldProducts: XboxGoldProduct[] = [
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Xbox Live Gold 3 Month Subscription (BR)",
+    price: 17.51,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Xbox Live Gold 12 Month Subscription (BR)",
+    price: 43.26,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+];
+// singapore
+export const SingaporeXboxGoldProducts: XboxGoldProduct[] = [
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Xbox Live Gold 1 Month Subscription (SG)",
+    price: 12.87,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Xbox Live Gold 3 Month Subscription (SG)",
+    price: 26.78,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+];
+
+// xbox Game
+export interface XboxGameProduct {
+  id: number;
+  name: string;
+  price: number;
+  image: string;
+  quantity: number;
+  // Add other properties as needed
+}
+// brazil
+export const BrazilXboxGameProducts: XboxGameProduct[] = [
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Xbox Game Pass PC 3 Meses",
+    price: 20.6,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+];
+// us
+export const USXboxGameProducts: XboxGameProduct[] = [
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "3 Months Xbox Game Pass Subscription (USA)",
+    price: 29.87,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "6 Months Xbox Game Pass Subscription (USA)",
+    price: 59.74,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+];
+// emirates
+export const EmiratesXboxGameProducts: XboxGameProduct[] = [
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "3 Months Xbox Game Pass Subscription (UAE)",
+    price: 33.99,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "6 Months Xbox Game Pass Subscription (UAE)",
+    price: 66.95,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+];
+// saudi
+export const SaudiXboxGameProducts: XboxGameProduct[] = [
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "3 Months Xbox Game Pass Subscription (KSA)",
+    price: 33.99,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "6 Months Xbox Game Pass Subscription (KSA)",
+    price: 63.86,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+];
+
+// xbox ultimate
+export interface XboxUltimateProduct {
+  id: number;
+  name: string;
+  price: number;
+  image: string;
+  quantity: number;
+  // Add other properties as needed
+}
+// brazil
+export const BrazilXboxUltimateProducts: XboxUltimateProduct[] = [
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Xbox GamePass Utimate Brazil 1 Month",
+    price: 9.27,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Xbox GamePass Utimate Brazil 3 Month",
+    price: 27.81,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+];
+// us
+export const USXboxUltimateProducts: XboxUltimateProduct[] = [
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "1 Month Xbox Game Pass Ultimate Subscription (USA)",
+    price: 15.45,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "3 Month Xbox Game Pass Ultimate Subscription (USA)",
+    price: 40.17,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+];
+// europe
+export const EuropeXboxUltimateProducts: XboxUltimateProduct[] = [
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "1 Month Xbox Game Pass Ultimate Subscription (EU)",
+    price: 15.45,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "3 Month Xbox Game Pass Ultimate Subscription (EU)",
+    price: 31.93,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+];
+// emirates
+export const EmiratesXboxUltimateProducts: XboxUltimateProduct[] = [
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "1 Month Xbox Game Pass Ultimate Subscription (UAE)",
+    price: 16.99,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "3 Month Xbox Game Pass Ultimate Subscription (UAE)",
+    price: 47.38,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+];
+// saudi
+export const SaudiXboxUltimateProducts: XboxUltimateProduct[] = [
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "1 Month Xbox Game Pass Ultimate Subscription",
+    price: 16.99,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "3 Month Xbox Game Pass Ultimate Subscription",
+    price: 47.38,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+];
+// turkey
+export const TurkeyXboxUltimateProducts: XboxUltimateProduct[] = [
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "1 Month Xbox Game Pass Ultimate (TR)",
+    price: 13.9,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "3 Month Xbox Game Pass Ultimate (TR)",
+    price: 29.87,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+];
+// russia
+export const RussiaXboxUltimateProducts: XboxUltimateProduct[] = [
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "1 Months Xbox Game Pass Ultimate Subscription (RU)",
+    price: 14.42,
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "3 Months Xbox Game Pass Ultimate Subscription (RU)",
+    price: 37.0,
     image: "/xbox-card.webp",
     quantity: 0,
     // Add other properties as needed
