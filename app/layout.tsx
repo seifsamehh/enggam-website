@@ -7,7 +7,6 @@ import { Providers } from "./providers";
 import type { Metadata } from "next";
 import { PT_Serif } from "next/font/google";
 import CrispChat from "@/components/CrispChat";
-import Head from "next/head";
 import Script from "next/script";
 
 const ptSerif = PT_Serif({

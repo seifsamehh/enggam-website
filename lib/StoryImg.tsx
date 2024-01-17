@@ -7,7 +7,7 @@ export default function StoryImg() {
   return (
     <ScrollParallax strength={-0.5}>
       <Image
-        src="/enggam-image.webp"
+        src="/story.webp"
         alt="story image"
         aria-label="story image"
         className="rounded-md"
