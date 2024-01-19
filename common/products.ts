@@ -54,4 +54,49 @@ export const products: Product[] = [
     quantity: 0,
     // Add other properties as needed
   },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Fortnite 1000 V-Bucks Card (United State)",
+    price: 28.84,
+    delete: "29.90",
+    image: "/Fortnite-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "BRL100 Riot Points Gift Card Brazil",
+    price: 25.75,
+    delete: "27.00",
+    image: "/mobile-legends-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "5800RP Riot Points Gift Card Turkey",
+    price: 21.1,
+    delete: "22.50",
+    image: "/mobile-legends-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "1500 diamonds freefire Brazil R$150",
+    price: 10.81,
+    delete: "11.50",
+    image: "/freefire-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Yalla Ludo 56,000 Diamonds",
+    price: 107.12,
+    delete: "110.60",
+    image: "/Yalla-ludo-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
 ];

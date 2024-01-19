@@ -180,4 +180,193 @@ export const SaleProducts: SalePageProduct[] = [
     quantity: 0,
     // Add other properties as needed
   },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Fortnite 1000 V-Bucks Card (United State)",
+    price: 28.84,
+    delete: "29.90",
+    image: "/Fortnite-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "BRL100 Riot Points Gift Card Brazil",
+    price: 25.75,
+    delete: "27.00",
+    image: "/mobile-legends-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "5800RP Riot Points Gift Card Turkey",
+    price: 21.1,
+    delete: "22.50",
+    image: "/mobile-legends-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "1500 diamonds freefire Brazil R$150",
+    price: 10.81,
+    delete: "11.50",
+    image: "/freefire-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Yalla Ludo 56,000 Diamonds",
+    price: 107.12,
+    delete: "110.60",
+    image: "/Yalla-ludo-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PUBG 6000+2100 UC (Global) Code",
+    price: 87.55,
+    delete: "90.00",
+    image: "/pubg-mobile-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Netflix 25 GBP (UK)",
+    price: 41.2,
+    delete: "42.60",
+    image: "/netflix-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Netflix 25 GBP (UK)",
+    price: 41.2,
+    delete: "42.60",
+    image: "/netflix-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Netflix 60 USD (US)",
+    price: 63.3,
+    delete: "65.00",
+    image: "/netflix-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PSN $30 (UAE)",
+    price: 29.87,
+    delete: "31.00",
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PSN $30 (KW)",
+    price: 30.2,
+    delete: "31.20",
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Xbox Live Gold 3 Month Subscription (US)",
+    price: 23.17,
+    delete: "24.50",
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "£10 Xbox Live Card United Kingdom (UK)",
+    price: 12.36,
+    delete: "13.60",
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "£50 Xbox Live Card United Kingdom (UK)",
+    price: 62.0,
+    delete: "64.00",
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "£20 Xbox Live Card United Kingdom (UK)",
+    price: 24.2,
+    delete: "25.20",
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "25CAD Xbox Live card Canada (CA)",
+    price: 20.08,
+    delete: "21.20",
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "100CAD Xbox Live card Canada (CA)",
+    price: 77.25,
+    delete: "78.50",
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "¥10000 Xbox Live Card Japan (JP)",
+    price: 199.9,
+    delete: "202.20",
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PUBG 24300 UC (Global) Code",
+    price: 265.74,
+    delete: "267.20",
+    image: "/pubg-mobile-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PUBG 1500+300 UC (Global) Code",
+    price: 22.3,
+    delete: "23.50",
+    image: "/pubg-mobile-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "6000 Diamonds-Mobile Legends Global",
+    price: 102.48,
+    delete: "104.68",
+    image: "/mobile-legends-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
 ];
