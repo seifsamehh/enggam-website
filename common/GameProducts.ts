@@ -470,6 +470,219 @@ export const RobloxUSProducts: RobloxProduct[] = [
     // Add other properties as needed
   },
 ];
+// australia
+export const RobloxAustraliaProducts: RobloxProduct[] = [
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "AUD 10 Roblox (Australia)",
+    price: 7.72,
+    image: "/Roblox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "AUD 25 Roblox (Australia)",
+    price: 18.54,
+    image: "/Roblox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "AUD 50 Roblox (Australia)",
+    price: 36.56,
+    image: "/Roblox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "AUD 100 Roblox (Australia)",
+    price: 73.1,
+    image: "/Roblox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+];
+// brazil
+export const RobloxBrazilProducts: RobloxProduct[] = [
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "BRL 25 Roblox (Brazil)",
+    price: 5.66,
+    image: "/Roblox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "BRL 40 Roblox (Brazil)",
+    price: 9.1,
+    image: "/Roblox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "BRL 60 Roblox (Brazil)",
+    price: 12.87,
+    image: "/Roblox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "BRL 100 Roblox (Brazil)",
+    price: 21.83,
+    image: "/Roblox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+];
+// Canda
+export const RobloxCandaProducts: RobloxProduct[] = [
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "CAD15 Roblox (Canada)",
+    price: 11.84,
+    image: "/Roblox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "CAD25 Roblox (Canada)",
+    price: 19.3,
+    image: "/Roblox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "CAD50 Roblox (Canada)",
+    price: 38.6,
+    image: "/Roblox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "CAD100 Roblox (Canada)",
+    price: 76.2,
+    image: "/Roblox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "CAD150 Roblox (Canada)",
+    price: 113.8,
+    image: "/Roblox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "CAD200 Roblox (Canada)",
+    price: 152.13,
+    image: "/Roblox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+];
+// France
+export const RobloxFranceProducts: RobloxProduct[] = [
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "€10 Roblox (France)",
+    price: 11.3,
+    image: "/Roblox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "€20 Roblox (France)",
+    price: 22.66,
+    image: "/Roblox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "€50 Roblox (France)",
+    price: 52.0,
+    image: "/Roblox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+];
+// Germany
+export const RobloxGermanyProducts: RobloxProduct[] = [
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "€10 Roblox (Germany)",
+    price: 10.6,
+    image: "/Roblox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "€20 Roblox (Germany)",
+    price: 20.9,
+    image: "/Roblox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "€50 Roblox (Germany)",
+    price: 51.5,
+    image: "/Roblox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+];
+// Malaysia
+export const RobloxMalaysiaProducts: RobloxProduct[] = [
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "RM50 Roblox (Malaysia)",
+    price: 11.84,
+    image: "/Roblox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "RM125 Roblox (Malaysia)",
+    price: 29.3,
+    image: "/Roblox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+];
+// Singapore
+export const RobloxSingaporeProducts: RobloxProduct[] = [
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "SGD30 Roblox (Singapore)",
+    price: 25.75,
+    image: "/Roblox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "SGD75 Roblox (Singapore)",
+    price: 59.74,
+    image: "/Roblox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+];
 
 // fortnite
 export interface FortniteProduct {

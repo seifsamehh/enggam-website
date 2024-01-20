@@ -37,6 +37,13 @@ import {
   MobileDiamondsTopUpProducts,
   LudoProduct,
   LudoGlobalProducts,
+  RobloxAustraliaProducts,
+  RobloxBrazilProducts,
+  RobloxCandaProducts,
+  RobloxFranceProducts,
+  RobloxGermanyProducts,
+  RobloxMalaysiaProducts,
+  RobloxSingaporeProducts,
 } from "@/common/GameProducts";
 import { addToCart } from "@/slices/cartSlice";
 import { Toaster, toast } from "sonner";
@@ -879,6 +886,510 @@ export default function page() {
                         <CardBody>
                           <div className="master-cards flex justify-center items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
                             {RobloxUSProducts.map(
+                              (RobloxProduct: RobloxProduct) => (
+                                <div
+                                  key={RobloxProduct.id}
+                                  className="box relative w-full md:max-w-xs overflow-hidden rounded-lg bg-white p-4"
+                                >
+                                  <Image
+                                    src={RobloxProduct.image}
+                                    alt={RobloxProduct.name}
+                                    aria-label={RobloxProduct.name}
+                                    width={500}
+                                    height={500}
+                                    loading="lazy"
+                                    placeholder="blur"
+                                    blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
+                                  />
+                                  <div className="mt-4 pb-5">
+                                    <h5 className="text-xl font-semibold tracking-tight text-slate-900 my-4">
+                                      {RobloxProduct.name}
+                                    </h5>
+                                    <div className="flex items-center justify-between">
+                                      <p className="text-2xl font-bold text-slate-900">
+                                        {RobloxProduct.price} $
+                                      </p>
+                                      {cartItems.find(
+                                        (item: { id: number }) =>
+                                          item.id === RobloxProduct.id
+                                      ) ? (
+                                        <button
+                                          disabled
+                                          className="flex items-center rounded-md bg-[#0056b3] px-5 py-2.5 text-center text-sm font-medium text-white focus:outline-none focus:ring-4 focus:ring-blue-300"
+                                        >
+                                          Added to Cart
+                                        </button>
+                                      ) : (
+                                        <button
+                                          onClick={() =>
+                                            handleAddToCartRoblox(RobloxProduct)
+                                          }
+                                          className="flex items-center rounded-md bg-[#0056b3] px-5 py-2.5 text-center text-sm font-medium text-white focus:outline-none focus:ring-4 focus:ring-blue-300"
+                                        >
+                                          <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            className="mr-2 h-6 w-6"
+                                            fill="none"
+                                            viewBox="0 0 24 24"
+                                            stroke="currentColor"
+                                            strokeWidth="2"
+                                          >
+                                            <path
+                                              strokeLinecap="round"
+                                              strokeLinejoin="round"
+                                              d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                                            />
+                                          </svg>
+                                          Add to Cart
+                                        </button>
+                                      )}
+                                    </div>
+                                  </div>
+                                </div>
+                              )
+                            )}
+                          </div>
+                        </CardBody>
+                      </Card>
+                    </Tab>
+                    {/* australia */}
+                    <Tab key="Australia" title="Australia">
+                      <Card className="max-w-7xl">
+                        <CardBody>
+                          <div className="master-cards flex justify-center items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
+                            {RobloxAustraliaProducts.map(
+                              (RobloxProduct: RobloxProduct) => (
+                                <div
+                                  key={RobloxProduct.id}
+                                  className="box relative w-full md:max-w-xs overflow-hidden rounded-lg bg-white p-4"
+                                >
+                                  <Image
+                                    src={RobloxProduct.image}
+                                    alt={RobloxProduct.name}
+                                    aria-label={RobloxProduct.name}
+                                    width={500}
+                                    height={500}
+                                    loading="lazy"
+                                    placeholder="blur"
+                                    blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
+                                  />
+                                  <div className="mt-4 pb-5">
+                                    <h5 className="text-xl font-semibold tracking-tight text-slate-900 my-4">
+                                      {RobloxProduct.name}
+                                    </h5>
+                                    <div className="flex items-center justify-between">
+                                      <p className="text-2xl font-bold text-slate-900">
+                                        {RobloxProduct.price} $
+                                      </p>
+                                      {cartItems.find(
+                                        (item: { id: number }) =>
+                                          item.id === RobloxProduct.id
+                                      ) ? (
+                                        <button
+                                          disabled
+                                          className="flex items-center rounded-md bg-[#0056b3] px-5 py-2.5 text-center text-sm font-medium text-white focus:outline-none focus:ring-4 focus:ring-blue-300"
+                                        >
+                                          Added to Cart
+                                        </button>
+                                      ) : (
+                                        <button
+                                          onClick={() =>
+                                            handleAddToCartRoblox(RobloxProduct)
+                                          }
+                                          className="flex items-center rounded-md bg-[#0056b3] px-5 py-2.5 text-center text-sm font-medium text-white focus:outline-none focus:ring-4 focus:ring-blue-300"
+                                        >
+                                          <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            className="mr-2 h-6 w-6"
+                                            fill="none"
+                                            viewBox="0 0 24 24"
+                                            stroke="currentColor"
+                                            strokeWidth="2"
+                                          >
+                                            <path
+                                              strokeLinecap="round"
+                                              strokeLinejoin="round"
+                                              d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                                            />
+                                          </svg>
+                                          Add to Cart
+                                        </button>
+                                      )}
+                                    </div>
+                                  </div>
+                                </div>
+                              )
+                            )}
+                          </div>
+                        </CardBody>
+                      </Card>
+                    </Tab>
+                    {/* Brazil */}
+                    <Tab key="Brazil" title="Brazil">
+                      <Card className="max-w-7xl">
+                        <CardBody>
+                          <div className="master-cards flex justify-center items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
+                            {RobloxBrazilProducts.map(
+                              (RobloxProduct: RobloxProduct) => (
+                                <div
+                                  key={RobloxProduct.id}
+                                  className="box relative w-full md:max-w-xs overflow-hidden rounded-lg bg-white p-4"
+                                >
+                                  <Image
+                                    src={RobloxProduct.image}
+                                    alt={RobloxProduct.name}
+                                    aria-label={RobloxProduct.name}
+                                    width={500}
+                                    height={500}
+                                    loading="lazy"
+                                    placeholder="blur"
+                                    blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
+                                  />
+                                  <div className="mt-4 pb-5">
+                                    <h5 className="text-xl font-semibold tracking-tight text-slate-900 my-4">
+                                      {RobloxProduct.name}
+                                    </h5>
+                                    <div className="flex items-center justify-between">
+                                      <p className="text-2xl font-bold text-slate-900">
+                                        {RobloxProduct.price} $
+                                      </p>
+                                      {cartItems.find(
+                                        (item: { id: number }) =>
+                                          item.id === RobloxProduct.id
+                                      ) ? (
+                                        <button
+                                          disabled
+                                          className="flex items-center rounded-md bg-[#0056b3] px-5 py-2.5 text-center text-sm font-medium text-white focus:outline-none focus:ring-4 focus:ring-blue-300"
+                                        >
+                                          Added to Cart
+                                        </button>
+                                      ) : (
+                                        <button
+                                          onClick={() =>
+                                            handleAddToCartRoblox(RobloxProduct)
+                                          }
+                                          className="flex items-center rounded-md bg-[#0056b3] px-5 py-2.5 text-center text-sm font-medium text-white focus:outline-none focus:ring-4 focus:ring-blue-300"
+                                        >
+                                          <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            className="mr-2 h-6 w-6"
+                                            fill="none"
+                                            viewBox="0 0 24 24"
+                                            stroke="currentColor"
+                                            strokeWidth="2"
+                                          >
+                                            <path
+                                              strokeLinecap="round"
+                                              strokeLinejoin="round"
+                                              d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                                            />
+                                          </svg>
+                                          Add to Cart
+                                        </button>
+                                      )}
+                                    </div>
+                                  </div>
+                                </div>
+                              )
+                            )}
+                          </div>
+                        </CardBody>
+                      </Card>
+                    </Tab>
+                    {/* Canda */}
+                    <Tab key="Canda" title="Canda">
+                      <Card className="max-w-7xl">
+                        <CardBody>
+                          <div className="master-cards flex justify-center items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
+                            {RobloxCandaProducts.map(
+                              (RobloxProduct: RobloxProduct) => (
+                                <div
+                                  key={RobloxProduct.id}
+                                  className="box relative w-full md:max-w-xs overflow-hidden rounded-lg bg-white p-4"
+                                >
+                                  <Image
+                                    src={RobloxProduct.image}
+                                    alt={RobloxProduct.name}
+                                    aria-label={RobloxProduct.name}
+                                    width={500}
+                                    height={500}
+                                    loading="lazy"
+                                    placeholder="blur"
+                                    blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
+                                  />
+                                  <div className="mt-4 pb-5">
+                                    <h5 className="text-xl font-semibold tracking-tight text-slate-900 my-4">
+                                      {RobloxProduct.name}
+                                    </h5>
+                                    <div className="flex items-center justify-between">
+                                      <p className="text-2xl font-bold text-slate-900">
+                                        {RobloxProduct.price} $
+                                      </p>
+                                      {cartItems.find(
+                                        (item: { id: number }) =>
+                                          item.id === RobloxProduct.id
+                                      ) ? (
+                                        <button
+                                          disabled
+                                          className="flex items-center rounded-md bg-[#0056b3] px-5 py-2.5 text-center text-sm font-medium text-white focus:outline-none focus:ring-4 focus:ring-blue-300"
+                                        >
+                                          Added to Cart
+                                        </button>
+                                      ) : (
+                                        <button
+                                          onClick={() =>
+                                            handleAddToCartRoblox(RobloxProduct)
+                                          }
+                                          className="flex items-center rounded-md bg-[#0056b3] px-5 py-2.5 text-center text-sm font-medium text-white focus:outline-none focus:ring-4 focus:ring-blue-300"
+                                        >
+                                          <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            className="mr-2 h-6 w-6"
+                                            fill="none"
+                                            viewBox="0 0 24 24"
+                                            stroke="currentColor"
+                                            strokeWidth="2"
+                                          >
+                                            <path
+                                              strokeLinecap="round"
+                                              strokeLinejoin="round"
+                                              d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                                            />
+                                          </svg>
+                                          Add to Cart
+                                        </button>
+                                      )}
+                                    </div>
+                                  </div>
+                                </div>
+                              )
+                            )}
+                          </div>
+                        </CardBody>
+                      </Card>
+                    </Tab>
+                    {/* France */}
+                    <Tab key="France" title="France">
+                      <Card className="max-w-7xl">
+                        <CardBody>
+                          <div className="master-cards flex justify-center items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
+                            {RobloxFranceProducts.map(
+                              (RobloxProduct: RobloxProduct) => (
+                                <div
+                                  key={RobloxProduct.id}
+                                  className="box relative w-full md:max-w-xs overflow-hidden rounded-lg bg-white p-4"
+                                >
+                                  <Image
+                                    src={RobloxProduct.image}
+                                    alt={RobloxProduct.name}
+                                    aria-label={RobloxProduct.name}
+                                    width={500}
+                                    height={500}
+                                    loading="lazy"
+                                    placeholder="blur"
+                                    blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
+                                  />
+                                  <div className="mt-4 pb-5">
+                                    <h5 className="text-xl font-semibold tracking-tight text-slate-900 my-4">
+                                      {RobloxProduct.name}
+                                    </h5>
+                                    <div className="flex items-center justify-between">
+                                      <p className="text-2xl font-bold text-slate-900">
+                                        {RobloxProduct.price} $
+                                      </p>
+                                      {cartItems.find(
+                                        (item: { id: number }) =>
+                                          item.id === RobloxProduct.id
+                                      ) ? (
+                                        <button
+                                          disabled
+                                          className="flex items-center rounded-md bg-[#0056b3] px-5 py-2.5 text-center text-sm font-medium text-white focus:outline-none focus:ring-4 focus:ring-blue-300"
+                                        >
+                                          Added to Cart
+                                        </button>
+                                      ) : (
+                                        <button
+                                          onClick={() =>
+                                            handleAddToCartRoblox(RobloxProduct)
+                                          }
+                                          className="flex items-center rounded-md bg-[#0056b3] px-5 py-2.5 text-center text-sm font-medium text-white focus:outline-none focus:ring-4 focus:ring-blue-300"
+                                        >
+                                          <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            className="mr-2 h-6 w-6"
+                                            fill="none"
+                                            viewBox="0 0 24 24"
+                                            stroke="currentColor"
+                                            strokeWidth="2"
+                                          >
+                                            <path
+                                              strokeLinecap="round"
+                                              strokeLinejoin="round"
+                                              d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                                            />
+                                          </svg>
+                                          Add to Cart
+                                        </button>
+                                      )}
+                                    </div>
+                                  </div>
+                                </div>
+                              )
+                            )}
+                          </div>
+                        </CardBody>
+                      </Card>
+                    </Tab>
+                    {/* Germany */}
+                    <Tab key="Germany" title="Germany">
+                      <Card className="max-w-7xl">
+                        <CardBody>
+                          <div className="master-cards flex justify-center items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
+                            {RobloxGermanyProducts.map(
+                              (RobloxProduct: RobloxProduct) => (
+                                <div
+                                  key={RobloxProduct.id}
+                                  className="box relative w-full md:max-w-xs overflow-hidden rounded-lg bg-white p-4"
+                                >
+                                  <Image
+                                    src={RobloxProduct.image}
+                                    alt={RobloxProduct.name}
+                                    aria-label={RobloxProduct.name}
+                                    width={500}
+                                    height={500}
+                                    loading="lazy"
+                                    placeholder="blur"
+                                    blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
+                                  />
+                                  <div className="mt-4 pb-5">
+                                    <h5 className="text-xl font-semibold tracking-tight text-slate-900 my-4">
+                                      {RobloxProduct.name}
+                                    </h5>
+                                    <div className="flex items-center justify-between">
+                                      <p className="text-2xl font-bold text-slate-900">
+                                        {RobloxProduct.price} $
+                                      </p>
+                                      {cartItems.find(
+                                        (item: { id: number }) =>
+                                          item.id === RobloxProduct.id
+                                      ) ? (
+                                        <button
+                                          disabled
+                                          className="flex items-center rounded-md bg-[#0056b3] px-5 py-2.5 text-center text-sm font-medium text-white focus:outline-none focus:ring-4 focus:ring-blue-300"
+                                        >
+                                          Added to Cart
+                                        </button>
+                                      ) : (
+                                        <button
+                                          onClick={() =>
+                                            handleAddToCartRoblox(RobloxProduct)
+                                          }
+                                          className="flex items-center rounded-md bg-[#0056b3] px-5 py-2.5 text-center text-sm font-medium text-white focus:outline-none focus:ring-4 focus:ring-blue-300"
+                                        >
+                                          <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            className="mr-2 h-6 w-6"
+                                            fill="none"
+                                            viewBox="0 0 24 24"
+                                            stroke="currentColor"
+                                            strokeWidth="2"
+                                          >
+                                            <path
+                                              strokeLinecap="round"
+                                              strokeLinejoin="round"
+                                              d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                                            />
+                                          </svg>
+                                          Add to Cart
+                                        </button>
+                                      )}
+                                    </div>
+                                  </div>
+                                </div>
+                              )
+                            )}
+                          </div>
+                        </CardBody>
+                      </Card>
+                    </Tab>
+                    {/* Malaysia */}
+                    <Tab key="Malaysia" title="Malaysia">
+                      <Card className="max-w-7xl">
+                        <CardBody>
+                          <div className="master-cards flex justify-center items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
+                            {RobloxMalaysiaProducts.map(
+                              (RobloxProduct: RobloxProduct) => (
+                                <div
+                                  key={RobloxProduct.id}
+                                  className="box relative w-full md:max-w-xs overflow-hidden rounded-lg bg-white p-4"
+                                >
+                                  <Image
+                                    src={RobloxProduct.image}
+                                    alt={RobloxProduct.name}
+                                    aria-label={RobloxProduct.name}
+                                    width={500}
+                                    height={500}
+                                    loading="lazy"
+                                    placeholder="blur"
+                                    blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
+                                  />
+                                  <div className="mt-4 pb-5">
+                                    <h5 className="text-xl font-semibold tracking-tight text-slate-900 my-4">
+                                      {RobloxProduct.name}
+                                    </h5>
+                                    <div className="flex items-center justify-between">
+                                      <p className="text-2xl font-bold text-slate-900">
+                                        {RobloxProduct.price} $
+                                      </p>
+                                      {cartItems.find(
+                                        (item: { id: number }) =>
+                                          item.id === RobloxProduct.id
+                                      ) ? (
+                                        <button
+                                          disabled
+                                          className="flex items-center rounded-md bg-[#0056b3] px-5 py-2.5 text-center text-sm font-medium text-white focus:outline-none focus:ring-4 focus:ring-blue-300"
+                                        >
+                                          Added to Cart
+                                        </button>
+                                      ) : (
+                                        <button
+                                          onClick={() =>
+                                            handleAddToCartRoblox(RobloxProduct)
+                                          }
+                                          className="flex items-center rounded-md bg-[#0056b3] px-5 py-2.5 text-center text-sm font-medium text-white focus:outline-none focus:ring-4 focus:ring-blue-300"
+                                        >
+                                          <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            className="mr-2 h-6 w-6"
+                                            fill="none"
+                                            viewBox="0 0 24 24"
+                                            stroke="currentColor"
+                                            strokeWidth="2"
+                                          >
+                                            <path
+                                              strokeLinecap="round"
+                                              strokeLinejoin="round"
+                                              d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                                            />
+                                          </svg>
+                                          Add to Cart
+                                        </button>
+                                      )}
+                                    </div>
+                                  </div>
+                                </div>
+                              )
+                            )}
+                          </div>
+                        </CardBody>
+                      </Card>
+                    </Tab>
+                    {/* Singapore */}
+                    <Tab key="Singapore" title="Singapore">
+                      <Card className="max-w-7xl">
+                        <CardBody>
+                          <div className="master-cards flex justify-center items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
+                            {RobloxSingaporeProducts.map(
                               (RobloxProduct: RobloxProduct) => (
                                 <div
                                   key={RobloxProduct.id}
