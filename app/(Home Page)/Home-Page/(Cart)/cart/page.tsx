@@ -445,7 +445,6 @@ const CartPage = () => {
                             <Radio value="Bm Online Wallet">
                               Bm Online Wallet
                             </Radio>
-                            <Radio value="Easy Pay">Easy Pay</Radio>
                           </RadioGroup>
                           <Divider />
                           <Textarea

@@ -59,16 +59,6 @@ export default function PartnersSlider2() {
             blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
           />
           <Image
-            src="/partner11.webp"
-            alt="partner"
-            aria-label="partner"
-            width={250}
-            height={250}
-            loading="lazy"
-            placeholder="blur"
-            blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
-          />
-          <Image
             src="/partner12.webp"
             alt="partner"
             aria-label="partner"
@@ -114,16 +104,6 @@ export default function PartnersSlider2() {
           />
           <Image
             src="/partner10.webp"
-            alt="partner"
-            aria-label="partner"
-            width={250}
-            height={250}
-            loading="lazy"
-            placeholder="blur"
-            blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
-          />
-          <Image
-            src="/partner11.webp"
             alt="partner"
             aria-label="partner"
             width={250}
