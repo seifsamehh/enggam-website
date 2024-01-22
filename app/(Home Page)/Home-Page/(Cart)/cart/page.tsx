@@ -289,18 +289,22 @@ const CartPage = () => {
             </div>
             <div className="right min-[290px]:min-h-full md:min-h-screen bg-[#ff474d] text-white p-4 min-[290px]:w-[90%] md:w-1/4 flex justify-around flex-col">
               <div className="user-data">
-                <h2 className={`${raleway.className} text-3xl mb-4`}>
+                <h2 className={`${raleway.className} text-3xl`}>
                   Welcome,
                   <br />
                   <span className="text-xl">{user.fullName}</span>
                 </h2>
-                <p>
+                <p className="my-4">
                   You can ship the order easily and choose the easiest and most
                   suitable payment method for all and send it to us and the
                   reply will be done as soon as possible so that it is done to
                   help you in everything and make the order come out as soon as
                   possible and you can communicate with us easily in order to
                   complete any order required and make it faster ...
+                </p>
+                <p>
+                  Note: <br /> Please Write a correct email for ease and speed
+                  of communicating with you.
                 </p>
               </div>
               <div className="checkout min-[290px]:mt-8 md:mt-0">
