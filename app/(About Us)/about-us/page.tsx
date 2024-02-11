@@ -411,7 +411,7 @@ const AboutPage = () => {
           </div>
           <div className="w-full right">
             <Image
-              src="/enggam-image.webp"
+              src="/story.webp"
               alt="enggam company"
               aria-label="enggam company"
               className="rounded-md"
