@@ -369,4 +369,211 @@ export const SaleProducts: SalePageProduct[] = [
     quantity: 0,
     // Add other properties as needed
   },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "AstroPay Card 100EGP",
+    price: 5.15,
+    delete: "5.60",
+    image: "/AstroPay-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "AstroPay Card 10000EGP",
+    price: 412,
+    delete: "415",
+    image: "/AstroPay-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Perfect Money 25$ Voucher  (EURO)",
+    price: 28.84,
+    delete: "29.50",
+    image: "/Perfect-Money.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Perfect Money 1000$ Voucher",
+    price: 1102.1,
+    delete: "1110.00",
+    image: "/Perfect-Money.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Neosurf Prepaid card 20 AUD",
+    price: 16.99,
+    delete: "17.50",
+    image: "/Neosurf.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Neosurf Prepaid card 50 EURO",
+    price: 60.77,
+    delete: "62.00",
+    image: "/Neosurf.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "BRL 100 Razer Gold",
+    price: 22.66,
+    delete: "24.00",
+    image: "/Razer-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "RM 20 Razer Gold (MY)",
+    price: 5.56,
+    delete: "6.50",
+    image: "/Razer-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "$25 Razer Gold Rixty (USA)",
+    price: 25.75,
+    delete: "26.50",
+    image: "/Razer-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "$150 Razer Gold Global",
+    price: 154.5,
+    delete: "156.00",
+    image: "/Razer-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "NOON  100SAR (SAUDI ARABIC)",
+    price: 29.59,
+    delete: "30.30",
+    image: "/noon.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "NOON 200AED (United Arab Emirates)",
+    price: 58.86,
+    delete: "60.00",
+    image: "/noon.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "EZPIN GIFT CARD 100$",
+    price: 112.4,
+    delete: "115.00",
+    image: "/ezpin.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Pubg New State 3600+250 NC",
+    price: 12.99,
+    delete: "14.50",
+    image: "/pubg-state.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Pubg New State 9300+930 NC",
+    price: 32.4,
+    delete: "33.50",
+    image: "/pubg-state.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Pubg New State 300 NC",
+    price: 1.0,
+    delete: "1.60",
+    image: "/pubg-state.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Jawaker 70000 Token (GLOBAL)",
+    price: 11.23,
+    delete: "12.50",
+    image: "/jawaker.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Jawaker 4250 Token (GLOBAL)",
+    price: 1.4,
+    delete: "2.30",
+    image: "/jawaker.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Garena 33 shells Rp 10.000 (ID)",
+    price: 0.86,
+    delete: "1.20",
+    image: "/garena.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "130 Shells Garena (MY)",
+    price: 3.0,
+    delete: "3.90",
+    image: "/garena.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Garena 150 shells 100 Baht (TH)",
+    price: 4.86,
+    delete: "5.20",
+    image: "/garena.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Garena Shells 1400 (TW)",
+    price: 39.96,
+    delete: "41.00",
+    image: "/garena.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Garena Shells (VN) 200K",
+    price: 10.8,
+    delete: "11.60",
+    image: "/garena.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
 ];
