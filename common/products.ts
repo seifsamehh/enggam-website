@@ -11,91 +11,91 @@ export interface Product {
 export const products: Product[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
-    name: "Free Fire 2200+220 Diamonds Pins",
-    price: 19.87,
-    delete: "20.20",
-    image: "/freefire-card.webp",
-    quantity: 0,
-    // Add other properties as needed
-  },
-  {
-    id: Math.floor(Math.random() * 1000) + 1,
-    name: "PUBG 600 + 60  UC (Global) Code",
-    price: 8.85,
-    delete: "9.50",
-    image: "/pubg-mobile-card.webp",
-    quantity: 0,
-    // Add other properties as needed
-  },
-  {
-    id: Math.floor(Math.random() * 1000) + 1,
-    name: "MyPrepaidCenter Mastercard 10 USD",
-    price: 11.33,
-    delete: "12.50",
-    image: "/MyPrepaid-Center.webp",
-    quantity: 0,
-    // Add other properties as needed
-  },
-  {
-    id: Math.floor(Math.random() * 1000) + 1,
-    name: "Google Play Gift Card USA 10 USD",
-    price: 10.2,
-    delete: "11.50",
-    image: "/GooglePlay-gift-card.webp",
-    quantity: 0,
-    // Add other properties as needed
-  },
-  {
-    id: Math.floor(Math.random() * 1000) + 1,
-    name: "iTunes USA 10$ Gift Card",
-    price: 9.99,
-    delete: "10.50",
-    image: "/iTunes-gift-card.webp",
-    quantity: 0,
-    // Add other properties as needed
-  },
-  {
-    id: Math.floor(Math.random() * 1000) + 1,
-    name: "Fortnite 1000 V-Bucks Card (United State)",
-    price: 28.84,
-    delete: "29.90",
-    image: "/Fortnite-card.webp",
-    quantity: 0,
-    // Add other properties as needed
-  },
-  {
-    id: Math.floor(Math.random() * 1000) + 1,
-    name: "BRL100 Riot Points Gift Card Brazil",
-    price: 25.75,
-    delete: "27.00",
-    image: "/mobile-legends-card.webp",
-    quantity: 0,
-    // Add other properties as needed
-  },
-  {
-    id: Math.floor(Math.random() * 1000) + 1,
-    name: "5800RP Riot Points Gift Card Turkey",
-    price: 21.1,
-    delete: "22.50",
-    image: "/mobile-legends-card.webp",
-    quantity: 0,
-    // Add other properties as needed
-  },
-  {
-    id: Math.floor(Math.random() * 1000) + 1,
-    name: "1500 diamonds freefire Brazil R$150",
-    price: 10.81,
-    delete: "11.50",
-    image: "/freefire-card.webp",
-    quantity: 0,
-    // Add other properties as needed
-  },
-  {
-    id: Math.floor(Math.random() * 1000) + 1,
     name: "Yalla Ludo 56,000 Diamonds",
     price: 107.12,
     delete: "110.60",
     image: "/Yalla-ludo-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "PSN $30 (KW)",
+    price: 30.2,
+    delete: "31.20",
+    image: "/Psn-gift-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "¥10000 Xbox Live Card Japan (JP)",
+    price: 199.9,
+    delete: "202.20",
+    image: "/xbox-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "AstroPay Card 10000EGP",
+    price: 412,
+    delete: "415",
+    image: "/AstroPay-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Neosurf Prepaid card 20 AUD",
+    price: 16.99,
+    delete: "17.50",
+    image: "/Neosurf.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "NOON  100SAR (SAUDI ARABIC)",
+    price: 29.59,
+    delete: "30.30",
+    image: "/noon.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "EZPIN GIFT CARD 100$",
+    price: 112.4,
+    delete: "115.00",
+    image: "/ezpin.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Pubg New State 300 NC",
+    price: 1.0,
+    delete: "1.60",
+    image: "/pubg-state.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Jawaker 4250 Token (GLOBAL)",
+    price: 1.4,
+    delete: "2.30",
+    image: "/jawaker.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Garena Shells (VN) 200K",
+    price: 10.8,
+    delete: "11.60",
+    image: "/garena.webp",
     quantity: 0,
     // Add other properties as needed
   },

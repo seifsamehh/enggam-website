@@ -26,17 +26,30 @@ import {
   USDVouchersPerfectProducts,
   WebMoneyProduct,
   WebMoneyProducts,
+  AmazonProduct,
+  AmazonProductSpecial,
+  AmazonUsaProducts,
+  AmazonUkProducts,
+  AmazonAustraliaProducts,
+  AmazonCandaProducts,
+  AmazonCandaSpecialProducts,
+  AmazonUAEProducts,
+  AmazonUAESpecialProducts,
+  AmazonIEProducts,
+  AmazonLUProducts,
+  AmazonGermanyProducts,
 } from "@/common/PaymentProducts";
 import { addToCart } from "@/slices/cartSlice";
 import { Toaster, toast } from "sonner";
 import Footer from "@/common/Footer";
 import HeaderHome from "@/lib/HeaderHome";
-import { Tabs, Tab, Card, CardBody } from "@nextui-org/react";
+import { Tabs, Tab, Card, CardBody, Chip } from "@nextui-org/react";
 import Image from "next/image";
 import { Raleway } from "next/font/google";
 
 const raleway = Raleway({ subsets: ["latin"], weight: "900", display: "swap" });
 import "../../../../../../../styles/giftCards.scss";
+import Link from "next/link";
 
 export default function page() {
   const cartItems = useSelector((state: RootState) => state.cart.items);
@@ -91,6 +104,14 @@ export default function page() {
     dispatch(addToCart(WebMoneyProduct));
     toast.success("Successfully added to cart", {
       description: `${WebMoneyProduct.name} has been added to your cart.`,
+    });
+  };
+
+  // amazon products
+  const handleAddToCartAmazon = (AmazonProduct: AmazonProduct) => {
+    dispatch(addToCart(AmazonProduct));
+    toast.success("Successfully added to cart", {
+      description: `${AmazonProduct.name} has been added to your cart.`,
     });
   };
   return (
@@ -1338,6 +1359,692 @@ export default function page() {
                       )
                     )}
                   </div>
+                </CardBody>
+              </Card>
+            </Tab>
+            {/* Amazon tab */}
+            <Tab key="Amazon" title="Amazon">
+              <Card className="max-w-7xl">
+                <CardBody>
+                  {/* inside Amazon */}
+                  <Tabs aria-label="Options" size="lg" className="tabs">
+                    {/* usa */}
+                    <Tab key="United States" title="United States">
+                      <Card className="max-w-7xl">
+                        <CardBody>
+                          <div className="usa-cards flex justify-center items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
+                            {AmazonUsaProducts.map(
+                              (AmazonProduct: AmazonProduct) => (
+                                <div
+                                  key={AmazonProduct.id}
+                                  className="box relative w-full md:max-w-xs overflow-hidden rounded-lg bg-white p-4"
+                                >
+                                  <Image
+                                    src={AmazonProduct.image}
+                                    alt={AmazonProduct.name}
+                                    aria-label={AmazonProduct.name}
+                                    width={500}
+                                    height={500}
+                                    loading="lazy"
+                                    placeholder="blur"
+                                    blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
+                                  />
+                                  <div className="mt-4 pb-5">
+                                    <h5 className="text-xl font-semibold tracking-tight text-slate-900 my-4">
+                                      {AmazonProduct.name}
+                                    </h5>
+                                    <div className="flex items-center justify-between">
+                                      <p className="text-2xl font-bold text-slate-900">
+                                        {AmazonProduct.price} $
+                                      </p>
+                                      {cartItems.find(
+                                        (item: { id: number }) =>
+                                          item.id === AmazonProduct.id
+                                      ) ? (
+                                        <button
+                                          disabled
+                                          className="flex items-center rounded-md bg-[#0056b3] px-5 py-2.5 text-center text-sm font-medium text-white focus:outline-none focus:ring-4 focus:ring-blue-300"
+                                        >
+                                          Added to Cart
+                                        </button>
+                                      ) : (
+                                        <button
+                                          onClick={() =>
+                                            handleAddToCartAmazon(AmazonProduct)
+                                          }
+                                          className="flex items-center rounded-md bg-[#0056b3] px-5 py-2.5 text-center text-sm font-medium text-white focus:outline-none focus:ring-4 focus:ring-blue-300"
+                                        >
+                                          <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            className="mr-2 h-6 w-6"
+                                            fill="none"
+                                            viewBox="0 0 24 24"
+                                            stroke="currentColor"
+                                            strokeWidth="2"
+                                          >
+                                            <path
+                                              strokeLinecap="round"
+                                              strokeLinejoin="round"
+                                              d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                                            />
+                                          </svg>
+                                          Add to Cart
+                                        </button>
+                                      )}
+                                    </div>
+                                  </div>
+                                </div>
+                              )
+                            )}
+                          </div>
+                        </CardBody>
+                      </Card>
+                    </Tab>
+                    {/* uk*/}
+                    <Tab key="United Kingdom" title="United Kingdom">
+                      <Card className="max-w-7xl">
+                        <CardBody>
+                          <div className="canda-cards flex justify-center items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
+                            {AmazonUkProducts.map(
+                              (AmazonProduct: AmazonProduct) => (
+                                <div
+                                  key={AmazonProduct.id}
+                                  className="box relative w-full md:max-w-xs overflow-hidden rounded-lg bg-white p-4"
+                                >
+                                  <Image
+                                    src={AmazonProduct.image}
+                                    alt={AmazonProduct.name}
+                                    aria-label={AmazonProduct.name}
+                                    width={500}
+                                    height={500}
+                                    loading="lazy"
+                                    placeholder="blur"
+                                    blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
+                                  />
+                                  <div className="mt-4 pb-5">
+                                    <h5 className="text-xl font-semibold tracking-tight text-slate-900 my-4">
+                                      {AmazonProduct.name}
+                                    </h5>
+                                    <div className="flex items-center justify-between">
+                                      <p className="text-2xl font-bold text-slate-900">
+                                        {AmazonProduct.price} $
+                                      </p>
+                                      {cartItems.find(
+                                        (item: { id: number }) =>
+                                          item.id === AmazonProduct.id
+                                      ) ? (
+                                        <button
+                                          disabled
+                                          className="flex items-center rounded-md bg-[#0056b3] px-5 py-2.5 text-center text-sm font-medium text-white focus:outline-none focus:ring-4 focus:ring-blue-300"
+                                        >
+                                          Added to Cart
+                                        </button>
+                                      ) : (
+                                        <button
+                                          onClick={() =>
+                                            handleAddToCartAmazon(AmazonProduct)
+                                          }
+                                          className="flex items-center rounded-md bg-[#0056b3] px-5 py-2.5 text-center text-sm font-medium text-white focus:outline-none focus:ring-4 focus:ring-blue-300"
+                                        >
+                                          <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            className="mr-2 h-6 w-6"
+                                            fill="none"
+                                            viewBox="0 0 24 24"
+                                            stroke="currentColor"
+                                            strokeWidth="2"
+                                          >
+                                            <path
+                                              strokeLinecap="round"
+                                              strokeLinejoin="round"
+                                              d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                                            />
+                                          </svg>
+                                          Add to Cart
+                                        </button>
+                                      )}
+                                    </div>
+                                  </div>
+                                </div>
+                              )
+                            )}
+                          </div>
+                        </CardBody>
+                      </Card>
+                    </Tab>
+                    {/* australia*/}
+                    <Tab key="Australia" title="Australia">
+                      <Card className="max-w-7xl">
+                        <CardBody>
+                          <div className="europe-cards flex justify-center items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
+                            {AmazonAustraliaProducts.map(
+                              (AmazonProduct: AmazonProduct) => (
+                                <div
+                                  key={AmazonProduct.id}
+                                  className="box relative w-full md:max-w-xs overflow-hidden rounded-lg bg-white p-4"
+                                >
+                                  <Image
+                                    src={AmazonProduct.image}
+                                    alt={AmazonProduct.name}
+                                    aria-label={AmazonProduct.name}
+                                    width={500}
+                                    height={500}
+                                    loading="lazy"
+                                    placeholder="blur"
+                                    blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
+                                  />
+                                  <div className="mt-4 pb-5">
+                                    <h5 className="text-xl font-semibold tracking-tight text-slate-900 my-4">
+                                      {AmazonProduct.name}
+                                    </h5>
+                                    <div className="flex items-center justify-between">
+                                      <p className="text-2xl font-bold text-slate-900">
+                                        {AmazonProduct.price} $
+                                      </p>
+                                      {cartItems.find(
+                                        (item: { id: number }) =>
+                                          item.id === AmazonProduct.id
+                                      ) ? (
+                                        <button
+                                          disabled
+                                          className="flex items-center rounded-md bg-[#0056b3] px-5 py-2.5 text-center text-sm font-medium text-white focus:outline-none focus:ring-4 focus:ring-blue-300"
+                                        >
+                                          Added to Cart
+                                        </button>
+                                      ) : (
+                                        <button
+                                          onClick={() =>
+                                            handleAddToCartAmazon(AmazonProduct)
+                                          }
+                                          className="flex items-center rounded-md bg-[#0056b3] px-5 py-2.5 text-center text-sm font-medium text-white focus:outline-none focus:ring-4 focus:ring-blue-300"
+                                        >
+                                          <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            className="mr-2 h-6 w-6"
+                                            fill="none"
+                                            viewBox="0 0 24 24"
+                                            stroke="currentColor"
+                                            strokeWidth="2"
+                                          >
+                                            <path
+                                              strokeLinecap="round"
+                                              strokeLinejoin="round"
+                                              d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                                            />
+                                          </svg>
+                                          Add to Cart
+                                        </button>
+                                      )}
+                                    </div>
+                                  </div>
+                                </div>
+                              )
+                            )}
+                          </div>
+                        </CardBody>
+                      </Card>
+                    </Tab>
+                    {/* Canda*/}
+                    <Tab key="Canda" title="Canda">
+                      <Card className="max-w-7xl">
+                        <CardBody>
+                          <div className="europe-cards flex justify-center items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
+                            {AmazonCandaProducts.map(
+                              (AmazonProduct: AmazonProduct) => (
+                                <div
+                                  key={AmazonProduct.id}
+                                  className="box relative w-full md:max-w-xs overflow-hidden rounded-lg bg-white p-4"
+                                >
+                                  <Image
+                                    src={AmazonProduct.image}
+                                    alt={AmazonProduct.name}
+                                    aria-label={AmazonProduct.name}
+                                    width={500}
+                                    height={500}
+                                    loading="lazy"
+                                    placeholder="blur"
+                                    blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
+                                  />
+                                  <div className="mt-4 pb-5">
+                                    <h5 className="text-xl font-semibold tracking-tight text-slate-900 my-4">
+                                      {AmazonProduct.name}
+                                    </h5>
+                                    <div className="flex items-center justify-between">
+                                      <p className="text-2xl font-bold text-slate-900">
+                                        {AmazonProduct.price} $
+                                      </p>
+                                      {cartItems.find(
+                                        (item: { id: number }) =>
+                                          item.id === AmazonProduct.id
+                                      ) ? (
+                                        <button
+                                          disabled
+                                          className="flex items-center rounded-md bg-[#0056b3] px-5 py-2.5 text-center text-sm font-medium text-white focus:outline-none focus:ring-4 focus:ring-blue-300"
+                                        >
+                                          Added to Cart
+                                        </button>
+                                      ) : (
+                                        <button
+                                          onClick={() =>
+                                            handleAddToCartAmazon(AmazonProduct)
+                                          }
+                                          className="flex items-center rounded-md bg-[#0056b3] px-5 py-2.5 text-center text-sm font-medium text-white focus:outline-none focus:ring-4 focus:ring-blue-300"
+                                        >
+                                          <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            className="mr-2 h-6 w-6"
+                                            fill="none"
+                                            viewBox="0 0 24 24"
+                                            stroke="currentColor"
+                                            strokeWidth="2"
+                                          >
+                                            <path
+                                              strokeLinecap="round"
+                                              strokeLinejoin="round"
+                                              d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                                            />
+                                          </svg>
+                                          Add to Cart
+                                        </button>
+                                      )}
+                                    </div>
+                                  </div>
+                                </div>
+                              )
+                            )}
+                          </div>
+                        </CardBody>
+                      </Card>
+                    </Tab>
+                    {/* Canda special*/}
+                    <Tab key="Canda special" title="Canda special">
+                      <Card className="max-w-7xl">
+                        <CardBody>
+                          <div className="canda-cards flex justify-center items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
+                            {AmazonCandaSpecialProducts.map(
+                              (AmazonProductSpecial: AmazonProductSpecial) => (
+                                <div
+                                  key={AmazonProductSpecial.id}
+                                  className="box relative w-full md:max-w-xs overflow-hidden rounded-lg bg-white p-4"
+                                >
+                                  <Image
+                                    src={AmazonProductSpecial.image}
+                                    alt={AmazonProductSpecial.name}
+                                    aria-label={AmazonProductSpecial.name}
+                                    width={500}
+                                    height={500}
+                                    loading="lazy"
+                                    placeholder="blur"
+                                    blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
+                                  />
+                                  <div className="mt-4 pb-5">
+                                    <h5 className="text-xl font-semibold tracking-tight text-slate-900 my-4">
+                                      {AmazonProductSpecial.name}
+                                    </h5>
+                                    <Chip color="danger">Contact Us</Chip>
+                                    <div className="flex items-center justify-between">
+                                      <p className="text-2xl font-bold text-slate-900">
+                                        {AmazonProductSpecial.price} $
+                                      </p>
+                                      <Link
+                                        href="mailto:enggam729@gmail.com"
+                                        target="_blank"
+                                        title="contact us"
+                                        className="rounded-md bg-[#0056b3] px-5 py-2.5 text-center text-sm font-medium text-white focus:outline-none focus:ring-4 focus:ring-blue-300"
+                                      >
+                                        Contact Us
+                                      </Link>
+                                    </div>
+                                  </div>
+                                </div>
+                              )
+                            )}
+                          </div>
+                        </CardBody>
+                      </Card>
+                    </Tab>
+                    {/* Germany */}
+                    <Tab key="Germany" title="Germany">
+                      <Card className="max-w-7xl">
+                        <CardBody>
+                          <div className="europe-cards flex justify-center items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
+                            {AmazonGermanyProducts.map(
+                              (AmazonProduct: AmazonProduct) => (
+                                <div
+                                  key={AmazonProduct.id}
+                                  className="box relative w-full md:max-w-xs overflow-hidden rounded-lg bg-white p-4"
+                                >
+                                  <Image
+                                    src={AmazonProduct.image}
+                                    alt={AmazonProduct.name}
+                                    aria-label={AmazonProduct.name}
+                                    width={500}
+                                    height={500}
+                                    loading="lazy"
+                                    placeholder="blur"
+                                    blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
+                                  />
+                                  <div className="mt-4 pb-5">
+                                    <h5 className="text-xl font-semibold tracking-tight text-slate-900 my-4">
+                                      {AmazonProduct.name}
+                                    </h5>
+                                    <div className="flex items-center justify-between">
+                                      <p className="text-2xl font-bold text-slate-900">
+                                        {AmazonProduct.price} $
+                                      </p>
+                                      {cartItems.find(
+                                        (item: { id: number }) =>
+                                          item.id === AmazonProduct.id
+                                      ) ? (
+                                        <button
+                                          disabled
+                                          className="flex items-center rounded-md bg-[#0056b3] px-5 py-2.5 text-center text-sm font-medium text-white focus:outline-none focus:ring-4 focus:ring-blue-300"
+                                        >
+                                          Added to Cart
+                                        </button>
+                                      ) : (
+                                        <button
+                                          onClick={() =>
+                                            handleAddToCartAmazon(AmazonProduct)
+                                          }
+                                          className="flex items-center rounded-md bg-[#0056b3] px-5 py-2.5 text-center text-sm font-medium text-white focus:outline-none focus:ring-4 focus:ring-blue-300"
+                                        >
+                                          <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            className="mr-2 h-6 w-6"
+                                            fill="none"
+                                            viewBox="0 0 24 24"
+                                            stroke="currentColor"
+                                            strokeWidth="2"
+                                          >
+                                            <path
+                                              strokeLinecap="round"
+                                              strokeLinejoin="round"
+                                              d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                                            />
+                                          </svg>
+                                          Add to Cart
+                                        </button>
+                                      )}
+                                    </div>
+                                  </div>
+                                </div>
+                              )
+                            )}
+                          </div>
+                        </CardBody>
+                      </Card>
+                    </Tab>
+                    {/* Uae*/}
+                    <Tab
+                      key="United Arab Emirates"
+                      title="United Arab Emirates"
+                    >
+                      <Card className="max-w-7xl">
+                        <CardBody>
+                          <div className="europe-cards flex justify-center items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
+                            {AmazonUAEProducts.map(
+                              (AmazonProduct: AmazonProduct) => (
+                                <div
+                                  key={AmazonProduct.id}
+                                  className="box relative w-full md:max-w-xs overflow-hidden rounded-lg bg-white p-4"
+                                >
+                                  <Image
+                                    src={AmazonProduct.image}
+                                    alt={AmazonProduct.name}
+                                    aria-label={AmazonProduct.name}
+                                    width={500}
+                                    height={500}
+                                    loading="lazy"
+                                    placeholder="blur"
+                                    blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
+                                  />
+                                  <div className="mt-4 pb-5">
+                                    <h5 className="text-xl font-semibold tracking-tight text-slate-900 my-4">
+                                      {AmazonProduct.name}
+                                    </h5>
+                                    <div className="flex items-center justify-between">
+                                      <p className="text-2xl font-bold text-slate-900">
+                                        {AmazonProduct.price} $
+                                      </p>
+                                      {cartItems.find(
+                                        (item: { id: number }) =>
+                                          item.id === AmazonProduct.id
+                                      ) ? (
+                                        <button
+                                          disabled
+                                          className="flex items-center rounded-md bg-[#0056b3] px-5 py-2.5 text-center text-sm font-medium text-white focus:outline-none focus:ring-4 focus:ring-blue-300"
+                                        >
+                                          Added to Cart
+                                        </button>
+                                      ) : (
+                                        <button
+                                          onClick={() =>
+                                            handleAddToCartAmazon(AmazonProduct)
+                                          }
+                                          className="flex items-center rounded-md bg-[#0056b3] px-5 py-2.5 text-center text-sm font-medium text-white focus:outline-none focus:ring-4 focus:ring-blue-300"
+                                        >
+                                          <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            className="mr-2 h-6 w-6"
+                                            fill="none"
+                                            viewBox="0 0 24 24"
+                                            stroke="currentColor"
+                                            strokeWidth="2"
+                                          >
+                                            <path
+                                              strokeLinecap="round"
+                                              strokeLinejoin="round"
+                                              d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                                            />
+                                          </svg>
+                                          Add to Cart
+                                        </button>
+                                      )}
+                                    </div>
+                                  </div>
+                                </div>
+                              )
+                            )}
+                          </div>
+                        </CardBody>
+                      </Card>
+                    </Tab>
+                    {/* uae special*/}
+                    <Tab
+                      key="United Arab Emirates special"
+                      title="United Arab Emirates special"
+                    >
+                      <Card className="max-w-7xl">
+                        <CardBody>
+                          <div className="uae-cards flex justify-center items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
+                            {AmazonUAESpecialProducts.map(
+                              (AmazonProductSpecial: AmazonProductSpecial) => (
+                                <div
+                                  key={AmazonProductSpecial.id}
+                                  className="box relative w-full md:max-w-xs overflow-hidden rounded-lg bg-white p-4"
+                                >
+                                  <Image
+                                    src={AmazonProductSpecial.image}
+                                    alt={AmazonProductSpecial.name}
+                                    aria-label={AmazonProductSpecial.name}
+                                    width={500}
+                                    height={500}
+                                    loading="lazy"
+                                    placeholder="blur"
+                                    blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
+                                  />
+                                  <div className="mt-4 pb-5">
+                                    <h5 className="text-xl font-semibold tracking-tight text-slate-900 my-4">
+                                      {AmazonProductSpecial.name}
+                                    </h5>
+                                    <Chip color="danger">Contact Us</Chip>
+                                    <div className="flex items-center justify-between">
+                                      <p className="text-2xl font-bold text-slate-900">
+                                        {AmazonProductSpecial.price} $
+                                      </p>
+                                      <Link
+                                        href="mailto:enggam729@gmail.com"
+                                        target="_blank"
+                                        title="contact us"
+                                        className="rounded-md bg-[#0056b3] px-5 py-2.5 text-center text-sm font-medium text-white focus:outline-none focus:ring-4 focus:ring-blue-300"
+                                      >
+                                        Contact Us
+                                      </Link>
+                                    </div>
+                                  </div>
+                                </div>
+                              )
+                            )}
+                          </div>
+                        </CardBody>
+                      </Card>
+                    </Tab>
+                    {/* Ireland*/}
+                    <Tab key="Ireland" title="Ireland">
+                      <Card className="max-w-7xl">
+                        <CardBody>
+                          <div className="europe-cards flex justify-center items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
+                            {AmazonIEProducts.map(
+                              (AmazonProduct: AmazonProduct) => (
+                                <div
+                                  key={AmazonProduct.id}
+                                  className="box relative w-full md:max-w-xs overflow-hidden rounded-lg bg-white p-4"
+                                >
+                                  <Image
+                                    src={AmazonProduct.image}
+                                    alt={AmazonProduct.name}
+                                    aria-label={AmazonProduct.name}
+                                    width={500}
+                                    height={500}
+                                    loading="lazy"
+                                    placeholder="blur"
+                                    blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
+                                  />
+                                  <div className="mt-4 pb-5">
+                                    <h5 className="text-xl font-semibold tracking-tight text-slate-900 my-4">
+                                      {AmazonProduct.name}
+                                    </h5>
+                                    <div className="flex items-center justify-between">
+                                      <p className="text-2xl font-bold text-slate-900">
+                                        {AmazonProduct.price} $
+                                      </p>
+                                      {cartItems.find(
+                                        (item: { id: number }) =>
+                                          item.id === AmazonProduct.id
+                                      ) ? (
+                                        <button
+                                          disabled
+                                          className="flex items-center rounded-md bg-[#0056b3] px-5 py-2.5 text-center text-sm font-medium text-white focus:outline-none focus:ring-4 focus:ring-blue-300"
+                                        >
+                                          Added to Cart
+                                        </button>
+                                      ) : (
+                                        <button
+                                          onClick={() =>
+                                            handleAddToCartAmazon(AmazonProduct)
+                                          }
+                                          className="flex items-center rounded-md bg-[#0056b3] px-5 py-2.5 text-center text-sm font-medium text-white focus:outline-none focus:ring-4 focus:ring-blue-300"
+                                        >
+                                          <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            className="mr-2 h-6 w-6"
+                                            fill="none"
+                                            viewBox="0 0 24 24"
+                                            stroke="currentColor"
+                                            strokeWidth="2"
+                                          >
+                                            <path
+                                              strokeLinecap="round"
+                                              strokeLinejoin="round"
+                                              d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                                            />
+                                          </svg>
+                                          Add to Cart
+                                        </button>
+                                      )}
+                                    </div>
+                                  </div>
+                                </div>
+                              )
+                            )}
+                          </div>
+                        </CardBody>
+                      </Card>
+                    </Tab>
+                    {/* LUXEMBOURG */}
+                    <Tab key="LUXEMBOURG" title="LUXEMBOURG">
+                      <Card className="max-w-7xl">
+                        <CardBody>
+                          <div className="europe-cards flex justify-center items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
+                            {AmazonLUProducts.map(
+                              (AmazonProduct: AmazonProduct) => (
+                                <div
+                                  key={AmazonProduct.id}
+                                  className="box relative w-full md:max-w-xs overflow-hidden rounded-lg bg-white p-4"
+                                >
+                                  <Image
+                                    src={AmazonProduct.image}
+                                    alt={AmazonProduct.name}
+                                    aria-label={AmazonProduct.name}
+                                    width={500}
+                                    height={500}
+                                    loading="lazy"
+                                    placeholder="blur"
+                                    blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
+                                  />
+                                  <div className="mt-4 pb-5">
+                                    <h5 className="text-xl font-semibold tracking-tight text-slate-900 my-4">
+                                      {AmazonProduct.name}
+                                    </h5>
+                                    <div className="flex items-center justify-between">
+                                      <p className="text-2xl font-bold text-slate-900">
+                                        {AmazonProduct.price} $
+                                      </p>
+                                      {cartItems.find(
+                                        (item: { id: number }) =>
+                                          item.id === AmazonProduct.id
+                                      ) ? (
+                                        <button
+                                          disabled
+                                          className="flex items-center rounded-md bg-[#0056b3] px-5 py-2.5 text-center text-sm font-medium text-white focus:outline-none focus:ring-4 focus:ring-blue-300"
+                                        >
+                                          Added to Cart
+                                        </button>
+                                      ) : (
+                                        <button
+                                          onClick={() =>
+                                            handleAddToCartAmazon(AmazonProduct)
+                                          }
+                                          className="flex items-center rounded-md bg-[#0056b3] px-5 py-2.5 text-center text-sm font-medium text-white focus:outline-none focus:ring-4 focus:ring-blue-300"
+                                        >
+                                          <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            className="mr-2 h-6 w-6"
+                                            fill="none"
+                                            viewBox="0 0 24 24"
+                                            stroke="currentColor"
+                                            strokeWidth="2"
+                                          >
+                                            <path
+                                              strokeLinecap="round"
+                                              strokeLinejoin="round"
+                                              d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                                            />
+                                          </svg>
+                                          Add to Cart
+                                        </button>
+                                      )}
+                                    </div>
+                                  </div>
+                                </div>
+                              )
+                            )}
+                          </div>
+                        </CardBody>
+                      </Card>
+                    </Tab>
+                  </Tabs>
                 </CardBody>
               </Card>
             </Tab>

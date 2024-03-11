@@ -1099,3 +1099,537 @@ export const WebMoneyProducts: WebMoneyProduct[] = [
     // Add other properties as needed
   },
 ];
+
+// amazon
+export interface AmazonProduct {
+  id: number;
+  name: string;
+  price: number;
+  image: string;
+  quantity: number;
+  // Add other properties as needed
+}
+//  Amazon usa products
+export const AmazonUsaProducts: AmazonProduct[] = [
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Amazon 5 USD (USA)",
+    price: 5.45,
+    image: "/amazon-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Amazon 10 USD (USA)",
+    price: 10.8,
+    image: "/amazon-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Amazon 25 USD (USA)",
+    price: 27.0,
+    image: "/amazon-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Amazon 50 USD (USA)",
+    price: 53.5,
+    image: "/amazon-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Amazon 100 USD (USA)",
+    price: 107.0,
+    image: "/amazon-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Amazon 300 USD (USA)",
+    price: 323.0,
+    image: "/amazon-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Amazon 500 USD (USA)",
+    price: 538.0,
+    image: "/amazon-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+];
+//  Amazon uk products
+export const AmazonUkProducts: AmazonProduct[] = [
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Amazon 5 GBP (UK)",
+    price: 7.25,
+    image: "/amazon-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Amazon 10 GBP (UK)",
+    price: 14.6,
+    image: "/amazon-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Amazon 15 GBP (UK)",
+    price: 21.06,
+    image: "/amazon-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Amazon 20 GBP (UK)",
+    price: 27.8,
+    image: "/amazon-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Amazon 25 GBP (UK)",
+    price: 35.64,
+    image: "/amazon-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Amazon 50 GBP (UK)",
+    price: 71.0,
+    image: "/amazon-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Amazon 100 GBP (UK)",
+    price: 139.5,
+    image: "/amazon-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+];
+//  Amazon australia products
+export const AmazonAustraliaProducts: AmazonProduct[] = [
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Amazon 5 AUD (AU)",
+    price: 4.35,
+    image: "/amazon-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Amazon 10 AUD (AU)",
+    price: 8.1,
+    image: "/amazon-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Amazon 25 AUD (AU)",
+    price: 19.99,
+    image: "/amazon-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Amazon 50 AUD (AU)",
+    price: 38.8,
+    image: "/amazon-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Amazon 100 AUD (AU)",
+    price: 78.85,
+    image: "/amazon-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+];
+//  Amazon canda products
+export const AmazonCandaProducts: AmazonProduct[] = [
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Amazon 1CAD (CA)",
+    price: 1.29,
+    image: "/amazon-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Amazon 2CAD (CA)",
+    price: 2.16,
+    image: "/amazon-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Amazon 3CAD (CA)",
+    price: 3.15,
+    image: "/amazon-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Amazon 5CAD (CA)",
+    price: 4.86,
+    image: "/amazon-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Amazon 10CAD (CA)",
+    price: 9.15,
+    image: "/amazon-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Amazon 15CAD (CA)",
+    price: 14.0,
+    image: "/amazon-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Amazon 20CAD (CA)",
+    price: 18.35,
+    image: "/amazon-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Amazon 25CAD (CA)",
+    price: 22.12,
+    image: "/amazon-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Amazon 50CAD (CA)",
+    price: 44.28,
+    image: "/amazon-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Amazon 100CAD (CA)",
+    price: 89.64,
+    image: "/amazon-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Amazon 300CAD (CA)",
+    price: 260.5,
+    image: "/amazon-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Amazon 500CAD (CA)",
+    price: 442.0,
+    image: "/amazon-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+];
+// amazon canda special
+export interface AmazonProductSpecial {
+  id: number;
+  name: string;
+  image: string;
+  price: string;
+  quantity: number;
+  // Add other properties as needed
+}
+//  Amazon canda special products
+export const AmazonCandaSpecialProducts: AmazonProductSpecial[] = [
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Amazon 1 - 5000 CAD (CA)",
+    image: "/amazon-card.webp",
+    price: "1 - 5000",
+    quantity: 0,
+    // Add other properties as needed
+  },
+];
+
+//  Amazon germany products
+export const AmazonGermanyProducts: AmazonProduct[] = [
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Amazon 5 EURO (DE)",
+    price: 6.0,
+    image: "/amazon-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Amazon 10 EURO (DE)",
+    price: 11.8,
+    image: "/amazon-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Amazon 15 EURO (DE)",
+    price: 17.8,
+    image: "/amazon-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Amazon 20 EURO (DE)",
+    price: 24.3,
+    image: "/amazon-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Amazon 25 EURO (DE)",
+    price: 29.15,
+    image: "/amazon-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Amazon 35 EURO (DE)",
+    price: 41.35,
+    image: "/amazon-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Amazon 40 EURO (DE)",
+    price: 47.5,
+    image: "/amazon-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Amazon 50 EURO (DE)",
+    price: 57.3,
+    image: "/amazon-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Amazon 75 EURO (DE)",
+    price: 89.6,
+    image: "/amazon-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Amazon 100 EURO (DE)",
+    price: 117.8,
+    image: "/amazon-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+];
+
+//  Amazon UAE products
+export const AmazonUAEProducts: AmazonProduct[] = [
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Amazon 5 AED (UAE)",
+    price: 1.72,
+    image: "/amazon-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Amazon 10 AED (UAE)",
+    price: 3.35,
+    image: "/amazon-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Amazon 25 AED (UAE)",
+    price: 7.77,
+    image: "/amazon-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Amazon 50 AED (UAE)",
+    price: 14.9,
+    image: "/amazon-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Amazon 100 AED (UAE)",
+    price: 29.7,
+    image: "/amazon-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Amazon 150 AED (UAE)",
+    price: 46.44,
+    image: "/amazon-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Amazon 200 AED (UAE)",
+    price: 59.4,
+    image: "/amazon-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Amazon 250 AED (UAE)",
+    price: 74.52,
+    image: "/amazon-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Amazon 500 AED (UAE)",
+    price: 149.0,
+    image: "/amazon-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Amazon 1000 AED (UAE)",
+    price: 292.76,
+    image: "/amazon-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Amazon 2000 AED (UAE)",
+    price: 588.6,
+    image: "/amazon-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Amazon 6000 AED (UAE)",
+    price: 1758.99,
+    image: "/amazon-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+];
+// amazon uae special
+export interface AmazonUAEProductSpecial {
+  id: number;
+  name: string;
+  image: string;
+  price: string;
+  quantity: number;
+  // Add other properties as needed
+}
+//  Amazon uae special products
+export const AmazonUAESpecialProducts: AmazonProductSpecial[] = [
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Amazon 1AED to 6000 AED (UAE)",
+    image: "/amazon-card.webp",
+    price: "1 - 6000",
+    quantity: 0,
+    // Add other properties as needed
+  },
+];
+
+//  Amazon Ireland products
+export const AmazonIEProducts: AmazonProduct[] = [
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Amazon 5 EUR (IE)",
+    price: 7.0,
+    image: "/amazon-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Amazon 10 EUR (IE)",
+    price: 13.7,
+    image: "/amazon-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Amazon 20 EUR (IE)",
+    price: 27.45,
+    image: "/amazon-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+];
+
+//  Amazon lu products
+export const AmazonLUProducts: AmazonProduct[] = [
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "Amazon 10 EUR (LU)",
+    price: 14.0,
+    image: "/amazon-card.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+];
