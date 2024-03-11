@@ -1776,10 +1776,7 @@ export default function page() {
                       </Card>
                     </Tab>
                     {/* Uae*/}
-                    <Tab
-                      key="United Arab Emirates"
-                      title="United Arab Emirates"
-                    >
+                    <Tab key="UAE" title="UAE">
                       <Card className="max-w-7xl">
                         <CardBody>
                           <div className="europe-cards flex justify-center items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
@@ -1851,10 +1848,7 @@ export default function page() {
                       </Card>
                     </Tab>
                     {/* uae special*/}
-                    <Tab
-                      key="United Arab Emirates special"
-                      title="United Arab Emirates special"
-                    >
+                    <Tab key="UAE special" title="UAE special">
                       <Card className="max-w-7xl">
                         <CardBody>
                           <div className="uae-cards flex justify-center items-center flex-wrap gap-4 bg-[#0056b3] p-6 rounded-md">
