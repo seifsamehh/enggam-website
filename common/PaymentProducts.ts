@@ -1633,3 +1633,168 @@ export const AmazonLUProducts: AmazonProduct[] = [
     // Add other properties as needed
   },
 ];
+
+// Noon
+export interface NoonProduct {
+  id: number;
+  name: string;
+  price: number;
+  image: string;
+  quantity: number;
+  // Add other properties as needed
+}
+//  Noon saudi products
+export const NoonSaudiProducts: NoonProduct[] = [
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "NOON 25 SAR (SA)",
+    price: 7.56,
+    image: "/noon.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "NOON 50 SAR (SA)",
+    price: 15.12,
+    image: "/noon.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "NOON 100 SAR (SA)",
+    price: 29.59,
+    image: "/noon.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "NOON 200 SAR (SA)",
+    price: 58.32,
+    image: "/noon.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "NOON 250 SAR (SA)",
+    price: 72.9,
+    image: "/noon.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "NOON 500 SAR (SA)",
+    price: 144.72,
+    image: "/noon.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+];
+//  Noon uae products
+export const NoonUaeProducts: NoonProduct[] = [
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "NOON 25AED (UAE)",
+    price: 7.56,
+    image: "/noon.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "NOON 50AED (UAE)",
+    price: 15.12,
+    image: "/noon.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "NOON 100AED (UAE)",
+    price: 29.7,
+    image: "/noon.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "NOON 200AED (UAE)",
+    price: 58.86,
+    image: "/noon.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "NOON 250AED (UAE)",
+    price: 73.44,
+    image: "/noon.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "NOON 500AED (UAE)",
+    price: 145.88,
+    image: "/noon.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "NOON 5000AED (UAE)",
+    price: 1435.48,
+    image: "/noon.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+];
+
+// Ezpin
+export interface EzpinProduct {
+  id: number;
+  name: string;
+  price: number;
+  image: string;
+  quantity: number;
+  // Add other properties as needed
+}
+//  Ezpin saudi products
+export const EzpinProducts: EzpinProduct[] = [
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "EZPIN GIFT CARD 50$",
+    price: 57.2,
+    image: "/ezpin.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "EZPIN GIFT CARD 100$",
+    price: 112.4,
+    image: "/ezpin.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "EZPIN GIFT CARD 250$",
+    price: 290.6,
+    image: "/ezpin.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+  {
+    id: Math.floor(Math.random() * 1000) + 1,
+    name: "EZPIN GIFT CARD 1000$",
+    price: 1112.4,
+    image: "/ezpin.webp",
+    quantity: 0,
+    // Add other properties as needed
+  },
+];
