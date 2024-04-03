@@ -940,13 +940,13 @@ const Footer = () => {
                         processed , but we guarantee that every code is correct
                         and valid . If you have any problem we are happy to help
                         you 24/7 , you can chat with us through our <br />
-                        Facebook Page :
+                        Facebook Page :<br />
                         <Link
                           href="https://www.facebook.com/enggam.co/"
                           target="_blank"
                           className="text-[#0056b3]"
                         >
-                          enggam729@gmail.com
+                          https://www.facebook.com/enggam.co/
                         </Link>
                         Send Email To: <br />
                         <Link
@@ -956,6 +956,7 @@ const Footer = () => {
                         >
                           enggam729@gmail.com
                         </Link>
+                        <br />
                         WhatsUp on <br />
                         <Link
                           href="tel:+201014402598"
