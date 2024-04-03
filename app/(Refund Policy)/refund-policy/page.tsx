@@ -5,9 +5,9 @@ const page = () => {
   return (
     <>
       <HeaderLanding />
-      <section className="min-h-screen refund">
-        <h1>Refund Policy</h1>
-        <p>
+      <section className="min-h-screen flex justify-center items-center flex-col gap-4 refund">
+        <h1 className="text-4xl">Refund Policy</h1>
+        <p className="max-w-4xl">
           We don’t accept return or refund once your order is processed , but we
           guarantee that every code is correct and valid . If you have any
           problem we are happy to help you 24/7 , you can chat with us through
