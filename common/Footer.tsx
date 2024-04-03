@@ -919,52 +919,8 @@ const Footer = () => {
               )}
             </ModalContent>
           </Modal>
-          <Button color="primary" onPress={onOpen}>
-            Terms of service
-          </Button>
-          <Modal
-            isOpen={isOpen}
-            onOpenChange={onOpenChange}
-            scrollBehavior={"inside"}
-            isDismissable={false}
-            size="5xl"
-            backdrop="blur"
-          >
-            <ModalContent>
-              {(onClose) => (
-                <>
-                  <ModalBody className="mt-8">
-                    <div className="privacy-policy">
-                      <h5 className="text-[#0056b3] font-black text-2xl">
-                        Terms of service
-                      </h5>
-                      <p>
-                        These Terms of Service govern your rights and
-                        obligations, as users of the portals administered and
-                        managed by Enggam otherwise provided by Enggam, all new
-                        portals introduced and managed by Enggam shall be
-                        governed by these Terms of Service. By registering an
-                        account with Enggam and accessing any of the Portals,
-                        you acknowledge and accept that your usage of the
-                        Portals (or any of them) shall be governed by these
-                        Terms of Service and any other specific rules,
-                        procedures, terms and conditions for the products,
-                        services or facilities offered as determined or as may
-                        be amended by Enggam at any time or from time to time at
-                        its absolute discretion.
-                      </p>
-                    </div>
-                  </ModalBody>
-                  <ModalFooter className="flex justify-start">
-                    <Button color="default" onPress={onClose}>
-                      Agreed
-                    </Button>
-                  </ModalFooter>
-                </>
-              )}
-            </ModalContent>
-          </Modal>
           <Link href="/refund-policy">Refund Policy</Link>
+          <Link href="/terms">Terms of service</Link>
           <Link href="https://enggam-website-docs.vercel.app/" target="_blank">
             Docs
           </Link>
