@@ -10,23 +10,35 @@ const page = () => {
     <>
       <HeaderLanding />
       <section className="min-h-screen flex justify-center items-center flex-col gap-4 refund">
-        <h1 className={`${raleway.className} text-4xl text-[#0056b3]`}>
+        <h1 className={`${raleway.className} text-6xl text-[#0056b3]`}>
           Refund Policy
         </h1>
-        <p className="max-w-4xl text-center">
+        <p className="max-w-4xl text-2xl text-center min-[290px]:px-4 md:px-0">
           We don’t accept return or refund once your order is processed , but we
           guarantee that every code is correct and valid. If you have any
           problem we are happy to help you 24/7 , you can chat with us through
           our Facebook Page :{" "}
-          <Link href="https://www.facebook.com/enggam.co/" target="_blank">
+          <Link
+            href="https://www.facebook.com/enggam.co/"
+            className="text-[#0056b3]"
+            target="_blank"
+          >
             https://www.facebook.com/enggam.co/
           </Link>{" "}
           Send Email To :{" "}
-          <Link href="mailto:enggam729@gmail.com" target="_blank">
+          <Link
+            href="mailto:enggam729@gmail.com"
+            className="text-[#0056b3]"
+            target="_blank"
+          >
             enggam729@gmail.com
           </Link>{" "}
           WhatsUp on{" "}
-          <Link href="tel:+201014402598" target="_blank">
+          <Link
+            href="tel:+201014402598"
+            className="text-[#0056b3]"
+            target="_blank"
+          >
             +201014402598
           </Link>{" "}
           Once Bought and Delivered , cannot be returned , nor refunded So

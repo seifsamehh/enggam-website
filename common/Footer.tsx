@@ -150,7 +150,7 @@ const Footer = () => {
         <div className="left">
           <p>Copyright &copy; {currentYear} - ENGGAM</p>
           <p>
-            Powered by <span>Ali Nasr</span>
+            Powered by <span>Ali Abdul Majeed Ali Muhammad Nasr</span>
           </p>
         </div>
         <div className="middle flex min-[290px]:justify-start md:justify-center items-center gap-2 min-[290px]:flex-wrap md:flex-nowrap">
