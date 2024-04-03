@@ -228,28 +228,6 @@ const Footer = () => {
               {(onClose) => (
                 <>
                   <ModalBody className="mt-8">
-                    <div className="terms">
-                      <h5 className="text-[#0056b3] font-black text-2xl">
-                        TERMS OF SERVICE
-                      </h5>
-                      <p>
-                        These Terms of Service govern your rights and
-                        obligations, as users of the portals administered and
-                        managed by Enggam otherwise provided by Enggam, all new
-                        portals introduced and managed by Enggam shall be
-                        governed by these Terms of Service.
-                      </p>
-                      <p>
-                        By registering an account with Enggam and accessing any
-                        of the Portals, you acknowledge and accept that your
-                        usage of the Portals (or any of them) shall be governed
-                        by these Terms of Service and any other specific rules,
-                        procedures, terms and conditions for the products,
-                        services or facilities offered as determined or as may
-                        be amended by Enggam at any time or from time to time at
-                        its absolute discretion.
-                      </p>
-                    </div>
                     <div className="services">
                       <h5 className="text-[#0056b3] font-black text-2xl">
                         The Services are provided by Enggam
@@ -926,6 +904,72 @@ const Footer = () => {
                         Where possible, we will work with You and/or any user
                         selling on our website, to resolve any disputes arising
                         from your purchase.
+                      </p>
+                    </div>
+                  </ModalBody>
+                  <ModalFooter className="flex justify-start">
+                    <Button color="default" onPress={onClose}>
+                      Agreed
+                    </Button>
+                  </ModalFooter>
+                </>
+              )}
+            </ModalContent>
+          </Modal>
+          <Button color="primary" onPress={onOpen}>
+            Refund Police
+          </Button>
+          <Modal
+            isOpen={isOpen}
+            onOpenChange={onOpenChange}
+            scrollBehavior={"inside"}
+            isDismissable={false}
+            size="5xl"
+            backdrop="blur"
+          >
+            <ModalContent>
+              {(onClose) => (
+                <>
+                  <ModalBody className="mt-8">
+                    <div className="privacy-policy">
+                      <h5 className="text-[#0056b3] font-black text-2xl">
+                        Refund Police
+                      </h5>
+                      <p>
+                        We don’t accept return or refund once your order is
+                        processed , but we guarantee that every code is correct
+                        and valid . If you have any problem we are happy to help
+                        you 24/7 , you can chat with us through our <br />
+                        Facebook Page :
+                        <Link
+                          href="https://www.facebook.com/enggam.co/"
+                          target="_blank"
+                          className="text-[#0056b3]"
+                        >
+                          enggam729@gmail.com
+                        </Link>
+                        Send Email To: <br />
+                        <Link
+                          href="mailto:enggam729@gmail"
+                          target="_blank"
+                          className="text-[#0056b3]"
+                        >
+                          enggam729@gmail.com
+                        </Link>
+                        WhatsUp on <br />
+                        <Link
+                          href="tel:+201014402598"
+                          target="_blank"
+                          className="text-[#0056b3]"
+                        >
+                          +201014402598
+                        </Link>
+                        Once Bought and Delivered , cannot be returned , nor
+                        refunded So Please make sure to select the right product
+                        , with the right country code and\or in the right
+                        currency before you purchase it , as we cannot take
+                        products back , nor refund or exchange products that
+                        have already been paid and delivered
                       </p>
                     </div>
                   </ModalBody>
