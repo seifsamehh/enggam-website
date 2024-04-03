@@ -149,6 +149,9 @@ const Footer = () => {
       <div className="bottom flex justify-between items-center min-[290px]:flex-wrap md:flex-nowrap min-[290px]:gap-2 md:gap-0 min-[290px]:mt-4 md:mt-0">
         <div className="left">
           <p>Copyright &copy; {currentYear} - ENGGAM</p>
+          <p>
+            Powered by <span className="text-[#0056b3]">Ali Nasr</span>
+          </p>
         </div>
         <div className="middle flex min-[290px]:justify-start md:justify-center items-center gap-2 min-[290px]:flex-wrap md:flex-nowrap">
           <Image
@@ -948,6 +951,7 @@ const Footer = () => {
                         >
                           https://www.facebook.com/enggam.co/
                         </Link>
+                        <br />
                         Send Email To: <br />
                         <Link
                           href="mailto:enggam729@gmail"
@@ -965,12 +969,58 @@ const Footer = () => {
                         >
                           +201014402598
                         </Link>
+                        <br />
                         Once Bought and Delivered , cannot be returned , nor
                         refunded So Please make sure to select the right product
                         , with the right country code and\or in the right
                         currency before you purchase it , as we cannot take
                         products back , nor refund or exchange products that
                         have already been paid and delivered
+                      </p>
+                    </div>
+                  </ModalBody>
+                  <ModalFooter className="flex justify-start">
+                    <Button color="default" onPress={onClose}>
+                      Agreed
+                    </Button>
+                  </ModalFooter>
+                </>
+              )}
+            </ModalContent>
+          </Modal>
+          <Button color="primary" onPress={onOpen}>
+            Terms of service
+          </Button>
+          <Modal
+            isOpen={isOpen}
+            onOpenChange={onOpenChange}
+            scrollBehavior={"inside"}
+            isDismissable={false}
+            size="5xl"
+            backdrop="blur"
+          >
+            <ModalContent>
+              {(onClose) => (
+                <>
+                  <ModalBody className="mt-8">
+                    <div className="privacy-policy">
+                      <h5 className="text-[#0056b3] font-black text-2xl">
+                        Terms of service
+                      </h5>
+                      <p>
+                        These Terms of Service govern your rights and
+                        obligations, as users of the portals administered and
+                        managed by Enggam otherwise provided by Enggam, all new
+                        portals introduced and managed by Enggam shall be
+                        governed by these Terms of Service. By registering an
+                        account with Enggam and accessing any of the Portals,
+                        you acknowledge and accept that your usage of the
+                        Portals (or any of them) shall be governed by these
+                        Terms of Service and any other specific rules,
+                        procedures, terms and conditions for the products,
+                        services or facilities offered as determined or as may
+                        be amended by Enggam at any time or from time to time at
+                        its absolute discretion.
                       </p>
                     </div>
                   </ModalBody>
