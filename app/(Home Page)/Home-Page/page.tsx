@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import Swal from "sweetalert2";
 import dynamic from "next/dynamic";
 
-const Footer = dynamic(() => import("@/common/Footer"));
+const FooterHome = dynamic(() => import("@/common/FooterHome"));
 const HeroSection = dynamic(() => import("@/components/Hero"));
 const HomeCategories = dynamic(() => import("@/components/HomeCategories"));
 const SaleHome = dynamic(() => import("@/components/SaleHome"));
@@ -60,7 +60,7 @@ export default function page() {
       <Story />
       <SupportSection />
       <Cta />
-      <Footer />
+      <FooterHome />
     </main>
   );
 }
