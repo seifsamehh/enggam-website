@@ -1,5 +1,5 @@
-import Footer from "@/common/Footer";
-import HeaderLanding from "@/lib/HeaderLanding";
+import FooterHome from "@/common/FooterHome";
+import HeaderHome from "@/lib/HeaderHome";
 import { Raleway } from "next/font/google";
 
 const raleway = Raleway({ subsets: ["latin"], weight: "900", display: "swap" });
@@ -7,7 +7,7 @@ const raleway = Raleway({ subsets: ["latin"], weight: "900", display: "swap" });
 const page = () => {
   return (
     <>
-      <HeaderLanding />
+      <HeaderHome />
       <section className="terms min-h-screen flex justify-center items-center flex-col gap-4 min-[290px]:py-4 md:py-0 ">
         <h1
           className={`${raleway.className} text-6xl text-center text-[#0056b3]`}
@@ -27,7 +27,7 @@ const page = () => {
           time at its absolute discretion.
         </p>
       </section>
-      <Footer />
+      <FooterHome />
     </>
   );
 };

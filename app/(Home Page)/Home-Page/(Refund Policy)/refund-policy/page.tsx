@@ -1,14 +1,14 @@
-import Footer from "@/common/Footer";
-import HeaderLanding from "@/lib/HeaderLanding";
 import Link from "next/link";
 import { Raleway } from "next/font/google";
+import HeaderHome from "@/lib/HeaderHome";
+import FooterHome from "@/common/FooterHome";
 
 const raleway = Raleway({ subsets: ["latin"], weight: "900", display: "swap" });
 
 const page = () => {
   return (
     <>
-      <HeaderLanding />
+      <HeaderHome />
       <section className="min-h-screen flex justify-center items-center flex-col gap-4 min-[290px]:py-4 md:py-0 refund">
         <h1
           className={`${raleway.className} text-6xl text-center text-[#0056b3]`}
@@ -51,7 +51,7 @@ const page = () => {
         </p>
         <p></p>
       </section>
-      <Footer />
+      <FooterHome />
     </>
   );
 };
