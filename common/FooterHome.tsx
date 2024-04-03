@@ -919,8 +919,8 @@ const FooterHome = () => {
               )}
             </ModalContent>
           </Modal>
-          <Link href="/home-page/refund-policy">Refund Policy</Link>
-          <Link href="/home-page/terms">Terms of service</Link>
+          <Link href="/Home-Page/refund-policy">Refund Policy</Link>
+          <Link href="/Home-Page/terms">Terms of service</Link>
           <Link href="https://enggam-website-docs.vercel.app/" target="_blank">
             Docs
           </Link>
