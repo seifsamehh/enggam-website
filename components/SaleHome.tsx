@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "@/store/store";
 import { Product, products } from "@/common/products";
@@ -14,7 +15,21 @@ import { Raleway } from "next/font/google";
 const raleway = Raleway({ subsets: ["latin"], weight: "900", display: "swap" });
 import "../styles/sale.scss";
 
+const USD_TO_EGP_RATE = 47.78;
 export default function SaleHome() {
+  const [selectedCurrency, setSelectedCurrency] = useState("USD");
+
+  const handleCurrencyChange = (currency: string) => {
+    setSelectedCurrency(currency);
+  };
+
+  const convertCurrency = (price: number) => {
+    if (selectedCurrency === "EGP") {
+      return (price * USD_TO_EGP_RATE).toFixed(2);
+    }
+    return price.toFixed(2);
+  };
+
   const cartItems = useSelector((state: RootState) => state.cart.items);
   const dispatch = useDispatch();
 
@@ -116,6 +131,16 @@ export default function SaleHome() {
           >
             View More
           </Link>
+          <div>
+            <select
+              value={selectedCurrency}
+              onChange={(e) => handleCurrencyChange(e.target.value)}
+              className="bg-white text-[#ff474d] py-2 px-4 rounded-md"
+            >
+              <option value="USD">USD</option>
+              <option value="EGP">EGP</option>
+            </select>
+          </div>
         </div>
         <div ref={ref} className="keen-slider keen-slider-large">
           {products.map((product: Product) => (
@@ -140,10 +165,12 @@ export default function SaleHome() {
                 <h5 className="text-xl font-semibold tracking-tight text-slate-900 my-4">
                   {product.name}
                 </h5>
-                <del>{product.delete} $</del>
+                <del>
+                  {convertCurrency(product.delete)} {selectedCurrency}
+                </del>
                 <div className="flex items-center justify-between">
                   <p className="text-2xl font-bold text-slate-900">
-                    {product.price} $
+                    {convertCurrency(product.price)} {selectedCurrency}
                   </p>
                   {cartItems.find((item) => item.id === product.id) ? (
                     <button

@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "@/store/store";
@@ -10,7 +11,21 @@ import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import "../styles/HomeProducts.scss";
 
+const USD_TO_EGP_RATE = 47.78;
 export default function HomeProductSlider() {
+  const [selectedCurrency, setSelectedCurrency] = useState("USD");
+
+  const handleCurrencyChange = (currency: string) => {
+    setSelectedCurrency(currency);
+  };
+
+  const convertCurrency = (price: number) => {
+    if (selectedCurrency === "EGP") {
+      return (price * USD_TO_EGP_RATE).toFixed(2);
+    }
+    return price.toFixed(2);
+  };
+
   const cartItems = useSelector((state: RootState) => state.cart.items);
   const dispatch = useDispatch();
 
@@ -102,6 +117,16 @@ export default function HomeProductSlider() {
   );
   return (
     <>
+      <div>
+        <select
+          value={selectedCurrency}
+          onChange={(e) => handleCurrencyChange(e.target.value)}
+          className="bg-[#ff474d] text-white py-2 px-4 rounded-md"
+        >
+          <option value="USD">USD</option>
+          <option value="EGP">EGP</option>
+        </select>
+      </div>
       <div ref={ref} className="keen-slider keen-slider-large">
         {homeproducts.map((homeproducts: HomeProduct) => (
           <div
@@ -125,7 +150,8 @@ export default function HomeProductSlider() {
                 </h5>
                 <div className="flex items-center justify-between">
                   <p className="text-xl font-bold text-slate-900">
-                    {homeproducts.price} $
+                    {/* {homeproducts.price} $ */}
+                    {convertCurrency(homeproducts.price)} {selectedCurrency}
                   </p>
                   {cartItems.find((item) => item.id === homeproducts.id) ? (
                     <button

@@ -43,7 +43,22 @@ interface CartItem {
   image: string;
   quantity: number;
 }
+
+const USD_TO_EGP_RATE = 47.78;
 const CartPage = () => {
+  const [selectedCurrency, setSelectedCurrency] = useState("USD");
+
+  const handleCurrencyChange = (currency: string) => {
+    setSelectedCurrency(currency);
+  };
+
+  const convertCurrency = (price: number) => {
+    if (selectedCurrency === "EGP") {
+      return +(price * USD_TO_EGP_RATE).toFixed(2); // Convert the string back to a number using the unary plus operator
+    }
+    return +price.toFixed(2); // Convert the string back to a number using the unary plus operator
+  };
+
   const router = useRouter();
   // model
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
@@ -70,7 +85,8 @@ const CartPage = () => {
   };
 
   const totalPrice = cartItems.reduce(
-    (total: number, item: CartItem) => total + item.price * item.quantity,
+    (total: number, item: CartItem) =>
+      total + convertCurrency(item.price as number) * item.quantity,
     0
   );
 
@@ -257,7 +273,10 @@ const CartPage = () => {
                         >
                           {item.name}
                         </h2>
-                        <p>Price: ${item.price}</p>
+                        {/* <p>Price: ${item.price}</p> */}
+                        <p>
+                          {convertCurrency(item.price)} {selectedCurrency}
+                        </p>
                         <div className="flex gap-2 items-center">
                           <button
                             onClick={() => handleDecreaseQuantity(item.id)}
@@ -306,10 +325,21 @@ const CartPage = () => {
                   Note: <br /> Please Write a correct email for ease and speed
                   of communicating with you.
                 </p>
+                <div>
+                  <select
+                    value={selectedCurrency}
+                    onChange={(e) => handleCurrencyChange(e.target.value)}
+                    className="bg-white text-[#ff474d] py-2 px-4 rounded-md"
+                  >
+                    <option value="USD">USD</option>
+                    <option value="EGP">EGP</option>
+                  </select>
+                </div>
               </div>
               <div className="checkout min-[290px]:mt-8 md:mt-0">
                 <p className={`${raleway.className} text-2xl`}>
-                  <span className="font-black">Total Price:</span> ${totalPrice}
+                  <span className="font-black">Total Price:</span> {totalPrice}{" "}
+                  {selectedCurrency}
                 </p>
                 <Button
                   onPress={onOpen}

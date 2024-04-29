@@ -65,7 +65,7 @@ export default function Categories() {
             <h2
               className={`${raleway.className} text-5xl bg-gradient-to-r from-blue-500 to-cyan-300 bg-clip-text text-transparent min-[290px]:text-center md:text-left`}
             >
-              PAYMENT CARDS
+              ANOTHER CARDS
             </h2>
             <p className="leading-8 min-[290px]:text-center md:text-left">
               You can choose any card for the payment method through our website

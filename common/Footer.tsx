@@ -143,7 +143,7 @@ const Footer = () => {
         </div>
         <div className="footer-address">
           <h3 className={`${raleway.className} text-3xl mb-4`}>Address</h3>
-          <p>Made With &#x2764; From Egypt</p>
+          <p>Sharkia, Zagazig Center, Al-Wahda Street, Kafr Al-Hamam</p>
         </div>
       </div>
       <div className="bottom flex justify-between items-center min-[290px]:flex-wrap md:flex-nowrap min-[290px]:gap-2 md:gap-0 min-[290px]:mt-4 md:mt-0">

@@ -77,7 +77,7 @@ export default function HomeCategories() {
                 placeholder="blur"
                 blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nKSkqODMsMC4xOQ=="
               />
-              <h2 className={`${raleway.className} text-3xl`}>PAYMENT CARDS</h2>
+              <h2 className={`${raleway.className} text-3xl`}>ANOTHER CARDS</h2>
               <p className="my-4">
                 You can choose any card for the payment method through our
                 website by browsing through the site’s featured cards.

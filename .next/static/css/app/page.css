@@ -1,0 +1,229 @@
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[13].use[5]!./styles/cta.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.cta .cta-box {
+  position: relative;
+  z-index: 5;
+}
+.cta .cta-box a {
+  background-color: #0056b3;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+.cta .mail-img {
+  position: absolute;
+  top: 1rem;
+  left: 5rem;
+}
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[2].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[13].oneOf[2].use[2]!./node_modules/next/font/google/target.css?{"path":"common/Cta.tsx","import":"Raleway","arguments":[{"subsets":["latin"],"weight":"900","display":"swap"}],"variableName":"raleway"} ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@font-face {
+  font-family: '__Raleway_Fallback_8d7ded';
+  src: local("Arial");
+  ascent-override:89.62%;
+  descent-override:22.31%;
+  line-gap-override:0.00%;
+  size-adjust:104.89%;
+}@font-face {font-family: '__Raleway_Fallback_Fallback_8d7ded';src: local("Arial");ascent-override: 89.62%;descent-override: 22.31%;line-gap-override: 0.00%;size-adjust: 104.89%
+}.__className_8d7ded {font-family: '__Raleway_Fallback_8d7ded', '__Raleway_Fallback_Fallback_8d7ded';font-weight: 900;font-style: normal
+}
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[13].use[5]!./styles/footer.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.footer {
+  background-color: #0056b3;
+  color: #ffffff;
+  padding: 1rem 1rem 8rem 1rem;
+}
+@media screen and (max-width: 768px) {
+  .footer .footer-social {
+    margin: 2rem 0;
+  }
+}
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[2].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[13].oneOf[2].use[2]!./node_modules/next/font/google/target.css?{"path":"common/Footer.tsx","import":"Raleway","arguments":[{"subsets":["latin"],"weight":"900","display":"swap"}],"variableName":"raleway"} ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@font-face {
+  font-family: '__Raleway_Fallback_8d7ded';
+  src: local("Arial");
+  ascent-override:89.62%;
+  descent-override:22.31%;
+  line-gap-override:0.00%;
+  size-adjust:104.89%;
+}@font-face {font-family: '__Raleway_Fallback_Fallback_8d7ded';src: local("Arial");ascent-override: 89.62%;descent-override: 22.31%;line-gap-override: 0.00%;size-adjust: 104.89%
+}.__className_8d7ded {font-family: '__Raleway_Fallback_8d7ded', '__Raleway_Fallback_Fallback_8d7ded';font-weight: 900;font-style: normal
+}
+/*!******************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./node_modules/keen-slider/keen-slider.min.css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************/
+.keen-slider:not([data-keen-slider-disabled]){-webkit-touch-callout:none;-webkit-tap-highlight-color:transparent;align-content:flex-start;display:flex;overflow:hidden;position:relative;touch-action:pan-y;-webkit-user-select:none;-moz-user-select:none;user-select:none;-khtml-user-select:none;width:100%}.keen-slider:not([data-keen-slider-disabled]) .keen-slider__slide{min-height:100%;overflow:hidden;position:relative;width:100%}.keen-slider:not([data-keen-slider-disabled])[data-keen-slider-reverse]{flex-direction:row-reverse}.keen-slider:not([data-keen-slider-disabled])[data-keen-slider-v]{flex-wrap:wrap}
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[13].use[5]!./styles/slider.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.zoom-out {
+  perspective: 1000px;
+  height: 90vh;
+}
+
+.zoom-out__slide div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.zoom-out__slide img {
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+  position: absolute;
+}
+
+@media screen and (max-width: 768px) {
+  .zoom-out__slide img {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[13].use[5]!./styles/partners.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@media screen and (max-width: 991px) {
+  .partners {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .partners-sm {
+    display: none;
+  }
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[2].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[13].oneOf[2].use[2]!./node_modules/next/font/google/target.css?{"path":"lib/PartnersSlider.tsx","import":"Raleway","arguments":[{"subsets":["latin"],"weight":"900","display":"swap"}],"variableName":"raleway"} ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@font-face {
+  font-family: '__Raleway_Fallback_8d7ded';
+  src: local("Arial");
+  ascent-override:89.62%;
+  descent-override:22.31%;
+  line-gap-override:0.00%;
+  size-adjust:104.89%;
+}@font-face {font-family: '__Raleway_Fallback_Fallback_8d7ded';src: local("Arial");ascent-override: 89.62%;descent-override: 22.31%;line-gap-override: 0.00%;size-adjust: 104.89%
+}.__className_8d7ded {font-family: '__Raleway_Fallback_8d7ded', '__Raleway_Fallback_Fallback_8d7ded';font-weight: 900;font-style: normal
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[2].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[13].oneOf[2].use[2]!./node_modules/next/font/google/target.css?{"path":"components/Support.tsx","import":"Raleway","arguments":[{"subsets":["latin"],"weight":"900","display":"swap"}],"variableName":"raleway"} ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@font-face {
+  font-family: '__Raleway_Fallback_8d7ded';
+  src: local("Arial");
+  ascent-override:89.62%;
+  descent-override:22.31%;
+  line-gap-override:0.00%;
+  size-adjust:104.89%;
+}@font-face {font-family: '__Raleway_Fallback_Fallback_8d7ded';src: local("Arial");ascent-override: 89.62%;descent-override: 22.31%;line-gap-override: 0.00%;size-adjust: 104.89%
+}.__className_8d7ded {font-family: '__Raleway_Fallback_8d7ded', '__Raleway_Fallback_Fallback_8d7ded';font-weight: 900;font-style: normal
+}
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[13].use[5]!./styles/support.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.support {
+  background-image: url(/_next/static/media/patterns.eeb89cdb.svg);
+  background-repeat: repeat-x;
+  background-size: contain;
+  background-position: center 820px;
+}
+@media screen and (max-width: 991px) {
+  .support {
+    background-position: center bottom;
+  }
+}
+.support .support-boxs .box .icon svg {
+  font-size: 5rem;
+}
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[2].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[13].oneOf[2].use[2]!./node_modules/next/font/google/target.css?{"path":"components/Sale.tsx","import":"Raleway","arguments":[{"subsets":["latin"],"weight":"900","display":"swap"}],"variableName":"raleway"} ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@font-face {
+  font-family: '__Raleway_Fallback_8d7ded';
+  src: local("Arial");
+  ascent-override:89.62%;
+  descent-override:22.31%;
+  line-gap-override:0.00%;
+  size-adjust:104.89%;
+}@font-face {font-family: '__Raleway_Fallback_Fallback_8d7ded';src: local("Arial");ascent-override: 89.62%;descent-override: 22.31%;line-gap-override: 0.00%;size-adjust: 104.89%
+}.__className_8d7ded {font-family: '__Raleway_Fallback_8d7ded', '__Raleway_Fallback_Fallback_8d7ded';font-weight: 900;font-style: normal
+}
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[13].use[5]!./styles/sale.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.sale::before {
+  content: "%";
+  position: absolute;
+  top: 0;
+  left: 10%;
+  color: #ffffff;
+  font-size: 20rem;
+}
+@media screen and (max-width: 991px) {
+  .sale::before {
+    font-size: 6rem;
+  }
+}
+.sale .sale-heading h3 {
+  color: #ffffff;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #ffffff;
+}
+
+.sale-home {
+  background-image: url(/_next/static/media/patterns.eeb89cdb.svg);
+  background-repeat: repeat-x;
+  background-size: contain;
+  background-position: center 700px;
+}
+@media screen and (max-width: 991px) {
+  .sale-home {
+    background-position: center bottom;
+  }
+}
+.sale-home .keen-slider__slide {
+  background: #ffffff;
+}
+@media screen and (max-width: 991px) {
+  .sale-home .keen-slider-large {
+    display: none !important;
+  }
+}
+@media (min-width: 992px) {
+  .sale-home .keen-slider-small {
+    display: none !important;
+  }
+}
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[2].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[13].oneOf[2].use[2]!./node_modules/next/font/google/target.css?{"path":"components/Categories.tsx","import":"Raleway","arguments":[{"subsets":["latin"],"weight":"900","display":"swap"}],"variableName":"raleway"} ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@font-face {
+  font-family: '__Raleway_Fallback_8d7ded';
+  src: local("Arial");
+  ascent-override:89.62%;
+  descent-override:22.31%;
+  line-gap-override:0.00%;
+  size-adjust:104.89%;
+}@font-face {font-family: '__Raleway_Fallback_Fallback_8d7ded';src: local("Arial");ascent-override: 89.62%;descent-override: 22.31%;line-gap-override: 0.00%;size-adjust: 104.89%
+}.__className_8d7ded {font-family: '__Raleway_Fallback_8d7ded', '__Raleway_Fallback_Fallback_8d7ded';font-weight: 900;font-style: normal
+}
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[13].use[5]!./styles/categories.scss ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.categories svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -20;
+}

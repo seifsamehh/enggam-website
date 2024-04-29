@@ -131,11 +131,11 @@ export default function HeaderHome() {
               <DropdownItem
                 as={Link}
                 href="/Home-Page/categories/payment-cards"
-                key="Payment-Cards"
+                key="Another-Cards"
                 startContent={<LiaCcVisa />}
-                aria-label="Payment Cards"
+                aria-label="Another Cards"
               >
-                Payment Cards
+                Another Cards
               </DropdownItem>
             </DropdownMenu>
           </Dropdown>
@@ -257,11 +257,11 @@ export default function HeaderHome() {
           <NavbarMenuItem>
             <Link
               href="/Home-Page/categories/payment-cards"
-              aria-label="Payment Cards"
+              aria-label="Another Cards"
               className="flex justify-start items-center gap-1"
             >
               <LiaCcVisa />
-              Payment Cards
+              Another Cards
             </Link>
           </NavbarMenuItem>
           <NavbarMenuItem>

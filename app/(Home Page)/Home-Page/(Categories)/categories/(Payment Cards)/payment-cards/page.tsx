@@ -55,8 +55,23 @@ import { Raleway } from "next/font/google";
 const raleway = Raleway({ subsets: ["latin"], weight: "900", display: "swap" });
 import "../../../../../../../styles/giftCards.scss";
 import Link from "next/link";
+import { useState } from "react";
 
+const USD_TO_EGP_RATE = 47.78;
 export default function page() {
+  const [selectedCurrency, setSelectedCurrency] = useState("USD");
+
+  const handleCurrencyChange = (currency: string) => {
+    setSelectedCurrency(currency);
+  };
+
+  const convertCurrency = (price: number): string => {
+    if (selectedCurrency === "EGP") {
+      return (price * USD_TO_EGP_RATE).toFixed(2);
+    }
+    return price.toFixed(2);
+  };
+
   const cartItems = useSelector((state: RootState) => state.cart.items);
   const dispatch = useDispatch();
 
@@ -156,7 +171,17 @@ export default function page() {
             blurDataURL="data:image/webp;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkzL9QDwADegHBOLyGlwAAAABJRU5ErkJggg=="
           />
         </div>
-        <div className="payment-products min-h-screen flex justify-center items-center flex-col py-8">
+        <div className="payment-products min-h-screen flex justify-center items-center gap-4 flex-col py-8">
+          <div>
+            <select
+              value={selectedCurrency}
+              onChange={(e) => handleCurrencyChange(e.target.value)}
+              className="bg-[#ff474d] text-white py-2 px-4 rounded-md"
+            >
+              <option value="USD">USD</option>
+              <option value="EGP">EGP</option>
+            </select>
+          </div>
           <Tabs aria-label="Options" size="lg" className="tabs">
             {/* Neosurf tab */}
             <Tab key="Neosurf" title="Neosurf">
@@ -191,7 +216,8 @@ export default function page() {
                                     </h5>
                                     <div className="flex items-center justify-between">
                                       <p className="text-2xl font-bold text-slate-900">
-                                        {NeosurfProduct.price} $
+                                        {convertCurrency(NeosurfProduct.price)}{" "}
+                                        {selectedCurrency}
                                       </p>
                                       {cartItems.find(
                                         (item: { id: number }) =>
@@ -265,7 +291,8 @@ export default function page() {
                                     </h5>
                                     <div className="flex items-center justify-between">
                                       <p className="text-2xl font-bold text-slate-900">
-                                        {NeosurfProduct.price} $
+                                        {convertCurrency(NeosurfProduct.price)}{" "}
+                                        {selectedCurrency}
                                       </p>
                                       {cartItems.find(
                                         (item: { id: number }) =>
@@ -343,7 +370,8 @@ export default function page() {
                             </h5>
                             <div className="flex items-center justify-between">
                               <p className="text-2xl font-bold text-slate-900">
-                                {OpenbucksProduct.price} $
+                                {convertCurrency(OpenbucksProduct.price)}{" "}
+                                {selectedCurrency}
                               </p>
                               {cartItems.find(
                                 (item: { id: number }) =>
@@ -421,7 +449,8 @@ export default function page() {
                                     </h5>
                                     <div className="flex items-center justify-between">
                                       <p className="text-2xl font-bold text-slate-900">
-                                        {AstroProduct.price} $
+                                        {convertCurrency(AstroProduct.price)}{" "}
+                                        {selectedCurrency}
                                       </p>
                                       {cartItems.find(
                                         (item: { id: number }) =>
@@ -496,7 +525,8 @@ export default function page() {
                                     </h5>
                                     <div className="flex items-center justify-between">
                                       <p className="text-2xl font-bold text-slate-900">
-                                        {AstroProduct.price} $
+                                        {convertCurrency(AstroProduct.price)}{" "}
+                                        {selectedCurrency}
                                       </p>
                                       {cartItems.find(
                                         (item: { id: number }) =>
@@ -568,7 +598,8 @@ export default function page() {
                                     </h5>
                                     <div className="flex items-center justify-between">
                                       <p className="text-2xl font-bold text-slate-900">
-                                        {AstroProduct.price} $
+                                        {convertCurrency(AstroProduct.price)}{" "}
+                                        {selectedCurrency}
                                       </p>
                                       {cartItems.find(
                                         (item: { id: number }) =>
@@ -640,7 +671,8 @@ export default function page() {
                                     </h5>
                                     <div className="flex items-center justify-between">
                                       <p className="text-2xl font-bold text-slate-900">
-                                        {AstroProduct.price} $
+                                        {convertCurrency(AstroProduct.price)}{" "}
+                                        {selectedCurrency}
                                       </p>
                                       {cartItems.find(
                                         (item: { id: number }) =>
@@ -722,7 +754,8 @@ export default function page() {
                                     </h5>
                                     <div className="flex items-center justify-between">
                                       <p className="text-2xl font-bold text-slate-900">
-                                        {FlexepinProduct.price} $
+                                        {convertCurrency(FlexepinProduct.price)}{" "}
+                                        {selectedCurrency}
                                       </p>
                                       {cartItems.find(
                                         (item: { id: number }) =>
@@ -796,7 +829,8 @@ export default function page() {
                                     </h5>
                                     <div className="flex items-center justify-between">
                                       <p className="text-2xl font-bold text-slate-900">
-                                        {FlexepinProduct.price} $
+                                        {convertCurrency(FlexepinProduct.price)}{" "}
+                                        {selectedCurrency}
                                       </p>
                                       {cartItems.find(
                                         (item: { id: number }) =>
@@ -870,7 +904,8 @@ export default function page() {
                                     </h5>
                                     <div className="flex items-center justify-between">
                                       <p className="text-2xl font-bold text-slate-900">
-                                        {FlexepinProduct.price} $
+                                        {convertCurrency(FlexepinProduct.price)}{" "}
+                                        {selectedCurrency}
                                       </p>
                                       {cartItems.find(
                                         (item: { id: number }) =>
@@ -954,7 +989,10 @@ export default function page() {
                                     </h5>
                                     <div className="flex items-center justify-between">
                                       <p className="text-2xl font-bold text-slate-900">
-                                        {MyPrepaidProduct.price} $
+                                        {convertCurrency(
+                                          MyPrepaidProduct.price
+                                        )}{" "}
+                                        {selectedCurrency}
                                       </p>
                                       {cartItems.find(
                                         (item: { id: number }) =>
@@ -1028,7 +1066,10 @@ export default function page() {
                                     </h5>
                                     <div className="flex items-center justify-between">
                                       <p className="text-2xl font-bold text-slate-900">
-                                        {MyPrepaidProduct.price} $
+                                        {convertCurrency(
+                                          MyPrepaidProduct.price
+                                        )}{" "}
+                                        {selectedCurrency}
                                       </p>
                                       {cartItems.find(
                                         (item: { id: number }) =>
@@ -1102,7 +1143,10 @@ export default function page() {
                                     </h5>
                                     <div className="flex items-center justify-between">
                                       <p className="text-2xl font-bold text-slate-900">
-                                        {MyPrepaidProduct.price} $
+                                        {convertCurrency(
+                                          MyPrepaidProduct.price
+                                        )}{" "}
+                                        {selectedCurrency}
                                       </p>
                                       {cartItems.find(
                                         (item: { id: number }) =>
@@ -1186,7 +1230,10 @@ export default function page() {
                                     </h5>
                                     <div className="flex items-center justify-between">
                                       <p className="text-2xl font-bold text-slate-900">
-                                        {PerfectMoneyProduct.price} $
+                                        {convertCurrency(
+                                          PerfectMoneyProduct.price
+                                        )}{" "}
+                                        {selectedCurrency}
                                       </p>
                                       {cartItems.find(
                                         (item: { id: number }) =>
@@ -1260,7 +1307,10 @@ export default function page() {
                                     </h5>
                                     <div className="flex items-center justify-between">
                                       <p className="text-2xl font-bold text-slate-900">
-                                        {PerfectMoneyProduct.price} $
+                                        {convertCurrency(
+                                          PerfectMoneyProduct.price
+                                        )}{" "}
+                                        {selectedCurrency}
                                       </p>
                                       {cartItems.find(
                                         (item: { id: number }) =>
@@ -1338,7 +1388,8 @@ export default function page() {
                             </h5>
                             <div className="flex items-center justify-between">
                               <p className="text-2xl font-bold text-slate-900">
-                                {WebMoneyProduct.price} $
+                                {convertCurrency(WebMoneyProduct.price)}{" "}
+                                {selectedCurrency}
                               </p>
                               {cartItems.find(
                                 (item: { id: number }) =>
@@ -1416,7 +1467,8 @@ export default function page() {
                                     </h5>
                                     <div className="flex items-center justify-between">
                                       <p className="text-2xl font-bold text-slate-900">
-                                        {AmazonProduct.price} $
+                                        {convertCurrency(AmazonProduct.price)}{" "}
+                                        {selectedCurrency}
                                       </p>
                                       {cartItems.find(
                                         (item: { id: number }) =>
@@ -1488,7 +1540,8 @@ export default function page() {
                                     </h5>
                                     <div className="flex items-center justify-between">
                                       <p className="text-2xl font-bold text-slate-900">
-                                        {AmazonProduct.price} $
+                                        {convertCurrency(AmazonProduct.price)}{" "}
+                                        {selectedCurrency}
                                       </p>
                                       {cartItems.find(
                                         (item: { id: number }) =>
@@ -1560,7 +1613,8 @@ export default function page() {
                                     </h5>
                                     <div className="flex items-center justify-between">
                                       <p className="text-2xl font-bold text-slate-900">
-                                        {AmazonProduct.price} $
+                                        {convertCurrency(AmazonProduct.price)}{" "}
+                                        {selectedCurrency}
                                       </p>
                                       {cartItems.find(
                                         (item: { id: number }) =>
@@ -1632,7 +1686,8 @@ export default function page() {
                                     </h5>
                                     <div className="flex items-center justify-between">
                                       <p className="text-2xl font-bold text-slate-900">
-                                        {AmazonProduct.price} $
+                                        {convertCurrency(AmazonProduct.price)}{" "}
+                                        {selectedCurrency}
                                       </p>
                                       {cartItems.find(
                                         (item: { id: number }) =>
@@ -1705,7 +1760,7 @@ export default function page() {
                                     <Chip color="danger">Contact Us</Chip>
                                     <div className="flex items-center justify-between">
                                       <p className="text-2xl font-bold text-slate-900">
-                                        {AmazonProductSpecial.price} $
+                                        {AmazonProductSpecial.price}
                                       </p>
                                       <Link
                                         href="mailto:enggam729@gmail.com"
@@ -1751,7 +1806,8 @@ export default function page() {
                                     </h5>
                                     <div className="flex items-center justify-between">
                                       <p className="text-2xl font-bold text-slate-900">
-                                        {AmazonProduct.price} $
+                                        {convertCurrency(AmazonProduct.price)}{" "}
+                                        {selectedCurrency}
                                       </p>
                                       {cartItems.find(
                                         (item: { id: number }) =>
@@ -1823,7 +1879,8 @@ export default function page() {
                                     </h5>
                                     <div className="flex items-center justify-between">
                                       <p className="text-2xl font-bold text-slate-900">
-                                        {AmazonProduct.price} $
+                                        {convertCurrency(AmazonProduct.price)}{" "}
+                                        {selectedCurrency}
                                       </p>
                                       {cartItems.find(
                                         (item: { id: number }) =>
@@ -1896,7 +1953,7 @@ export default function page() {
                                     <Chip color="danger">Contact Us</Chip>
                                     <div className="flex items-center justify-between">
                                       <p className="text-2xl font-bold text-slate-900">
-                                        {AmazonProductSpecial.price} $
+                                        {AmazonProductSpecial.price}
                                       </p>
                                       <Link
                                         href="mailto:enggam729@gmail.com"
@@ -1942,7 +1999,8 @@ export default function page() {
                                     </h5>
                                     <div className="flex items-center justify-between">
                                       <p className="text-2xl font-bold text-slate-900">
-                                        {AmazonProduct.price} $
+                                        {convertCurrency(AmazonProduct.price)}{" "}
+                                        {selectedCurrency}
                                       </p>
                                       {cartItems.find(
                                         (item: { id: number }) =>
@@ -2014,7 +2072,8 @@ export default function page() {
                                     </h5>
                                     <div className="flex items-center justify-between">
                                       <p className="text-2xl font-bold text-slate-900">
-                                        {AmazonProduct.price} $
+                                        {convertCurrency(AmazonProduct.price)}{" "}
+                                        {selectedCurrency}
                                       </p>
                                       {cartItems.find(
                                         (item: { id: number }) =>
@@ -2096,7 +2155,8 @@ export default function page() {
                                     </h5>
                                     <div className="flex items-center justify-between">
                                       <p className="text-2xl font-bold text-slate-900">
-                                        {NoonProduct.price} $
+                                        {convertCurrency(NoonProduct.price)}{" "}
+                                        {selectedCurrency}
                                       </p>
                                       {cartItems.find(
                                         (item: { id: number }) =>
@@ -2167,7 +2227,8 @@ export default function page() {
                                   </h5>
                                   <div className="flex items-center justify-between">
                                     <p className="text-2xl font-bold text-slate-900">
-                                      {NoonProduct.price} $
+                                      {convertCurrency(NoonProduct.price)}{" "}
+                                      {selectedCurrency}
                                     </p>
                                     {cartItems.find(
                                       (item: { id: number }) =>
@@ -2241,7 +2302,8 @@ export default function page() {
                           </h5>
                           <div className="flex items-center justify-between">
                             <p className="text-2xl font-bold text-slate-900">
-                              {EzpinProduct.price} $
+                              {convertCurrency(EzpinProduct.price)}{" "}
+                              {selectedCurrency}
                             </p>
                             {cartItems.find(
                               (item: { id: number }) =>

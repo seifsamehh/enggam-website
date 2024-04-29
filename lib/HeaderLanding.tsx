@@ -127,11 +127,11 @@ export default function HeaderLanding() {
               <DropdownItem
                 as={Link}
                 href="/sign-in"
-                aria-label="Payment-Cards"
-                key="Payment-Cards"
+                aria-label="Another-Cards"
+                key="Another-Cards"
                 startContent={<LiaCcVisa />}
               >
-                Payment Cards
+                Another Cards
               </DropdownItem>
             </DropdownMenu>
           </Dropdown>
@@ -222,9 +222,9 @@ export default function HeaderLanding() {
             </Link>
           </NavbarMenuItem>
           <NavbarMenuItem>
-            <Link href="/sign-in" aria-label="Payment Cards">
+            <Link href="/sign-in" aria-label="Another Cards">
               <LiaCcVisa />
-              Payment Cards
+              Another Cards
             </Link>
           </NavbarMenuItem>
           <NavbarMenuItem>
