@@ -2,5 +2,5 @@
   "/page": "app/page.js",
   "/(Home Page)/Home-Page/page": "app/(Home Page)/Home-Page/page.js",
   "/(Sign in)/sign-in/[[...sign-in]]/page": "app/(Sign in)/sign-in/[[...sign-in]]/page.js",
-  "/(Home Page)/Home-Page/(Cart)/cart/page": "app/(Home Page)/Home-Page/(Cart)/cart/page.js"
+  "/(Home Page)/Home-Page/(Sale)/sale-page/page": "app/(Home Page)/Home-Page/(Sale)/sale-page/page.js"
 }

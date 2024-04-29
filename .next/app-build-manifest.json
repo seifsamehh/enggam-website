@@ -29,11 +29,11 @@
       "static/chunks/main-app.js",
       "static/chunks/app/(Home Page)/Home-Page/page.js"
     ],
-    "/(Home Page)/Home-Page/(Cart)/cart/page": [
+    "/(Home Page)/Home-Page/(Sale)/sale-page/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/(Home Page)/Home-Page/(Cart)/cart/page.css",
-      "static/chunks/app/(Home Page)/Home-Page/(Cart)/cart/page.js"
+      "static/css/app/(Home Page)/Home-Page/(Sale)/sale-page/page.css",
+      "static/chunks/app/(Home Page)/Home-Page/(Sale)/sale-page/page.js"
     ]
   }
 }

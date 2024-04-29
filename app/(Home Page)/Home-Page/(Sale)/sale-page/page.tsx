@@ -8,8 +8,23 @@ import Footer from "@/common/Footer";
 import HeaderHome from "@/lib/HeaderHome";
 import { Toaster, toast } from "sonner";
 import Image from "next/image";
+import { useState } from "react";
 
+const USD_TO_EGP_RATE = 47.78;
 export default function page() {
+  const [selectedCurrency, setSelectedCurrency] = useState("USD");
+
+  const handleCurrencyChange = (currency: string) => {
+    setSelectedCurrency(currency);
+  };
+
+  const convertCurrency = (price: number) => {
+    if (selectedCurrency === "EGP") {
+      return (price * USD_TO_EGP_RATE).toFixed(2);
+    }
+    return price.toFixed(2);
+  };
+
   const cartItems = useSelector((state: RootState) => state.cart.items);
   const dispatch = useDispatch();
 
@@ -22,7 +37,17 @@ export default function page() {
   return (
     <>
       <HeaderHome />
-      <section className="sale-page overflow-hidden">
+      <section className="sale-page flex justify-center items-center flex-col overflow-hidden py-12">
+        <div>
+          <select
+            value={selectedCurrency}
+            onChange={(e) => handleCurrencyChange(e.target.value)}
+            className="bg-[#ff474d] text-white py-2 px-4 rounded-md"
+          >
+            <option value="USD">USD</option>
+            <option value="EGP">EGP</option>
+          </select>
+        </div>
         <div className="sale-boxs flex justify-center items-center gap-4 flex-wrap py-12">
           {SaleProducts.map((SalePageProduct) => (
             <div
@@ -46,10 +71,12 @@ export default function page() {
                 <h5 className="text-xl font-semibold tracking-tight text-slate-900 my-4">
                   {SalePageProduct.name}
                 </h5>
-                <del>{SalePageProduct.delete} $</del>
+                <del>
+                  {convertCurrency(SalePageProduct.delete)} {selectedCurrency}
+                </del>
                 <div className="flex items-center justify-between">
                   <p className="text-2xl font-bold text-slate-900">
-                    {SalePageProduct.price} $
+                    {convertCurrency(SalePageProduct.price)} {selectedCurrency}
                   </p>
                   {cartItems.find((item) => item.id === SalePageProduct.id) ? (
                     <button
