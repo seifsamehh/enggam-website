@@ -230,10 +230,12 @@ export default function SaleHome() {
                 <h5 className="text-3xl font-semibold tracking-tight text-slate-900 my-4">
                   {product.name}
                 </h5>
-                <del>{product.delete} $</del>
+                <del>
+                  {convertCurrency(product.delete)} {selectedCurrency}
+                </del>
                 <div className="flex items-center justify-between">
                   <p className="text-xl font-bold text-slate-900">
-                    {product.price} $
+                    {convertCurrency(product.price)} {selectedCurrency}
                   </p>
                   {cartItems.find((item) => item.id === product.id) ? (
                     <button

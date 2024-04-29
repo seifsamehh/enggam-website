@@ -150,7 +150,6 @@ export default function HomeProductSlider() {
                 </h5>
                 <div className="flex items-center justify-between">
                   <p className="text-xl font-bold text-slate-900">
-                    {/* {homeproducts.price} $ */}
                     {convertCurrency(homeproducts.price)} {selectedCurrency}
                   </p>
                   {cartItems.find((item) => item.id === homeproducts.id) ? (
@@ -213,7 +212,7 @@ export default function HomeProductSlider() {
                 </h5>
                 <div className="flex items-center justify-between">
                   <p className="text-xl font-bold text-slate-900">
-                    {homeproducts.price} $
+                    {convertCurrency(homeproducts.price)} {selectedCurrency}
                   </p>
                   {cartItems.find((item) => item.id === homeproducts.id) ? (
                     <button
