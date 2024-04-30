@@ -158,7 +158,7 @@ export default function page() {
           <h1
             className={`${raleway.className} min-[290px]:text-6xl md:text-8xl text-center`}
           >
-            PAYMENT CARDS
+            ANOTHER CARDS
           </h1>
           <Image
             src="https://i.imgur.com/a6tUu6Z.png"
