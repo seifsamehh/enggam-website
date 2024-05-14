@@ -93,8 +93,8 @@ export default function Team() {
                 src="/Seif-Sameh.webp"
                 alt="seif"
                 className="rounded-xl"
-                width={500}
-                height={500}
+                width={900}
+                height={900}
                 loading="lazy"
                 placeholder="blur"
                 blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nKSkqODMsMC4xOQ=="
@@ -106,9 +106,10 @@ export default function Team() {
               </h4>
               <p className="text-indigo-600">Web Developer</p>
               <p className="text-gray-600 mt-2 max-w-2xll">
-                Seif Eldin Sameh is a MERN stack web developer with 4+ years of
-                experience in building scalable and user-friendly web
-                applications.
+                over 2 years of expertise in developing robust web applications,
+                I specialize in utilizing a wide range of technologies to create
+                seamless and innovative solutions for software companies,
+                agencies, and founders.
               </p>
               <div className="social-links flex gap-4 mt-6">
                 {/* github */}
@@ -135,7 +136,7 @@ export default function Team() {
                 </Link>
                 {/* linkedin */}
                 <Link
-                  href="https://www.linkedin.com/in/seif-eldin-sameh-81b8661b7/"
+                  href="https://www.linkedin.com/in/seif-eldin-sameh/"
                   target="_blank"
                 >
                   <svg

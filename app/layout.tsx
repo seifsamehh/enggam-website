@@ -1,10 +1,11 @@
 import "./globals.css";
+import "../public/fawrypay.css";
 import LoadingPage from "@/common/LoadingPage";
 import { ClerkProvider } from "@clerk/nextjs";
 import { Analytics } from "@vercel/analytics/react";
 import { Parallax } from "./parallax";
 import { Providers } from "./providers";
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { PT_Serif } from "next/font/google";
 import CrispChat from "@/components/CrispChat";
 import Script from "next/script";
@@ -14,6 +15,13 @@ const ptSerif = PT_Serif({
   weight: "400",
   display: "swap",
 });
+
+export const viewport: Viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
+    { media: "(prefers-color-scheme: dark)", color: "#1f1e1e" },
+  ],
+};
 
 export const metadata: Metadata = {
   title: "ENGGAM Website | Gift, Game, Payment Store",
@@ -64,10 +72,6 @@ export const metadata: Metadata = {
   colorScheme: "light",
   creator: "Seif Eldin Sameh",
   publisher: "Seif Eldin Sameh",
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
-    { media: "(prefers-color-scheme: dark)", color: "#1f1e1e" },
-  ],
   manifest: "/manifest.json",
   icons: {
     icon: [
@@ -317,6 +321,11 @@ export default function RootLayout({
           <Script
             type="application/ld+json"
             dangerouslySetInnerHTML={{ __html: JSON.stringify(website) }}
+          />
+          <Script
+            id="fawrypay"
+            type="text/javascript"
+            src="https://atfawry.fawrystaging.com/atfawry/plugin/assets/payments/js/fawrypay-payments.js"
           />
         </body>
       </html>

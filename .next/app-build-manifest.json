@@ -29,11 +29,47 @@
       "static/chunks/main-app.js",
       "static/chunks/app/(Home Page)/Home-Page/page.js"
     ],
+    "/(Home Page)/Home-Page/(Cart)/cart/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(Home Page)/Home-Page/(Cart)/cart/page.css",
+      "static/chunks/app/(Home Page)/Home-Page/(Cart)/cart/page.js"
+    ],
+    "/_not-found/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/_not-found/page.css",
+      "static/chunks/app/_not-found/page.js"
+    ],
     "/(Home Page)/Home-Page/(Sale)/sale-page/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/(Home Page)/Home-Page/(Sale)/sale-page/page.css",
       "static/chunks/app/(Home Page)/Home-Page/(Sale)/sale-page/page.js"
+    ],
+    "/(Home Page)/Home-Page/(Categories)/categories/(Gift Cards)/gift-cards/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(Home Page)/Home-Page/(Categories)/categories/(Gift Cards)/gift-cards/page.css",
+      "static/chunks/app/(Home Page)/Home-Page/(Categories)/categories/(Gift Cards)/gift-cards/page.js"
+    ],
+    "/(Home Page)/Home-Page/(Categories)/categories/(Game Cards)/game-cards/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(Home Page)/Home-Page/(Categories)/categories/(Game Cards)/game-cards/page.css",
+      "static/chunks/app/(Home Page)/Home-Page/(Categories)/categories/(Game Cards)/game-cards/page.js"
+    ],
+    "/(Home Page)/Home-Page/(Categories)/categories/(Payment Cards)/payment-cards/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(Home Page)/Home-Page/(Categories)/categories/(Payment Cards)/payment-cards/page.css",
+      "static/chunks/app/(Home Page)/Home-Page/(Categories)/categories/(Payment Cards)/payment-cards/page.js"
+    ],
+    "/(Home Page)/Home-Page/(About Us)/about-us/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(Home Page)/Home-Page/(About Us)/about-us/page.css",
+      "static/chunks/app/(Home Page)/Home-Page/(About Us)/about-us/page.js"
     ]
   }
 }

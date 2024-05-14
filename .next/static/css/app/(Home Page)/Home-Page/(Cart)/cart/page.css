@@ -1,0 +1,13 @@
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[2].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[13].oneOf[2].use[2]!./node_modules/next/font/google/target.css?{"path":"app/(Home Page)/Home-Page/(Cart)/cart/page.jsx","import":"Raleway","arguments":[{"subsets":["latin"],"weight":"900","display":"swap"}],"variableName":"raleway"} ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@font-face {
+  font-family: '__Raleway_Fallback_a062ca';
+  src: local("Arial");
+  ascent-override:90.51%;
+  descent-override:22.53%;
+  line-gap-override:0.00%;
+  size-adjust:103.86%;
+}@font-face {font-family: '__Raleway_Fallback_Fallback_a062ca';src: local("Arial");ascent-override: 90.51%;descent-override: 22.53%;line-gap-override: 0.00%;size-adjust: 103.86%
+}.__className_a062ca {font-family: '__Raleway_Fallback_a062ca', '__Raleway_Fallback_Fallback_a062ca';font-weight: 900;font-style: normal
+}

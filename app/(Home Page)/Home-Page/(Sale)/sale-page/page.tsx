@@ -38,7 +38,7 @@ export default function page() {
     <>
       <HeaderHome />
       <section className="sale-page flex justify-center items-center flex-col overflow-hidden py-12">
-        <div>
+        <div className="hidden">
           <select
             value={selectedCurrency}
             onChange={(e) => handleCurrencyChange(e.target.value)}

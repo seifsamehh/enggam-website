@@ -131,7 +131,7 @@ export default function SaleHome() {
           >
             View More
           </Link>
-          <div>
+          <div className="hidden">
             <select
               value={selectedCurrency}
               onChange={(e) => handleCurrencyChange(e.target.value)}

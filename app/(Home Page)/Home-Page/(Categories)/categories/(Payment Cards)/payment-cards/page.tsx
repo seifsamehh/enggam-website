@@ -172,7 +172,7 @@ export default function page() {
           />
         </div>
         <div className="payment-products min-h-screen flex justify-center items-center gap-4 flex-col py-8">
-          <div>
+          <div className="hidden">
             <select
               value={selectedCurrency}
               onChange={(e) => handleCurrencyChange(e.target.value)}
