@@ -12,7 +12,7 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import { useUser } from "@clerk/nextjs";
-import confetti from "canvas-confetti";
+// import confetti from "canvas-confetti";
 import { useEffect, useState } from "react";
 // import {
 //   Modal,
@@ -35,6 +35,7 @@ import { MdEmail } from "react-icons/md";
 import { useRouter } from "next/navigation";
 
 import { Raleway } from "next/font/google";
+import { Button } from "@nextui-org/react";
 const raleway = Raleway({ subsets: ["latin"], weight: "900", display: "swap" });
 
 const USD_TO_EGP_RATE = 47.78;
@@ -178,7 +179,7 @@ const CartPage = () => {
       "770000019150" +
       merchantRefNum +
       customerProfileId +
-      "https://www.enggam.com/Home-Page" +
+      "https://www.enggam.com/Home-Page/cancel" +
       chargeItems.map((item) => item.itemId).join("") +
       chargeItems.map((item) => item.quantity).join("") +
       chargeItems.map((item) => item.price).join("") +
@@ -195,7 +196,7 @@ const CartPage = () => {
       paymentMethod: "",
       customerProfileId: customerProfileId,
       chargeItems: chargeItems,
-      returnUrl: "https://www.enggam.com/Home-Page",
+      returnUrl: "https://www.enggam.com/Home-Page/cancel",
       authCaptureModePayment: false,
       signature: signature,
     };
@@ -234,7 +235,6 @@ const CartPage = () => {
       const response = await fetch(`${statusUrl}?${queryParams}`);
       const data = await response.json();
       // Handle the response data as needed
-      console.log(data);
     } catch (error) {
       // Handle any errors that occur during the request
       console.error(error);
@@ -428,13 +428,13 @@ const CartPage = () => {
                 </p>
                 {products.length > 0 && (
                   <div className="payments">
-                    <input
-                      type="image"
+                    <Button
+                      className="bg-white text-black py-2 px-4 rounded-md"
                       onClick={() => checkout(products)}
-                      src="https://www.atfawry.com/assets/img/FawryPayLogo.jpg"
-                      alt="pay-using-fawry"
                       id="fawry-payment-btn"
-                    />
+                    >
+                      Checkout
+                    </Button>
                   </div>
                 )}
                 {/* <Button

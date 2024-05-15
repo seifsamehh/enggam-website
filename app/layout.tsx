@@ -69,7 +69,6 @@ export const metadata: Metadata = {
   authors: [
     { name: "Seif Eldin Sameh", url: "https://seif-sameh-mern.vercel.app/" },
   ],
-  colorScheme: "light",
   creator: "Seif Eldin Sameh",
   publisher: "Seif Eldin Sameh",
   manifest: "/manifest.json",
