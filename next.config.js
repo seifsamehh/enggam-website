@@ -3,7 +3,6 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ["i.imgur.com"],
     remotePatterns: [
       {
         protocol: "https",

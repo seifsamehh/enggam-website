@@ -28,6 +28,30 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/(Home Page)/Home-Page/page.js"
+    ],
+    "/(Home Page)/Home-Page/(Categories)/categories/(Payment Cards)/payment-cards/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(Home Page)/Home-Page/(Categories)/categories/(Payment Cards)/payment-cards/page.css",
+      "static/chunks/app/(Home Page)/Home-Page/(Categories)/categories/(Payment Cards)/payment-cards/page.js"
+    ],
+    "/(Home Page)/Home-Page/(Sale)/sale-page/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(Home Page)/Home-Page/(Sale)/sale-page/page.css",
+      "static/chunks/app/(Home Page)/Home-Page/(Sale)/sale-page/page.js"
+    ],
+    "/(Home Page)/Home-Page/(Categories)/categories/(Gift Cards)/gift-cards/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(Home Page)/Home-Page/(Categories)/categories/(Gift Cards)/gift-cards/page.css",
+      "static/chunks/app/(Home Page)/Home-Page/(Categories)/categories/(Gift Cards)/gift-cards/page.js"
+    ],
+    "/(Home Page)/Home-Page/(Categories)/categories/(Game Cards)/game-cards/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(Home Page)/Home-Page/(Categories)/categories/(Game Cards)/game-cards/page.css",
+      "static/chunks/app/(Home Page)/Home-Page/(Categories)/categories/(Game Cards)/game-cards/page.js"
     ]
   }
 }

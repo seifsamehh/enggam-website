@@ -13,7 +13,7 @@ import "../styles/HomeProducts.scss";
 
 const USD_TO_EGP_RATE = 47.78;
 export default function HomeProductSlider() {
-  const [selectedCurrency, setSelectedCurrency] = useState("USD");
+  const [selectedCurrency, setSelectedCurrency] = useState("EGP");
 
   const handleCurrencyChange = (currency: string) => {
     setSelectedCurrency(currency);
@@ -117,7 +117,7 @@ export default function HomeProductSlider() {
   );
   return (
     <>
-      <div>
+      <div className="hidden">
         <select
           value={selectedCurrency}
           onChange={(e) => handleCurrencyChange(e.target.value)}

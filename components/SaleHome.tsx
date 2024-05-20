@@ -17,7 +17,7 @@ import "../styles/sale.scss";
 
 const USD_TO_EGP_RATE = 47.78;
 export default function SaleHome() {
-  const [selectedCurrency, setSelectedCurrency] = useState("USD");
+  const [selectedCurrency, setSelectedCurrency] = useState("EGP");
 
   const handleCurrencyChange = (currency: string) => {
     setSelectedCurrency(currency);
