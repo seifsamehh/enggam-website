@@ -274,7 +274,7 @@ const CartPage = () => {
     const onCancel = () => {
       generateError("You have Canceled the operation!");
       router.push({
-        pathname: "https://www.enggam.com/Home-Page/cancel",
+        pathname: "/Home-Page/cancel",
       });
     };
 
