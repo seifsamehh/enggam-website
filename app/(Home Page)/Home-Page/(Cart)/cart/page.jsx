@@ -460,10 +460,6 @@ const CartPage = () => {
                   possible and you can communicate with us easily in order to
                   complete any order required and make it faster ...
                 </p>
-                <p>
-                  Note: <br /> Please Write a correct email for ease and speed
-                  of communicating with you.
-                </p>
                 <div className="hidden">
                   <select
                     value={selectedCurrency}
