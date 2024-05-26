@@ -137,6 +137,11 @@ html.lenis {
   color: #fff;
 }
 
+.cancel a {
+  background-color: #fff;
+  color: #ff474d;
+}
+
 /* payment btns */
 #fawry-payment-btn,
 #geidea-payment-btn {
