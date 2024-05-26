@@ -3398,6 +3398,17 @@ html.lenis {
 .lenis.lenis-scrolling iframe {
   pointer-events: none;
 }
+
+/* payment btns */
+#fawry-payment-btn,
+#geidea-payment-btn {
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  width: 200px;
+  color: #0f0f0f;
+  background-color: #fff;
+  text-align: center;
+}
 /* end global components */
 .placeholder\:text-danger::-moz-placeholder {
   --tw-text-opacity: 1;

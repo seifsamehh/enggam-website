@@ -3,6 +3,7 @@
 import { useDispatch, useSelector } from "react-redux";
 // import { RootState } from "../../../../../store/store";
 import CryptoJS from "crypto-js";
+import axios from "axios";
 import {
   removeFromCart,
   increaseQuantity,
@@ -28,10 +29,10 @@ import { useEffect, useState } from "react";
 //   Divider,
 //   Textarea,
 // } from "@nextui-org/react";
-import { FaArrowLeftLong, FaPhone } from "react-icons/fa6";
+import { FaArrowLeftLong } from "react-icons/fa6";
 import { RxCross2 } from "react-icons/rx";
-import { FaUser } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
+// import { FaUser } from "react-icons/fa";
+// import { MdEmail } from "react-icons/md";
 import { useRouter } from "next/navigation";
 
 import { Raleway } from "next/font/google";
@@ -240,6 +241,56 @@ const CartPage = () => {
       console.error(error);
     }
   }
+
+  // Geidea integration
+  const paymentAmount = totalPrice * USD_TO_EGP_RATE;
+
+  const generateError = (message) => {
+    // Implement error handling logic, possibly using a toast notification or a state variable
+    console.error(message);
+  };
+
+  const generateSuccess = (message) => {
+    // Implement success handling logic, possibly using a toast notification or a state variable
+    console.log(message);
+  };
+
+  const handleSubmit = async () => {
+    const name = customerName;
+    const email = customerEmail;
+    const amount = paymentAmount;
+
+    const onSuccess = (e) => {
+      generateSuccess("Payment Successful!");
+      router.push({
+        pathname: "/Home-Page/success",
+        query: { data: JSON.stringify(e) },
+      });
+    };
+
+    const onError = () => {
+      generateError("Something went Wrong Please Try Again!");
+    };
+    const onCancel = () => {
+      generateError("You have Canceled the operation!");
+    };
+
+    try {
+      const response = await axios.post("/api/payments", {
+        amount: amount,
+        name: name,
+        email: email,
+      });
+
+      const sessionId = response.data.session.id;
+      var payment = new GeideaCheckout(onSuccess, onError, onCancel);
+      payment.startPayment(sessionId);
+    } catch (err) {
+      console.error(err);
+      generateError("Failed to process payment.");
+    }
+  };
+
   return (
     <section className="cart-page overflow-hidden min-h-screen">
       {products.length === 0 ? (
@@ -427,13 +478,15 @@ const CartPage = () => {
                   {selectedCurrency}
                 </p>
                 {products.length > 0 && (
-                  <div className="payments">
+                  <div className="payments flex justify-start items-center gap-4 flex-wrap md:flex-nowrap">
                     <Button
-                      className="bg-white text-black py-2 px-4 rounded-md"
                       onClick={() => checkout(products)}
                       id="fawry-payment-btn"
                     >
-                      Checkout
+                      Fawry Checkout
+                    </Button>
+                    <Button onClick={handleSubmit} id="geidea-payment-btn">
+                      Geidea Checkout
                     </Button>
                   </div>
                 )}

@@ -59,7 +59,7 @@ import { useState } from "react";
 
 const USD_TO_EGP_RATE = 47.78;
 export default function page() {
-  const [selectedCurrency, setSelectedCurrency] = useState("EGP");
+  const [selectedCurrency, setSelectedCurrency] = useState("USD");
 
   const handleCurrencyChange = (currency: string) => {
     setSelectedCurrency(currency);
@@ -960,7 +960,7 @@ export default function page() {
             <Tab
               key="MyPrepaid center"
               title="MyPrepaid center"
-              className="hidden"
+              // className="hidden"
             >
               <Card className="max-w-7xl">
                 <CardBody>
