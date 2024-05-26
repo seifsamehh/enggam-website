@@ -247,7 +247,7 @@ const CartPage = () => {
 
   const generateError = (message) => {
     // Implement error handling logic, possibly using a toast notification or a state variable
-    console.error(message);
+    console.log(message);
   };
 
   const generateSuccess = (message) => {
@@ -273,6 +273,9 @@ const CartPage = () => {
     };
     const onCancel = () => {
       generateError("You have Canceled the operation!");
+      router.push({
+        pathname: "/Home-Page/cancel",
+      });
     };
 
     try {
