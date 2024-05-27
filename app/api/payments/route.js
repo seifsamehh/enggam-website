@@ -57,7 +57,7 @@ export async function POST(req) {
         merchantReferenceId: name,
         order: { integrationType: "HPP" },
         paymentOperation: "Pay",
-        returnUrl: "https://www.enggam.com/Home-Page/success",
+        // returnUrl: "https://www.enggam.com/Home-Page/success",
       },
       {
         headers: {

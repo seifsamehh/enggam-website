@@ -248,11 +248,19 @@ const CartPage = () => {
   const generateError = (message) => {
     // Implement error handling logic, possibly using a toast notification or a state variable
     console.log(message);
+    router.push({
+      pathname: "/Home-Page/cancel",
+      query: { data: JSON.stringify(e) },
+    });
   };
 
   const generateSuccess = (message) => {
     // Implement success handling logic, possibly using a toast notification or a state variable
     console.log(message);
+    router.push({
+      pathname: "/Home-Page/success",
+      query: { data: JSON.stringify(e) },
+    });
   };
 
   const handleSubmit = async () => {
@@ -262,10 +270,6 @@ const CartPage = () => {
 
     const onSuccess = (e) => {
       generateSuccess("Payment Successful!");
-      router.push({
-        pathname: "/Home-Page/success",
-        query: { data: JSON.stringify(e) },
-      });
     };
 
     const onError = () => {
@@ -273,9 +277,6 @@ const CartPage = () => {
     };
     const onCancel = () => {
       generateError("You have Canceled the operation!");
-      router.push({
-        pathname: "/Home-Page/cancel",
-      });
     };
 
     try {
