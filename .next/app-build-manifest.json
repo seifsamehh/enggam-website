@@ -35,11 +35,16 @@
       "static/css/app/(Home Page)/Home-Page/(Cart)/cart/page.css",
       "static/chunks/app/(Home Page)/Home-Page/(Cart)/cart/page.js"
     ],
-    "/_not-found/page": [
+    "/(Home Page)/Home-Page/(success)/success/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/_not-found/page.css",
-      "static/chunks/app/_not-found/page.js"
+      "static/css/app/(Home Page)/Home-Page/(success)/success/page.css",
+      "static/chunks/app/(Home Page)/Home-Page/(success)/success/page.js"
+    ],
+    "/(Home Page)/Home-Page/(Cancel Payment)/cancel/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(Home Page)/Home-Page/(Cancel Payment)/cancel/page.js"
     ]
   }
 }

@@ -245,24 +245,18 @@ const CartPage = () => {
   // Geidea integration
   const paymentAmount = totalPrice * USD_TO_EGP_RATE;
 
-  const generateError = (message) => {
-    console.log(message);
-    router
-      .push({
-        pathname: "https://www.enggam.com/Home-Page/cancel",
-        query: { data: JSON.stringify(message) },
-      })
-      .catch((err) => console.error("Failed to redirect:", err));
+  const generateError = () => {
+    router.push("/Home-Page");
+    dispatch(resetCart());
   };
 
-  const generateSuccess = (message) => {
-    console.log(message);
-    router
-      .push({
-        pathname: "/Home-Page/success",
-        query: { data: JSON.stringify(message) },
-      })
-      .catch((err) => console.error("Failed to redirect:", err));
+  const generateCancel = () => {
+    router.push("/Home-Page/cancel");
+  };
+
+  const generateSuccess = () => {
+    router.push("/Home-Page/success");
+    dispatch(resetCart());
   };
 
   const handleSubmit = async () => {
@@ -278,7 +272,7 @@ const CartPage = () => {
       generateError("Something went Wrong Please Try Again!");
     };
     const onCancel = () => {
-      generateError("You have Canceled the operation!");
+      generateCancel("You have Canceled the operation!");
     };
 
     try {
@@ -464,7 +458,7 @@ const CartPage = () => {
                   complete any order required and make it faster ...
                 </p>
                 <p>
-                  Note:
+                  <span className="font-black">Note:</span>
                   <br />
                   We will email you to complete your purchase, so keep in mind
                   that the email you are logged in or signed up with is the
