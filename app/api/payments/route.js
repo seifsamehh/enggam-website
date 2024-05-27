@@ -48,7 +48,7 @@ export async function POST(req) {
         appearance: { styles: { hppProfile: "simple" } },
         timestamp: timestamp,
         signature: signature,
-        callbackUrl: "https://www.enggam.com/Home-Page/success",
+        callbackUrl: "https://www.enggam.com/Home-Page",
         currency: currency,
         customer: {
           email: email,
@@ -57,7 +57,7 @@ export async function POST(req) {
         merchantReferenceId: name,
         order: { integrationType: "HPP" },
         paymentOperation: "Pay",
-        // returnUrl: "https://www.enggam.com/Home-Page/cancel",
+        returnUrl: "https://www.enggam.com/Home-Page/success",
       },
       {
         headers: {
