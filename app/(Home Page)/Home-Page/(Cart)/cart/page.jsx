@@ -246,21 +246,23 @@ const CartPage = () => {
   const paymentAmount = totalPrice * USD_TO_EGP_RATE;
 
   const generateError = (message) => {
-    // Implement error handling logic, possibly using a toast notification or a state variable
     console.log(message);
-    router.push({
-      pathname: "/Home-Page/cancel",
-      query: { data: JSON.stringify(e) },
-    });
+    router
+      .push({
+        pathname: "https://www.enggam.com/Home-Page/cancel",
+        query: { data: JSON.stringify(message) },
+      })
+      .catch((err) => console.error("Failed to redirect:", err));
   };
 
   const generateSuccess = (message) => {
-    // Implement success handling logic, possibly using a toast notification or a state variable
     console.log(message);
-    router.push({
-      pathname: "/Home-Page/success",
-      query: { data: JSON.stringify(e) },
-    });
+    router
+      .push({
+        pathname: "/Home-Page/success",
+        query: { data: JSON.stringify(message) },
+      })
+      .catch((err) => console.error("Failed to redirect:", err));
   };
 
   const handleSubmit = async () => {
@@ -268,7 +270,7 @@ const CartPage = () => {
     const email = customerEmail;
     const amount = paymentAmount;
 
-    const onSuccess = (e) => {
+    const onSuccess = () => {
       generateSuccess("Payment Successful!");
     };
 
