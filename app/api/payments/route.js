@@ -48,7 +48,7 @@ export async function POST(req) {
         appearance: { styles: { hppProfile: "simple" } },
         timestamp: timestamp,
         signature: signature,
-        callbackUrl: "https://www.enggam.com/Home-Page",
+        callbackUrl: "https://www.enggam.com/Home-Page/success",
         currency: currency,
         customer: {
           email: email,
