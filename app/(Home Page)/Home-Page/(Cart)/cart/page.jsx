@@ -460,6 +460,13 @@ const CartPage = () => {
                   possible and you can communicate with us easily in order to
                   complete any order required and make it faster ...
                 </p>
+                <p>
+                  Note:
+                  <br />
+                  We will email you to complete your purchase, so keep in mind
+                  that the email you are logged in or signed up with is the
+                  email to which we will send your product.
+                </p>
                 <div className="hidden">
                   <select
                     value={selectedCurrency}
