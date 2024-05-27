@@ -28,7 +28,7 @@ export async function POST(req) {
     const { GEIDA_USER: username, GEIDA_PASS: password } = process.env;
 
     const barear = Buffer.from(`${username}:${password}`).toString("base64");
-    const { name, email, amount, clientName } = await req.json();
+    const { name, email, amount, clientName, quantity } = await req.json();
     const amounts = parseFloat(amount).toFixed(2);
     const currency = "EGP";
     let timestamp = new Date().toLocaleString();
@@ -53,6 +53,11 @@ export async function POST(req) {
         customer: {
           name: clientName,
           email: email,
+          address: {
+            billing: {
+              postalCode: quantity,
+            },
+          },
         },
         language: "en",
         merchantReferenceId: name,
