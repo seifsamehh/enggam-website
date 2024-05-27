@@ -54,7 +54,7 @@ export async function POST(req) {
           email: email,
         },
         language: "en",
-        merchantReferenceId: name,
+        merchantReferenceId: email,
         order: { integrationType: "HPP" },
         paymentOperation: "Pay",
         returnUrl: "https://www.enggam.com/Home-Page/cancel",
