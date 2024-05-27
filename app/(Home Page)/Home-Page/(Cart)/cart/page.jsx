@@ -203,9 +203,10 @@ const CartPage = () => {
   };
 
   const handleSubmit = async () => {
-    const name = customerName;
+    const name = products.map((product) => product.name).join(", ");
     const email = customerEmail;
     const amount = paymentAmount;
+    const clientName = customerName;
 
     const onSuccess = () => {
       generateSuccess("Payment Successful!");
@@ -223,6 +224,7 @@ const CartPage = () => {
         amount: amount,
         name: name,
         email: email,
+        clientName: clientName,
       });
 
       const sessionId = response.data.session.id;
