@@ -53,11 +53,7 @@ export async function POST(req) {
         customer: {
           name: clientName,
           email: email,
-          address: {
-            billing: {
-              postalCode: quantity,
-            },
-          },
+          quantity: quantity,
         },
         language: "en",
         merchantReferenceId: name,
