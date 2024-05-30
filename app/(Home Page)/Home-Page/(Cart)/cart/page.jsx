@@ -20,6 +20,7 @@ import { useRouter } from "next/navigation";
 
 import { Raleway } from "next/font/google";
 import { Button } from "@nextui-org/react";
+import { toast } from "sonner";
 const raleway = Raleway({ subsets: ["latin"], weight: "900", display: "swap" });
 
 const USD_TO_EGP_RATE = 52.0;
@@ -182,7 +183,7 @@ const CartPage = () => {
   const generateError = () => {
     // router.push("/Home-Page");
     // dispatch(resetCart());
-    console.log("error");
+    toast.error("Something went Wrong Please Try Again!");
   };
 
   const generateCancel = () => {
@@ -206,8 +207,7 @@ const CartPage = () => {
   const handleSubmit = async () => {
     // const quantity = products.map((product) => product.quantity).join(", ");
     // const name = products.map((product) => product.name).join(", ");
-    const productName = products.map((product) => product.name);
-    const name = productName;
+    const name = customerName;
     const email = customerEmail;
     const amount = paymentAmount;
     // const clientName = customerName;
