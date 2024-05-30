@@ -1,4 +1,5 @@
-import Link from "next/link";
+"use client";
+
 import { Raleway } from "next/font/google";
 
 const raleway = Raleway({ subsets: ["latin"], weight: "900", display: "swap" });
@@ -21,12 +22,12 @@ export default function NotFound() {
               <p className="mb-8 text-lg text-white">
                 The page you are looking for it maybe deleted
               </p>
-              <Link
-                href="/profile/contact-us"
+              <button
+                onClick={() => window.history.back()}
                 className="inline-block px-8 py-3 text-base font-semibold text-center text-white transition border border-white rounded-lg hover:bg-white hover:text-primary"
               >
-                Contact Us
-              </Link>
+                Go Back
+              </button>
             </div>
           </div>
         </div>
