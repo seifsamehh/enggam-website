@@ -205,7 +205,8 @@ const CartPage = () => {
 
   const handleSubmit = async () => {
     // const quantity = products.map((product) => product.quantity).join(", ");
-    const name = products.map((product) => product.name).join(", ");
+    // const name = products.map((product) => product.name).join(", ");
+    const name = customerName;
     const email = customerEmail;
     const amount = paymentAmount;
     // const clientName = customerName;
