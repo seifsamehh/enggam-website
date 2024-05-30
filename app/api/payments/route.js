@@ -28,7 +28,7 @@ export async function POST(req) {
     const { GEIDA_USER: username, GEIDA_PASS: password } = process.env;
 
     const barear = Buffer.from(`${username}:${password}`).toString("base64");
-    const { name, email, amount, clientName, quantity } = await req.json();
+    const { name, email, amount } = await req.json();
     const amounts = parseFloat(amount).toFixed(2);
     const currency = "EGP";
     let timestamp = new Date().toLocaleString();
@@ -51,9 +51,9 @@ export async function POST(req) {
         callbackUrl: "https://www.enggam.com/Home-Page",
         currency: currency,
         customer: {
-          name: clientName,
+          // name: clientName,
           email: email,
-          phoneNumber: quantity,
+          // phoneNumber: quantity,
         },
         language: "en",
         merchantReferenceId: name,

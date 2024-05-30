@@ -180,8 +180,9 @@ const CartPage = () => {
   const paymentAmount = totalPrice * USD_TO_EGP_RATE;
 
   const generateError = () => {
-    router.push("/Home-Page");
-    dispatch(resetCart());
+    // router.push("/Home-Page");
+    // dispatch(resetCart());
+    console.log("error");
   };
 
   const generateCancel = () => {
@@ -207,7 +208,7 @@ const CartPage = () => {
     const name = products.map((product) => product.name).join(", ");
     const email = customerEmail;
     const amount = paymentAmount;
-    const clientName = customerName;
+    // const clientName = customerName;
 
     const onSuccess = () => {
       generateSuccess("Payment Successful!");
@@ -224,8 +225,8 @@ const CartPage = () => {
         amount: amount,
         name: name,
         email: email,
-        clientName: clientName,
-        quantity: quantity,
+        // clientName: clientName,
+        // quantity: quantity,
       });
 
       const sessionId = response.data.session.id;
