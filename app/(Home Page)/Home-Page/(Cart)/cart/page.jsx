@@ -181,8 +181,6 @@ const CartPage = () => {
   const paymentAmount = totalPrice * USD_TO_EGP_RATE;
 
   const generateError = () => {
-    // router.push("/Home-Page");
-    // dispatch(resetCart());
     toast.error("Something went Wrong Please Try Again!");
   };
 
@@ -190,18 +188,43 @@ const CartPage = () => {
     router.push("/Home-Page/cancel");
   };
 
-  const generateSuccess = () => {
-    router.push("/Home-Page/success");
-    dispatch(resetCart());
-    confetti({
-      particleCount: 100,
-      startVelocity: 30,
-      spread: 360,
-      origin: {
-        x: Math.random(),
-        y: Math.random() - 0.2,
-      },
-    });
+  const generateSuccess = async () => {
+    const email = customerEmail || "customer@domain.com";
+    const price = paymentAmount;
+    const products = productsItems;
+
+    try {
+      const response = await fetch("/api/sendEmail", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email,
+          price,
+          products,
+        }),
+      });
+
+      const responseData = await response.json();
+      if (response.ok) {
+        router.push("/Home-Page/success");
+        dispatch(resetCart());
+        confetti({
+          particleCount: 100,
+          startVelocity: 30,
+          spread: 360,
+          origin: {
+            x: Math.random(),
+            y: Math.random() - 0.2,
+          },
+        });
+      } else {
+        console.error("Failed to send email:", responseData.message);
+      }
+    } catch (error) {
+      console.error("Error sending email:", error);
+    }
   };
 
   const handleSubmit = async () => {
@@ -227,8 +250,6 @@ const CartPage = () => {
         amount: amount,
         name: name,
         email: email,
-        // clientName: clientName,
-        // quantity: quantity,
       });
 
       const sessionId = response.data.session.id;

@@ -51,9 +51,7 @@ export async function POST(req) {
         callbackUrl: "https://www.enggam.com/Home-Page",
         currency: currency,
         customer: {
-          // name: clientName,
           email: email,
-          // phoneNumber: quantity,
         },
         language: "en",
         merchantReferenceId: name,
