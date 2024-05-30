@@ -2,16 +2,7 @@ import nodemailer from "nodemailer";
 
 export async function POST(request) {
   try {
-    const {
-      firstname,
-      lastname,
-      email,
-      phone,
-      products,
-      price,
-      payment,
-      message,
-    } = await request.json();
+    const { email, products, price } = await request.json();
 
     const transporter = nodemailer.createTransport({
       host: "smtp.gmail.com", // Specify the SMTP server host
@@ -30,14 +21,9 @@ export async function POST(request) {
       html: `
         <h3>Hello Ali,</h3>
         <div style="padding: 20px; border-radius: 5px;">
-          <p><span style="font-size: 1rem; font-weight: bold;">First Name:</span> ${firstname}</p>
-          <p><span style="font-size: 1rem; font-weight: bold;">Last Name:</span> ${lastname}</p>
           <p><span style="font-size: 1rem; font-weight: bold;">Email:</span>${email}</p>
-          <p><span style="font-size: 1rem; font-weight: bold;">Phone:</span> ${phone}</p>
           <p><span style="font-size: 1rem; font-weight: bold;">Products:</span> ${products}</p>
-          <p><span style="font-size: 1rem; font-weight: bold;">Price:</span> ${price}</p>
-          <p><span style="font-size: 1rem; font-weight: bold;">Payment Method:</span> ${payment}</p>
-          <p><span style="font-size: 1rem; font-weight: bold;">Message:</span> ${message}</p>
+          <p><span style="font-size: 1rem; font-weight: bold;">Price:</span> ${price} EGP</p>
         </div>
         `,
     };
