@@ -23,7 +23,7 @@ import { Button } from "@nextui-org/react";
 import { toast } from "sonner";
 const raleway = Raleway({ subsets: ["latin"], weight: "900", display: "swap" });
 
-const USD_TO_EGP_RATE = 52.0;
+const USD_TO_EGP_RATE = 55.0;
 const CartPage = () => {
   const [selectedCurrency, setSelectedCurrency] = useState("USD");
 
