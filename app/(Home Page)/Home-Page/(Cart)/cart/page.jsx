@@ -23,7 +23,7 @@ import { Button } from "@nextui-org/react";
 import { toast } from "sonner";
 const raleway = Raleway({ subsets: ["latin"], weight: "900", display: "swap" });
 
-const USD_TO_EGP_RATE = 55.0;
+const USD_TO_EGP_RATE = 52.0;
 const CartPage = () => {
   const [selectedCurrency, setSelectedCurrency] = useState("USD");
 
@@ -178,7 +178,8 @@ const CartPage = () => {
   }
 
   // Geidea integration
-  const paymentAmount = totalPrice * USD_TO_EGP_RATE;
+  const fees = 1.025;
+  const paymentAmount = totalPrice * USD_TO_EGP_RATE * fees;
 
   const generateError = () => {
     toast.error("Something went Wrong Please Try Again!");
