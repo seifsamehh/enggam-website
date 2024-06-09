@@ -178,8 +178,8 @@ const CartPage = () => {
   }
 
   // Geidea integration
-  const fees = 1.025;
-  const paymentAmount = totalPrice * USD_TO_EGP_RATE * fees;
+  const fees = 1.15;
+  const paymentAmount = totalPrice * USD_TO_EGP_RATE * fees + 2.0;
 
   const generateError = () => {
     toast.error("Something went Wrong Please Try Again!");
