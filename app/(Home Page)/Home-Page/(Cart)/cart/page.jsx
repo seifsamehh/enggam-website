@@ -455,7 +455,7 @@ const CartPage = () => {
                     <Button
                       onClick={() => checkout(products)}
                       id="fawry-payment-btn"
-                      className="hidden"
+                      // className="hidden"
                     >
                       Fawry Checkout
                     </Button>
