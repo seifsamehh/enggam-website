@@ -172,12 +172,6 @@ const CartPage = () => {
     try {
       const response = await fetch(`${statusUrl}?${queryParams}`);
       const data = await response.json();
-
-      if (data.statusCode === "200") {
-        router.push("/Home-Page/success");
-      } else {
-        router.push("/Home-Page/cancel");
-      }
     } catch (error) {
       // Handle any errors that occur during the request
       console.error(error);
