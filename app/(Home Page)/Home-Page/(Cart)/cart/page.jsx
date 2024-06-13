@@ -125,7 +125,7 @@ const CartPage = () => {
     const signature = CryptoJS.SHA256(concatenatedString).toString();
 
     return {
-      merchantCode: "770000019150",
+      merchantCode: "400000018490",
       merchantRefNum: merchantRefNum,
       customerEmail: customerEmail,
       customerName: customerName,
