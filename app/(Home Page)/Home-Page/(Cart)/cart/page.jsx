@@ -115,7 +115,7 @@ const CartPage = () => {
       "400000018490" +
       merchantRefNum +
       customerProfileId +
-      "https://www.enggam.com/Home-Page/cancel" +
+      "https://www.enggam.com/Home-Page/success" +
       chargeItems.map((item) => item.itemId).join("") +
       chargeItems.map((item) => item.quantity).join("") +
       chargeItems.map((item) => item.price).join("") +
@@ -132,7 +132,7 @@ const CartPage = () => {
       paymentMethod: "",
       customerProfileId: customerProfileId,
       chargeItems: chargeItems,
-      returnUrl: "https://www.enggam.com/Home-Page/cancel",
+      returnUrl: "https://www.enggam.com/Home-Page/success",
       authCaptureModePayment: false,
       signature: signature,
     };
