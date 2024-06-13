@@ -112,20 +112,20 @@ const CartPage = () => {
 
     // Concatenate the elements for signature calculation
     const concatenatedString =
-      "770000019150" +
+      "400000018490" +
       merchantRefNum +
       customerProfileId +
       "https://www.enggam.com/Home-Page/cancel" +
       chargeItems.map((item) => item.itemId).join("") +
       chargeItems.map((item) => item.quantity).join("") +
       chargeItems.map((item) => item.price).join("") +
-      "0743aa6f-53e6-43ca-a3e2-46fe25c1e3be";
+      "5d289a9c-6a46-4b5a-a618-23b2929de937";
 
     // Calculate the signature
     const signature = CryptoJS.SHA256(concatenatedString).toString();
 
     return {
-      merchantCode: "770000019150",
+      merchantCode: "400000018490",
       merchantRefNum: merchantRefNum,
       customerEmail: customerEmail,
       customerName: customerName,
@@ -140,7 +140,7 @@ const CartPage = () => {
 
   // Concatenate the elements for signature calculation
   const concatenatedStringPaymentStatus =
-    "770000019150" + merchantRefNum + "0743aa6f-53e6-43ca-a3e2-46fe25c1e3be";
+    "400000018490" + merchantRefNum + "5d289a9c-6a46-4b5a-a618-23b2929de937";
 
   // Calculate the signature
   const signaturePaymentStatus = CryptoJS.SHA256(
@@ -159,7 +159,7 @@ const CartPage = () => {
     FawryPay.checkout(chargeRequest, configuration);
 
     // Make the additional request to check the payment status
-    const merchantCode = "770000019150";
+    const merchantCode = "400000018490";
     const merchantRefNumber = merchantRefNum;
     const signature = signaturePaymentStatus;
 

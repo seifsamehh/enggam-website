@@ -324,7 +324,7 @@ export default function RootLayout({
           <Script
             id="fawrypay"
             type="text/javascript"
-            src="https://atfawry.fawrystaging.com/atfawry/plugin/assets/payments/js/fawrypay-payments.js"
+            src="https://www.atfawry.com/atfawry/plugin/assets/payments/js/fawrypay-payments.js"
           />
           <Script
             id="geidea"
