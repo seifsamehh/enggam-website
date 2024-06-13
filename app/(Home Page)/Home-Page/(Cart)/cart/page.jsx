@@ -115,7 +115,7 @@ const CartPage = () => {
       "400000018490" +
       merchantRefNum +
       customerProfileId +
-      "https://www.enggam.com/Home-Page/success" +
+      "https://www.enggam.com/Home-Page/cart" +
       chargeItems.map((item) => item.itemId).join("") +
       chargeItems.map((item) => item.quantity).join("") +
       chargeItems.map((item) => item.price).join("") +
@@ -132,7 +132,7 @@ const CartPage = () => {
       paymentMethod: "",
       customerProfileId: customerProfileId,
       chargeItems: chargeItems,
-      returnUrl: "https://www.enggam.com/Home-Page/success",
+      returnUrl: "https://www.enggam.com/Home-Page/cart",
       authCaptureModePayment: false,
       signature: signature,
     };
@@ -170,6 +170,12 @@ const CartPage = () => {
     try {
       const response = await fetch(`${statusUrl}?${queryParams}`);
       const data = await response.json();
+
+      if (data.status === "SUCCESS") {
+        toast.success("Payment Successful!");
+      } else {
+        toast.error("Something went Wrong Please Try Again!");
+      }
       // Handle the response data as needed
     } catch (error) {
       // Handle any errors that occur during the request
