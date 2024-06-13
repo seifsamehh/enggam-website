@@ -115,7 +115,7 @@ const CartPage = () => {
       "400000018490" +
       merchantRefNum +
       customerProfileId +
-      "https://www.enggam.com/Home-Page/cart" +
+      "https://www.enggam.com/Home-Page" +
       chargeItems.map((item) => item.itemId).join("") +
       chargeItems.map((item) => item.quantity).join("") +
       chargeItems.map((item) => item.price).join("") +
@@ -132,7 +132,7 @@ const CartPage = () => {
       paymentMethod: "",
       customerProfileId: customerProfileId,
       chargeItems: chargeItems,
-      returnUrl: "https://www.enggam.com/Home-Page/cart",
+      returnUrl: "https://www.enggam.com/Home-Page",
       authCaptureModePayment: false,
       signature: signature,
     };
@@ -173,7 +173,7 @@ const CartPage = () => {
 
       console.log(data);
 
-      if (data.status === "SUCCESS") {
+      if (data.statusCode === 200) {
         toast.success("Payment Successful!");
       } else {
         toast.error("Something went Wrong Please Try Again!");

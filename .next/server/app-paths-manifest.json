@@ -1,9 +1,6 @@
 {
   "/(Home Page)/Home-Page/(Cart)/cart/page": "app/(Home Page)/Home-Page/(Cart)/cart/page.js",
-  "/api/sendEmail/route": "app/api/sendEmail/route.js",
   "/page": "app/page.js",
   "/(Sign in)/sign-in/[[...sign-in]]/page": "app/(Sign in)/sign-in/[[...sign-in]]/page.js",
-  "/(Home Page)/Home-Page/page": "app/(Home Page)/Home-Page/page.js",
-  "/api/payments/route": "app/api/payments/route.js",
-  "/(Home Page)/Home-Page/(success)/success/page": "app/(Home Page)/Home-Page/(success)/success/page.js"
+  "/(Home Page)/Home-Page/page": "app/(Home Page)/Home-Page/page.js"
 }
