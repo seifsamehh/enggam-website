@@ -171,6 +171,8 @@ const CartPage = () => {
       const response = await fetch(`${statusUrl}?${queryParams}`);
       const data = await response.json();
 
+      console.log(data);
+
       if (data.status === "SUCCESS") {
         toast.success("Payment Successful!");
       } else {
