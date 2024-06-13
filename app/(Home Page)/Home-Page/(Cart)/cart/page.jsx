@@ -25,6 +25,10 @@ const raleway = Raleway({ subsets: ["latin"], weight: "900", display: "swap" });
 
 const USD_TO_EGP_RATE = 52.0;
 const CartPage = () => {
+  const fees = 1.15;
+
+  const router = useRouter();
+
   const [selectedCurrency, setSelectedCurrency] = useState("USD");
 
   const handleCurrencyChange = (currency) => {
@@ -37,8 +41,6 @@ const CartPage = () => {
     }
     return +price.toFixed(2); // Convert the string back to a number using the unary plus operator
   };
-
-  const router = useRouter();
 
   // user data
   const { isLoaded, isSignedIn, user } = useUser();
@@ -105,7 +107,7 @@ const CartPage = () => {
     const chargeItems = products.map((product) => ({
       itemId: product.id,
       description: product.name,
-      price: (product.price * USD_TO_EGP_RATE).toFixed(2),
+      price: (product.price * USD_TO_EGP_RATE + fees + 2.0).toFixed(2),
       imageUrl: product.image,
       quantity: product.quantity || 1,
     }));
@@ -171,14 +173,11 @@ const CartPage = () => {
       const response = await fetch(`${statusUrl}?${queryParams}`);
       const data = await response.json();
 
-      console.log(data);
-
-      if (data.statusCode === 200) {
-        toast.success("Payment Successful!");
+      if (data.statusCode === "200") {
+        router.push("/Home-Page/success");
       } else {
-        toast.error("Something went Wrong Please Try Again!");
+        router.push("/Home-Page/cancel");
       }
-      // Handle the response data as needed
     } catch (error) {
       // Handle any errors that occur during the request
       console.error(error);
@@ -186,7 +185,6 @@ const CartPage = () => {
   }
 
   // Geidea integration
-  const fees = 1.15;
   const paymentAmount = totalPrice * USD_TO_EGP_RATE + fees + 2.0;
 
   const generateError = () => {
