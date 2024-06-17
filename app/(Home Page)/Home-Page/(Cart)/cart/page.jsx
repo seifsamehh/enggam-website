@@ -23,9 +23,9 @@ import { Button } from "@nextui-org/react";
 import { toast } from "sonner";
 const raleway = Raleway({ subsets: ["latin"], weight: "900", display: "swap" });
 
-const USD_TO_EGP_RATE = 52.0;
 const CartPage = () => {
-  const fees = 1.15;
+  const USD_TO_EGP_RATE = 52.0;
+  const fees = 5.525;
 
   const router = useRouter();
 
