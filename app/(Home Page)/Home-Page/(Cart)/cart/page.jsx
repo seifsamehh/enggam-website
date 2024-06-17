@@ -107,11 +107,7 @@ const CartPage = () => {
     const chargeItems = products.map((product) => ({
       itemId: product.id,
       description: product.name,
-      price: (
-        product.price * USD_TO_EGP_RATE +
-        totalPrice * 0.025 +
-        2.0
-      ).toFixed(2),
+      price: (product.price * USD_TO_EGP_RATE * 1.025 + 2.0).toFixed(2),
       imageUrl: product.image,
       quantity: product.quantity || 1,
     }));
@@ -183,7 +179,7 @@ const CartPage = () => {
   }
 
   // Geidea integration
-  const paymentAmount = totalPrice * USD_TO_EGP_RATE + totalPrice * 0.025 + 2.0;
+  const paymentAmount = totalPrice * USD_TO_EGP_RATE * 1.025 + 2.0;
 
   const generateError = () => {
     toast.error("Something went Wrong Please Try Again!");
