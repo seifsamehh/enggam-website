@@ -15,7 +15,7 @@ import { Raleway } from "next/font/google";
 const raleway = Raleway({ subsets: ["latin"], weight: "900", display: "swap" });
 import "../styles/sale.scss";
 
-const USD_TO_EGP_RATE = 47.78;
+const USD_TO_EGP_RATE = 53.00;
 export default function SaleHome() {
   const [selectedCurrency, setSelectedCurrency] = useState("USD");
 

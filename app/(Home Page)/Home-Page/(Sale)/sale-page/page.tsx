@@ -10,7 +10,7 @@ import { Toaster, toast } from "sonner";
 import Image from "next/image";
 import { useState } from "react";
 
-const USD_TO_EGP_RATE = 47.78;
+const USD_TO_EGP_RATE = 53.00;
 export default function page() {
   const [selectedCurrency, setSelectedCurrency] = useState("USD");
 

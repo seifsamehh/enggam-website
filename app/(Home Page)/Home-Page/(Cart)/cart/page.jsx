@@ -24,7 +24,7 @@ import { toast } from "sonner";
 const raleway = Raleway({ subsets: ["latin"], weight: "900", display: "swap" });
 
 const CartPage = () => {
-  const USD_TO_EGP_RATE = 52.0;
+  const USD_TO_EGP_RATE = 53.0;
   const fees = 1.025;
 
   const router = useRouter();
