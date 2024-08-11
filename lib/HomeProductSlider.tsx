@@ -11,7 +11,7 @@ import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import "../styles/HomeProducts.scss";
 
-const USD_TO_EGP_RATE = 53.00;
+const USD_TO_EGP_RATE = 52.0;
 export default function HomeProductSlider() {
   const [selectedCurrency, setSelectedCurrency] = useState("USD");
 
