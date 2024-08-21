@@ -12,8 +12,8 @@ export const SaleProducts: SalePageProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
     name: "Free Fire 2200 + 220 Diamonds Pins (Garena)",
-    price: 19.87,
-    delete: 20.2,
+    price: 20.30,
+    delete: 21.2,
     image: "/freefire-card.webp",
     quantity: 0,
     // Add other properties as needed
@@ -102,7 +102,7 @@ export const SaleProducts: SalePageProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
     name: "PUBG 16200 UC (Global) Code",
-    price: 178.19,
+    price: 175.10,
     delete: 180.0,
     image: "/pubg-mobile-card.webp",
     quantity: 0,
@@ -120,8 +120,8 @@ export const SaleProducts: SalePageProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
     name: "Free Fire 2200 + 220 Diamonds Pins (Garena)",
-    price: 17.5,
-    delete: 19.87,
+    price: 20.30,
+    delete: 21.02,
     image: "/freefire-card.webp",
     quantity: 0,
     // Add other properties as needed
@@ -345,7 +345,7 @@ export const SaleProducts: SalePageProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
     name: "PUBG 24300 UC (Global) Code",
-    price: 265.74,
+    price: 262.60,
     delete: 267.2,
     image: "/pubg-mobile-card.webp",
     quantity: 0,
@@ -354,7 +354,7 @@ export const SaleProducts: SalePageProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
     name: "PUBG 1500+300 UC (Global) Code",
-    price: 22.3,
+    price: 21.90,
     delete: 23.5,
     image: "/pubg-mobile-card.webp",
     quantity: 0,
@@ -453,7 +453,7 @@ export const SaleProducts: SalePageProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
     name: "$150 Razer Gold Global",
-    price: 154.5,
+    price: 147.29,
     delete: 156.0,
     image: "/Razer-gift-card.webp",
     quantity: 0,

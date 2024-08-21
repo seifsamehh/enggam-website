@@ -1455,7 +1455,7 @@ export const BrazilRazerProducts: RazerProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
     name: "BRL 25 Razer Gold",
-    price: 5.15,
+    price: 5.66,
     image: "/Razer-gift-card.webp",
     quantity: 0,
     // Add other properties as needed
@@ -1731,7 +1731,7 @@ export const USRazerProducts: RazerProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
     name: "$5 Razer Gold Rixty (USA)",
-    price: 5.04,
+    price: 5.15,
     image: "/Razer-gift-card.webp",
     quantity: 0,
     // Add other properties as needed
@@ -1779,7 +1779,7 @@ export const USRazerProducts: RazerProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
     name: "$150 Razer Gold Rixty (USA)",
-    price: 154.5,
+    price: 148.30,
     image: "/Razer-gift-card.webp",
     quantity: 0,
     // Add other properties as needed
@@ -1839,7 +1839,7 @@ export const GlobalRazerProducts: RazerProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
     name: "$2 Razer Gold Global",
-    price: 2.16,
+    price: 2.47,
     image: "/Razer-gift-card.webp",
     quantity: 0,
     // Add other properties as needed
@@ -1879,7 +1879,7 @@ export const GlobalRazerProducts: RazerProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
     name: "$100 Razer Gold Global",
-    price: 103.0,
+    price: 97.85,
     image: "/Razer-gift-card.webp",
     quantity: 0,
     // Add other properties as needed
@@ -1887,7 +1887,7 @@ export const GlobalRazerProducts: RazerProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
     name: "$150 Razer Gold Global",
-    price: 154.5,
+    price: 147.29,
     image: "/Razer-gift-card.webp",
     quantity: 0,
     // Add other properties as needed
@@ -1903,7 +1903,7 @@ export const GlobalRazerProducts: RazerProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
     name: "$250 Razer Gold Global",
-    price: 257.5,
+    price: 244.10,
     image: "/Razer-gift-card.webp",
     quantity: 0,
     // Add other properties as needed
@@ -2221,7 +2221,7 @@ export const TurkeySteamProducts: SteamProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
     name: "Steam 100 TL (TR)",
-    price: 15.45,
+    price: 11.33,
     image: "/Steam-gift-card.webp",
     quantity: 0,
     // Add other properties as needed
@@ -2391,7 +2391,7 @@ export const EmiratesPsnProducts: PsnProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
     name: "PSN $5 (UAE)",
-    price: 5.0,
+    price: 5.66,
     image: "/Psn-gift-card.webp",
     quantity: 0,
     // Add other properties as needed
@@ -2723,7 +2723,7 @@ export const KuawitPsnProducts: PsnProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
     name: "PlayStation Plus 12 Month Membership (KW)",
-    price: 21.4,
+    price: 51.30,
     image: "/Psn-gift-card.webp",
     quantity: 0,
     // Add other properties as needed
@@ -2735,7 +2735,7 @@ export const SaudiPsnProducts: PsnProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
     name: "PSN $10 (SA)",
-    price: 10.3,
+    price: 10.81,
     image: "/Psn-gift-card.webp",
     quantity: 0,
     // Add other properties as needed
@@ -2851,7 +2851,7 @@ export const UKPsnProducts: PsnProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
     name: "PSN £10 (UK)",
-    price: 10.39,
+    price: 13.39,
     image: "/Psn-gift-card.webp",
     quantity: 0,
     // Add other properties as needed
@@ -2883,7 +2883,7 @@ export const UKPsnProducts: PsnProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
     name: "PSN £30 (UK)",
-    price: 36.0,
+    price: 37.00,
     image: "/Psn-gift-card.webp",
     quantity: 0,
     // Add other properties as needed
@@ -2967,7 +2967,7 @@ export const USPsnProducts: PsnProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
     name: "PSN $10 (US)",
-    price: 9.47,
+    price: 113.30,
     image: "/Psn-gift-card.webp",
     quantity: 0,
     // Add other properties as needed
@@ -3063,7 +3063,7 @@ export const USPsnProducts: PsnProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
     name: "PlayStation Now 3 Month Subscription (US)",
-    price: 25.75,
+    price: 30.90,
     image: "/Psn-gift-card.webp",
     quantity: 0,
     // Add other properties as needed

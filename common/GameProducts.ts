@@ -20,7 +20,7 @@ export const PubgProducts: PubgProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
     name: "PUBG 300+25 UC (Global) Code",
-    price: 4.25,
+    price: 4.35,
     image: "/pubg-mobile-card.webp",
     quantity: 0,
     // Add other properties as needed
@@ -36,7 +36,7 @@ export const PubgProducts: PubgProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
     name: "PUBG 1500+300 UC (Global) Code",
-    price: 22.3,
+    price: 21.90,
     image: "/pubg-mobile-card.webp",
     quantity: 0,
     // Add other properties as needed
@@ -44,7 +44,7 @@ export const PubgProducts: PubgProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
     name: "PUBG 3000+850 UC (Global) Code",
-    price: 44.29,
+    price: 43.77,
     image: "/pubg-mobile-card.webp",
     quantity: 0,
     // Add other properties as needed
@@ -60,7 +60,7 @@ export const PubgProducts: PubgProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
     name: "PUBG 16200 UC (Global) Code",
-    price: 178.1,
+    price: 175.10,
     image: "/pubg-mobile-card.webp",
     quantity: 0,
     // Add other properties as needed
@@ -68,7 +68,7 @@ export const PubgProducts: PubgProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
     name: "PUBG 24300 UC (Global) Code",
-    price: 265.74,
+    price: 262.60,
     image: "/pubg-mobile-card.webp",
     quantity: 0,
     // Add other properties as needed
@@ -76,7 +76,7 @@ export const PubgProducts: PubgProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
     name: "PUBG 32400 UC (Global) Code",
-    price: 352.26,
+    price: 350.20,
     image: "/pubg-mobile-card.webp",
     quantity: 0,
     // Add other properties as needed
@@ -84,7 +84,7 @@ export const PubgProducts: PubgProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
     name: "PUBG 40500 UC (Global) Code",
-    price: 463.5,
+    price: 435.69,
     image: "/pubg-mobile-card.webp",
     quantity: 0,
     // Add other properties as needed
@@ -160,7 +160,7 @@ export const FreefireDiamondProducts: FreefireDiamondProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
     name: "Free Fire 530 + 53 Diamonds Pins (Garena)",
-    price: 4.94,
+    price: 5.00,
     image: "/freefire-card.webp",
     quantity: 0,
     // Add other properties as needed
@@ -176,7 +176,7 @@ export const FreefireDiamondProducts: FreefireDiamondProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
     name: "Free Fire 2200 + 220 Diamonds Pins (Garena)",
-    price: 19.87,
+    price: 20.30,
     image: "/freefire-card.webp",
     quantity: 0,
     // Add other properties as needed

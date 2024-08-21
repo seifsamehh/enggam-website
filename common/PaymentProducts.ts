@@ -693,7 +693,7 @@ export const MasterMyprepaidProducts: MyPrepaidProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
     name: "MyPrepaidCenter Mastercard 2 USD",
-    price: 3.0,
+    price: 3.09,
     image: "/MyPrepaid-Center.webp",
     quantity: 0,
     // Add other properties as needed
@@ -732,14 +732,6 @@ export const MasterMyprepaidProducts: MyPrepaidProduct[] = [
   },
   {
     id: Math.floor(Math.random() * 1000) + 1,
-    name: "MyPrepaidCenter Mastercard 19 USD",
-    price: 21.63,
-    image: "/MyPrepaid-Center.webp",
-    quantity: 0,
-    // Add other properties as needed
-  },
-  {
-    id: Math.floor(Math.random() * 1000) + 1,
     name: "MyPrepaidCenter Mastercard 20 USD",
     price: 21.83,
     image: "/MyPrepaid-Center.webp",
@@ -756,16 +748,8 @@ export const MasterMyprepaidProducts: MyPrepaidProduct[] = [
   },
   {
     id: Math.floor(Math.random() * 1000) + 1,
-    name: "MyPrepaidCenter Mastercard 32 USD",
-    price: 32.96,
-    image: "/MyPrepaid-Center.webp",
-    quantity: 0,
-    // Add other properties as needed
-  },
-  {
-    id: Math.floor(Math.random() * 1000) + 1,
     name: "MyPrepaidCenter Mastercard 50 USD",
-    price: 56.65,
+    price: 53.56,
     image: "/MyPrepaid-Center.webp",
     quantity: 0,
     // Add other properties as needed
@@ -816,7 +800,7 @@ export const VisaMyprepaidProducts: MyPrepaidProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
     name: "$5 MyPrepaidCenter Visa",
-    price: 5.15,
+    price: 6.20,
     image: "/MyPrepaid-Center.webp",
     quantity: 0,
     // Add other properties as needed
@@ -872,7 +856,7 @@ export const VisaMyprepaidProducts: MyPrepaidProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
     name: "$250 MyPrepaidCenter Visa",
-    price: 267.8,
+    price: 278.00,
     image: "/MyPrepaid-Center.webp",
     quantity: 0,
     // Add other properties as needed
@@ -880,7 +864,7 @@ export const VisaMyprepaidProducts: MyPrepaidProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
     name: "$500 MyPrepaidCenter Visa",
-    price: 535.6,
+    price: 566.50,
     image: "/MyPrepaid-Center.webp",
     quantity: 0,
     // Add other properties as needed

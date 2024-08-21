@@ -238,14 +238,14 @@ const website: WebsiteData = {
     },
     {
       name: "$5 Razer Gold Rixty (USA)",
-      price: 5.04,
+      price: 5.15,
       availability: "In Stock",
       brand: "Razer Gold",
       image: "https://i.imgur.com/3Qb6mQS.png",
     },
     {
       name: "PUBG 300+25 UC (Global) Code",
-      price: 4.25,
+      price: 4.35,
       availability: "In Stock",
       brand: "Pubg Mobile",
       image: "https://i.imgur.com/PkAX5Z1.png",
