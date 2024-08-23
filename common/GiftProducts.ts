@@ -2967,7 +2967,7 @@ export const USPsnProducts: PsnProduct[] = [
   {
     id: Math.floor(Math.random() * 1000) + 1,
     name: "PSN $10 (US)",
-    price: 113.30,
+    price: 9.47,
     image: "/Psn-gift-card.webp",
     quantity: 0,
     // Add other properties as needed
